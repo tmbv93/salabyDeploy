@@ -6,18 +6,34 @@
     position: fixed;
     z-index: 10;
 }
+#siteLogo{
+    width: 250px;
+    margin-left: -50px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
 body {
     background-image: url("../img/skoleveien.jpg");
     height: 2000px;
 }
-.align-center {
+.align-center{
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     height: 100%;
     text-align: center;
     cursor: pointer;
+     transition: transform 0.5s;
+
 }
+
+.align-center:hover{
+    transform: scale(1.1,1.1);
+    -ms-transform: scale(1.1,1.1); /* IE 9 */
+    -webkit-transform: scale(1.1,1.1); /* Chrome, Safari, Opera */
+}
+
 .menu-option {
     border: solid thin #444;
     cursor: pointer;
@@ -29,6 +45,11 @@ body {
 .menu-option img {
     max-width: 300px;
 }
+
+#mainMenu{
+    margin-bottom: 20px;
+}
+
 .menuHeader {
     width: 100%;
     height: 25px;
