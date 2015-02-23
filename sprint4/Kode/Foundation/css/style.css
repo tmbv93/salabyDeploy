@@ -25,16 +25,28 @@
 
     /*----------Hovedmeny!!-----------*/
 .menu-option {
-    border: solid thin #444;
-    cursor: pointer;
-    margin-top: 100px;
-    background-color: white;
+/*    border: solid thin #444;
+    background-color: white;*/
     text-align: center;
+    margin-top: 100px;
 }
 
 .menu-option img {
     max-width: 300px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
 }
+
+.menu-option img:hover{
+    transform: scale(1.1,1.1);
+    -ms-transform: scale(1.1,1.1); /* IE 9 */
+    -webkit-transform: scale(1.1,1.1); /* Chrome, Safari, Opera */
+    opacity: 0.7;
+}
+
 
 #mainMenu{
     margin-bottom: 20px;
@@ -55,7 +67,6 @@ body {
     height: 100%;
     text-align: center;
     cursor: pointer;
-    /*transition: transform 0.5s;*/
     transition: all 0.5s ease-in-out 0s;
     -webkit-transition: all 0.5s ease-in-out 0s;
     -moz-transition: all 0.5s ease-in-out 0s;
