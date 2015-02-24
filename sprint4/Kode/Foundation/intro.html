@@ -12,22 +12,23 @@
 
 <body>
 
-    <svg id="svg-1" class="clip-svg" width="1000" height="760">
-        <image id="img-1" class="svg-image" width="1000" height="1000" x="0" y="-20" xlink:href="img/klasserom2.svg" />
-    <rect class="svg-describe" width="1000" height="1000" fill="#000" />
-    <defs>
-        <clipPath id="clip-triangle">
-            <polygon points="-1 750,1000 0,0 -1" />
-        </clipPath>
-    </defs>
-</svg>
     
+    <div id="adultSection">
+        <a href="#"><img src="img/klasserom2.svg"></a>
+    </div>
     
     <div id="childSection">
+    <div class="row">
+        <div class="large-6 columns">
+        <h2>Velkommen til Salaby</h2>    
+    </div>
+    </div>
     <div id="row">
     <div class="large-6 columns">
-      <label>
-        <input type="text" placeholder="Brukernavn" />
+      <label> Innlogging
+        <input id="userField" type="text" placeholder="Brukernavn" />
+        <input id="passField" type="password" placeholder="Passord" />
+        <input id="loginBtn" type="button" class="button expand" value="Logg inn">
       </label>
     </div>
         </div>
@@ -35,7 +36,8 @@
     
     
     
-    
+        <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="../js/loginBtnShow.js"></script>
         <script src="js/vendor/jquery.js"></script>
         <script src="js/foundation.min.js"></script>
         <script src="js/menuHeadScript.js"></script>

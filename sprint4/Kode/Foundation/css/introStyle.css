@@ -6,22 +6,29 @@ body {
 
 
 /*******************************************************************************************/
-/*CHILD SECTION STYLES*/
+/*ADULT SECTION STYLES*/
 
-.svg-describe, .svg-image {
-    clip-path: url(#clip-triangle);
-}
-.svg-describe {
-    opacity: 0;
-    transition: all 0.5s ease 0.2s;
-    -moz-transition: all 0.5s ease 0.2s;
-    -webkit-transition: all 0.5s ease 0.2s;
-}
-.clip-svg .svg-describe:hover {
-        /*-webkit-transform: scale(2,2);*/
-        opacity: 1;
+#adultSection {
+    height: 40em;
+    width: 80em;
+    -webkit-transform: rotate(-40deg);
+    position: absolute;
+    top: -10em;
+    left: -25em;
+    overflow: hidden;
+    border-bottom: black solid 5px;
 }
 
+#adultSection img {
+    -webkit-transform: rotate(40deg);
+    margin-top: 10em;
+    transition: 0.1s all ease-in-out 0s;
+}
+
+#adultSection img:hover {
+
+    -webkit-transform: rotate(40deg) scale(1.1,1.1);
+}
 
 
 /*******************************************************************************************/
@@ -33,4 +40,8 @@ body {
     top: 400px;
     width: 800px;
     height: 500px;
+}
+
+#childSection h2 {
+    color: white;
 }
