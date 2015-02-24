@@ -9,7 +9,7 @@
 }
 #siteLogo {
     width: 200px;
-    margin-left: -50px;
+    /*margin-left: -50px;*/
     margin-bottom: 10px;
     cursor: pointer;
 }
