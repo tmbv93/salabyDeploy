@@ -9,7 +9,7 @@ body {
 /*ADULT SECTION STYLES*/
 
 #adultSection {
-    height: 40em;
+    height: 37em;
     width: 80em;
     -webkit-transform: rotate(-40deg);
     position: absolute;
@@ -39,6 +39,8 @@ body {
     position: absolute;
     right: 10px;
     top: 400px;
+      width: 800px;
+
 
 
 }
