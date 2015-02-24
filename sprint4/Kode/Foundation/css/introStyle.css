@@ -1,0 +1,36 @@
+body {
+    background-image: url(../img/skoleveien.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*******************************************************************************************/
+/*CHILD SECTION STYLES*/
+
+.svg-describe, .svg-image {
+    clip-path: url(#clip-triangle);
+}
+.svg-describe {
+    opacity: 0;
+    transition: all 0.5s ease 0.2s;
+    -moz-transition: all 0.5s ease 0.2s;
+    -webkit-transition: all 0.5s ease 0.2s;
+}
+.clip-svg .svg-describe:hover {
+        /*-webkit-transform: scale(2,2);*/
+        opacity: 1;
+}
+
+
+
+/*******************************************************************************************/
+/*CHILD SECTION STYLES*/
+
+#childSection {
+    position: absolute;
+    right: 10px;
+    top: 400px;
+    width: 800px;
+    height: 500px;
+}
