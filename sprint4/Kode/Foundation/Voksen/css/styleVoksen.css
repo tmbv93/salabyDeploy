@@ -9,6 +9,9 @@ body {
 .breadcrumbs {
     background-color: transparent;
 }
+ #wrapper {
+     padding-top: 10em;
+ }
 
 
 
@@ -18,6 +21,7 @@ body {
     background-color: #f2f2f2;
     border-bottom: solid thin #222;
     margin-bottom: 20px;
+    top: 0;
     position: fixed;
     z-index: 10;
 }
@@ -46,7 +50,6 @@ body {
 #promoBanner {
     width: 100%;
     height: 400px;
-    margin-top: 7em;
     background-color: rgba(200,50,20,0.5);
 }
 /*---------PROMOOMRÅDE SLUTT---------*/
@@ -88,9 +91,12 @@ body {
 #footer{
     width: 100%;
     background-color: #858585;
-    height: 7em;
+    height: auto;
+    position:static;
+    bottom: 0px;
     margin-top: 50px;
 }
+
 
 #footerLogo img{
     width: 200px;
@@ -99,7 +105,7 @@ body {
     transition: all 0.3s ease-in-out 0s;
     -webkit-transition: all 0.3s ease-in-out 0s;
     -moz-transition: all 0.3s ease-in-out 0s;
-    -o-transition: all 0.3s ease-in-out 0s;    
+    -o-transition: all 0.3s ease-in-out 0s;
 }
 #footerLogo img:hover{
     transform: scale(1.1,1.1);
@@ -126,7 +132,7 @@ body {
     transition: all 0.3s ease-in-out 0s;
     -webkit-transition: all 0.3s ease-in-out 0s;
     -moz-transition: all 0.3s ease-in-out 0s;
-    -o-transition: all 0.3s ease-in-out 0s;    
+    -o-transition: all 0.3s ease-in-out 0s;
 }
 
 #socialLinks img:hover{
@@ -134,21 +140,6 @@ body {
     -ms-transform: scale(1.1,1.1); /* IE 9 */
     -webkit-transform: scale(1.1,1.1); /* Chrome, Safari, Opera */
     opacity: 0.7;
-}
-
-
-/*SIDEBAR NAVIGATION*/
-
-.side-nav {
-    
-}
-
-.side-nav li {
-    display: block
-}
-
-.side-nav li:Hover {
-    background-color: #333;
 }
 
 /*---------Footer SLUTT!!-----------*/
@@ -174,4 +165,61 @@ ul li {
 /*HIDE ELEMENTS*/
 .kanalS{
     display: none;
+}
+
+
+
+/*STYLE FOR KOMPETANSE SIDEN*/
+#innholdWrapper {
+    margin-bottom: 5em;
+    width: 100%;
+    height: 300px;
+}
+
+#samfunnAco, #norskAco, #engelskAco, #mohAco, #kohAco, #naturAco, #rleAco, #matteAco, #naturAco, #musikkAco  {
+    display: none;
+}
+
+#samfunnAco:target {
+    display: inherit;
+}
+
+#norskAco:target {
+    display: inherit;
+}
+
+#engelskAco:target {
+    display: inherit;
+}
+
+#mohAco:target {
+    display: inherit;
+}
+
+#kohAco:target {
+    display: inherit;
+}
+
+#naturAco:target {
+    display: inherit;
+}
+
+#rleAco:target {
+    display: inherit;
+}
+
+#matteAco:target {
+    display: inherit;
+}
+
+#samfunnAco:target {
+    display: inherit;
+}
+
+#naturAco:target {
+    display: inherit;
+}
+
+#musikkAco:target {
+    display: inherit;
 }
