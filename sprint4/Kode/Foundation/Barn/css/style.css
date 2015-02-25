@@ -19,6 +19,7 @@
     top: 25px;
     position: relative;
 }
+
 /*---------Headerområde SLUTT!!---------*/
 
 /*---------Hovedområde!!---------*/
@@ -58,6 +59,7 @@
 
 body {
     background-image: url("../img/skoleveien.jpg");
+    height: 100%;
 }
 
 
@@ -103,10 +105,11 @@ body {
 #footer{
     width: 100%;
     background-color: #858585;
-    height: 7em;
+    height: auto;
     margin-top: 50px;
 
 }
+
 
 #footerLogo img{
     width: 200px;
@@ -179,4 +182,9 @@ ul li {
 
 .barnehage{
     /*display: none;*/
+}
+
+
+#test {
+    min-height: 100%;
 }
