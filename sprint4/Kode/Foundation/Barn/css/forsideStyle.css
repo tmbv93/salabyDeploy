@@ -55,8 +55,11 @@
     /*----------Hovedmeny SLUTT!!-----------*/
 
 body {
-    /*background-image: url("../img/skoleveien.jpg");*/
-    height: auto;
+    background-image: url("../img/skoleveien.jpg");
+}
+
+#wrapper{
+    min-height: 100%;
 }
 
 .align-center{
@@ -163,5 +166,5 @@ ul li {
 }
 
 .barnehage{
-    /*display: none;*/
+    display: none;
 }
