@@ -6,7 +6,7 @@ class UserTest < ActiveSupport::TestCase
   # end
 
   def setup
-    @user = User.new(first_name: "Test", last_name: "Person", password: "testpass", password_confirmation: "testpass")
+    @user = User.new(first_name: "Test", last_name: "Person", username: "username", password: "testpass", password_confirmation: "testpass")
   end
 
   test "is valid" do
@@ -34,8 +34,20 @@ class UserTest < ActiveSupport::TestCase
     assert_not @user.valid?
   end
 
-  test "password is long enough" do
+  test "password is correct length" do
     @user.password = @user.password_confirmation = "a" * 5 #at least six chars
+    assert_not @user.valid?
+  end
+
+  test "username is present" do
+    @user.username = '   '
+    assert_not @user.valid?
+  end
+
+  test "username is correct length" do
+    @user.username = "a" * 5; #at least six chars
+    assert_not @user.valid?
+    @user.username = "a" * 26 #max 25 chars
     assert_not @user.valid?
   end
 
