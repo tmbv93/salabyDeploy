@@ -61,6 +61,14 @@ body {
     height: 2000px;
 }
 
+/*----------Gjelder kun på relgioner i RLE siden-----------*/
+#align_center{
+    margin: 15px;
+    margin-bottom: 15px;
+}
+/*----------RLE siden SLUTT!!-----------*/
+
+
 .align-center{
     margin-left: auto;
     margin-right: auto;
