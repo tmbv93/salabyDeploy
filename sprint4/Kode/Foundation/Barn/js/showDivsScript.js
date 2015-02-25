@@ -2,19 +2,37 @@ $(function(){
 
 	var $barnehageButton, $kanalSButton;
 
+	var $barnehageDivs, $kanalSDivs;
+
 	function setHTMLObjects(){
 		$barnehageButton = $("#barnehageButton");
 		$kanalSButton = $("#kanalSButton");
+		$barnehageDivs = $(".barnehage");
+		$kanalSDivs = $(".kanalS");
 		
 	}
 
 	function buttonEvents(){
 		$barnehageButton.click(function(){
-			$(".barnehage").toggle();
+			if($barnehageDivs.is(":hidden")){
+			$barnehageDivs.slideDown();
+				if($kanalSDivs.is(":visible")){
+					($kanalSDivs).slideUp();
+				}
+			}else{
+			$barnehageDivs.slideUp();
+			}
 		});
 
 		$kanalSButton.click(function(){
-			$(".kanalS").toggle();
+			if($kanalSDivs.is(":hidden")){
+			$kanalSDivs.slideDown();
+				if($barnehageDivs.is(":visible")){
+					($barnehageDivs).slideUp();
+				}
+			}else{
+			$kanalSDivs.slideUp();
+			}
 		});
 	}
 	
