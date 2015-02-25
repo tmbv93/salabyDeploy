@@ -154,3 +154,9 @@ li a:hover {
 ul li {
     display: inline-block;
 }
+
+
+/*HIDE ELEMENTS*/
+.kanalS{
+    display: none;
+}
