@@ -1,8 +1,12 @@
+/*CONSTRUCTORS*/
+
 body {
     background-image: url(../img/skoleveien.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
 
 
 /*******************************************************************************************/
@@ -27,11 +31,25 @@ body {
 }
 
 #adultSection img:hover {
-
     -webkit-transform: rotate(40deg) scale(1.1,1.1);
 }
 
+.overlay{
+    width: auto;
+    height: auto;
+    background-color: rgba(255,255,255,0.5);
+    position: absolute;
+    padding: 5px;
+    top: 34em;
+    left:10em;
+    z-index: 2;
+    
+}
+.overlay a {
+    color: black;
+    font-size: 20pt;
 
+}
 /*******************************************************************************************/
 /*CHILD SECTION STYLES*/
 
@@ -40,11 +58,17 @@ body {
     right: 10px;
     top: 400px;
     width: 800px;
-
-
+    z-index: 2;
 
 }
 
 #childSection h2 {
     color: white;
+}
+
+#personPos {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 25em;
 }

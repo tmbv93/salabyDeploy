@@ -62,6 +62,10 @@ body {
     display: inline;
 }
 
+.articleImg {
+    float: left;
+}
+
 #articleOmrade article p {
     padding: 5px;
 }
@@ -135,8 +139,16 @@ body {
 
 /*SIDEBAR NAVIGATION*/
 
-.side-nav li{
-    display: inline;
+.side-nav {
+    
+}
+
+.side-nav li {
+    display: block
+}
+
+.side-nav li:Hover {
+    background-color: #333;
 }
 
 /*---------Footer SLUTT!!-----------*/
