@@ -1,0 +1,50 @@
+body {
+    background-image: url(../img/skoleveien.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*******************************************************************************************/
+/*ADULT SECTION STYLES*/
+
+#adultSection {
+    height: 37em;
+    width: 80em;
+    -webkit-transform: rotate(-40deg);
+    position: absolute;
+    top: -10em;
+    left: -25em;
+    overflow: hidden;
+    border-bottom: black solid 5px;
+
+}
+
+#adultSection img {
+    -webkit-transform: rotate(40deg);
+    margin-top: 10em;
+    transition: 1.1s all ease-in-out 0s;
+}
+
+#adultSection img:hover {
+
+    -webkit-transform: rotate(40deg) scale(1.1,1.1);
+}
+
+
+/*******************************************************************************************/
+/*CHILD SECTION STYLES*/
+
+#childSection {
+    position: absolute;
+    right: 10px;
+    top: 400px;
+    width: 800px;
+
+
+
+}
+
+#childSection h2 {
+    color: white;
+}
