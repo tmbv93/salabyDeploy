@@ -1,4 +1,18 @@
-/*---------Headerområde!!---------*/
+
+/***********************************CONSTRUCTORS**************************************/
+body {
+    /*background-image: url("../img/skoleveien.jpg");*/
+    background-color: #ccc;
+
+}
+
+.breadcrumbs {
+    background-color: transparent;
+}
+
+
+
+/*---------HEADER START---------*/
 #mainHeader {
     width: 100%;
     background-color: #f2f2f2;
@@ -7,6 +21,10 @@
     position: fixed;
     z-index: 10;
 }
+
+
+
+/*HEADER SLUTT*/
 #siteLogo {
     width: 200px;
     /*margin-left: -50px;*/
@@ -19,71 +37,47 @@
     top: 25px;
     position: relative;
 }
-/*---------Headerområde SLUTT!!---------*/
 
-/*---------Hovedområde!!---------*/
-
-    /*----------Hovedmeny!!-----------*/
-.menu-option {
-/*  border: solid thin #444;
-    background-color: white;*/
-    text-align: center;
-    margin-top: 100px;
+.menuHeader a .ac{
+    color: blue;
 }
-
-.menu-option img {
-    max-width: 300px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out 0s;
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    -moz-transition: all 0.3s ease-in-out 0s;
-    -o-transition: all 0.3s ease-in-out 0s;
-}
-
-.menu-option img:hover{
-    transform: scale(1.1,1.1);
-    -ms-transform: scale(1.1,1.1); /* IE 9 */
-    -webkit-transform: scale(1.1,1.1); /* Chrome, Safari, Opera */
-    opacity: 0.7;
-}
-
-
-#mainMenu{
-    margin-bottom: 20px;
-}
-
-    /*----------Hovedmeny SLUTT!!-----------*/
-
-
-
-body {
-    background-image: url("../img/skoleveien.jpg");
-
-}
-
-.align-center{
-    margin-left: auto;
-    margin-right: auto;
+/*---------Headerområde SLUTT---------*/
+/*---------PROMOOMRÅDE START---------*/
+#promoBanner {
     width: 100%;
-    height: 100%;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out 0s;
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    -moz-transition: all 0.3s ease-in-out 0s;
-    -o-transition: all 0.3s ease-in-out 0s;
+    height: 400px;
+    margin-top: 7em;
+    background-color: rgba(200,50,20,0.5);
+}
+/*---------PROMOOMRÅDE SLUTT---------*/
+/*---------ARTICLEOMRÅDE START---------*/
+
+#articleOmrade {
+    width: 100%;
+    height: auto;
+    padding-top: 2em;
 }
 
-.align-center:hover{
-    transform: scale(1.1,1.1);
-    -ms-transform: scale(1.1,1.1); /* IE 9 */
-    -webkit-transform: scale(1.1,1.1); /* Chrome, Safari, Opera */
-    opacity: 0.7;
+#articleOmrade article {
+    display: inline;
 }
-/*---------Hovedområde SLUTT!!---------*/
-.fag img {
-    max-width: 300px;
+
+#articleOmrade article p {
+    padding: 5px;
 }
+
+#articleOmrade article h3 {
+    padding: 5px;
+    border-bottom: solid thin #888;
+}
+
+/*---------ARTICLEOMRÅDE SLUTT---------*/
+
+/*----------Hovedmeny SLUTT!!-----------*/
+
+
+
+
 
 
 /*---------Footer!!-----------*/
@@ -136,6 +130,13 @@ body {
     -ms-transform: scale(1.1,1.1); /* IE 9 */
     -webkit-transform: scale(1.1,1.1); /* Chrome, Safari, Opera */
     opacity: 0.7;
+}
+
+
+/*SIDEBAR NAVIGATION*/
+
+.side-nav li{
+    display: inline;
 }
 
 /*---------Footer SLUTT!!-----------*/
