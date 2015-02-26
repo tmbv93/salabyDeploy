@@ -56,7 +56,7 @@
     transform: scale(1.1,1.1);
     -ms-transform: scale(1.1,1.1); /* IE 9 */
     -webkit-transform: scale(1.1,1.1); /* Chrome, Safari, Opera */
-    opacity: 0.7;
+
 }
 
 .menu{
@@ -94,7 +94,7 @@ body {
     transform: scale(1.1,1.1);
     -ms-transform: scale(1.1,1.1); /* IE 9 */
     -webkit-transform: scale(1.1,1.1); /* Chrome, Safari, Opera */
-    opacity: 0.7;
+
 }
 
 /*---------Hovedområde SLUTT!!---------*/
