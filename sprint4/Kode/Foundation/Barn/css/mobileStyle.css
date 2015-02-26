@@ -16,6 +16,10 @@
     	max-width: 200px;
     }
 
+    #skoleveienMenu .menu-option img{
+        max-width: 150px;
+    } 
+
     .columns .menu-option{
     	margin-top: 20px;
     }
