@@ -1,4 +1,5 @@
 /*---------Headerområde!!---------*/
+
 #mainHeader {
     width: 100%;
     background-color: #f2f2f2;
@@ -10,6 +11,7 @@
 #siteLogo {
     width: 200px;
     /*margin-left: -50px;*/
+
     margin-bottom: 10px;
     cursor: pointer;
 }
@@ -19,19 +21,17 @@
     top: 25px;
     position: relative;
 }
-
 /*---------Headerområde SLUTT!!---------*/
-
 /*---------Hovedområde!!---------*/
+/*----------Hovedmeny!!-----------*/
 
-    /*----------Hovedmeny!!-----------*/
 .menu-option {
-/*  border: solid thin #444;
+    /*  border: solid thin #444;
     background-color: white;*/
+
     text-align: center;
     margin-top: 100px;
 }
-
 .menu-option img {
     max-width: 300px;
     cursor: pointer;
@@ -40,42 +40,35 @@
     -moz-transition: all 0.15s ease-in-out 0s;
     -o-transition: all 0.15s ease-in-out 0s;
 }
+.menu-option img:hover {
+    transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    /* IE 9 */
 
-.menu-option img:hover{
-    transform: scale(1.1,1.1);
-    -ms-transform: scale(1.1,1.1); /* IE 9 */
-    -webkit-transform: scale(1.1,1.1); /* Chrome, Safari, Opera */
+    -webkit-transform: scale(1.1, 1.1);
+    /* Chrome, Safari, Opera */
+
     opacity: 0.7;
 }
-
-
-#mainMenu{
+#mainMenu {
     margin-bottom: 20px;
 }
-
-    /*----------Hovedmeny SLUTT!!-----------*/
-
-
+/*----------Hovedmeny SLUTT!!-----------*/
 
 body {
     background: url("../img/skoleveien.jpg") no-repeat;
-    background-attachment:fixed;
-    background-position:center bottom;
+    background-attachment: fixed;
+    background-position: center bottom;
     background-size: cover;
 }
-
-
-
 /*----------Gjelder kun på religion bildene på RLE siden-----------*/
 
-#align_center{
+#align_center {
     margin-bottom: 15px;
 }
-
 /*----------SLUTT!!-----------*/
 
-
-.align-center{
+.align-center {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -87,30 +80,34 @@ body {
     -moz-transition: all 0.15s ease-in-out 0s;
     -o-transition: all 0.15s ease-in-out 0s;
 }
+.align-center:hover {
+    transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    /* IE 9 */
 
-.align-center:hover{
-    transform: scale(1.1,1.1);
-    -ms-transform: scale(1.1,1.1); /* IE 9 */
-    -webkit-transform: scale(1.1,1.1); /* Chrome, Safari, Opera */
+    -webkit-transform: scale(1.1, 1.1);
+    /* Chrome, Safari, Opera */
+
     opacity: 0.7;
 }
-
 .fag img {
     max-width: 300px;
 }
 /*---------Hovedområde SLUTT!!---------*/
+<<<<<<< Updated upstream
 
 
+=======
+>>>>>>> Stashed changes
 /*---------Footer!!-----------*/
-#footer{
+
+#footer {
     width: 100%;
     background-color: #858585;
     height: auto;
     margin-top: 50px;
 }
-
-
-#footerLogo img{
+#footerLogo img {
     width: 200px;
     margin: 15px;
     cursor: pointer;
@@ -119,12 +116,17 @@ body {
     -moz-transition: all 0.3s ease-in-out 0s;
     -o-transition: all 0.3s ease-in-out 0s;
 }
-#footerLogo img:hover{
-    transform: scale(1.1,1.1);
-    -ms-transform: scale(1.1,1.1); /* IE 9 */
-    -webkit-transform: scale(1.1,1.1); /* Chrome, Safari, Opera */
+#footerLogo img:hover {
+    transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    /* IE 9 */
+
+    -webkit-transform: scale(1.1, 1.1);
+    /* Chrome, Safari, Opera */
+
     opacity: 0.7;
 }
+<<<<<<< Updated upstream
 
 #footerMid{
     margin-top: 20px;
@@ -137,13 +139,25 @@ body {
 }
 #footerMid li a{
     color: rgb(250,250,250);
+=======
+#footerMid {
+    margin-top: 40px;
 }
-#footerMid li a:hover{
-    color: rgb(200,200,200);
+#footerMid li a {
+    color: white;
+>>>>>>> Stashed changes
 }
+#footerMid li a:hover {
+    color: rgb(200, 200, 200);
+}
+<<<<<<< Updated upstream
 
 #socialLinks img{
     width: 40px;
+=======
+#socialLinks img {
+    width: 60px;
+>>>>>>> Stashed changes
     margin: 5px;
     margin-top: 20px;
     cursor: pointer;
@@ -152,131 +166,112 @@ body {
     -moz-transition: all 0.15s ease-in-out 0s;
     -o-transition: all 0.15s ease-in-out 0s;
 }
+#socialLinks img:hover {
+    transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    /* IE 9 */
 
-#socialLinks img:hover{
-    transform: scale(1.1,1.1);
-    -ms-transform: scale(1.1,1.1); /* IE 9 */
-    -webkit-transform: scale(1.1,1.1); /* Chrome, Safari, Opera */
+    -webkit-transform: scale(1.1, 1.1);
+    /* Chrome, Safari, Opera */
+
     opacity: 0.7;
 }
-
 /*---------Footer SLUTT!!-----------*/
-
-
-
-
 /*HIDE ELEMENTS*/
-.kanalS{
+
+.kanalS {
     display: none;
 }
-
-.barnehage{
+.barnehage {
     /*display: none;*/
 }
-
-
 #test {
     min-height: 100%;
 }
-
-
 /*HINDUISME*/
 
-.top-bar{
+.top-bar {
     height: 52px;
     background-color: #f2f2f2;
     border-bottom: solid thin #dcdcdc;
-
 }
-
 .title-area {
     height: 52px;
     border-bottom: solid thin #dcdcdc;
-
 }
-
-.top-bar-section ul{
-margin-top: 0px;
-height: 100% !important;
-
+.top-bar-section ul {
+    margin-top: 0px;
+    height: 100% !important;
 }
-
-
-.top-bar-section ul li a{
-color: black;
-background-color: #f2f2f2 !important;
+.top-bar-section ul li a {
+    color: black;
+    background-color: #f2f2f2 !important;
 }
-
-.top-bar-section ul li a:hover{
-background-color: grey !important;
+.top-bar-section ul li a:hover {
+    background-color: grey !important;
 }
-
 .top-bar.expanded .title-area {
- background-color: #f2f2f2;
+    background-color: #f2f2f2;
 }
-
-
 .top-bar .toggle-topbar.menu-icon a, .toggle-topbar.menu-icon {
-
-color: grey;
-
+    color: grey;
 }
-
-
 .top-bar .toggle-topbar.menu-icon a span::after {
-box-shadow: 0 0px 0 1px grey, 0 7px 0 1px grey, 0 14px 0 1px grey;
+    box-shadow: 0 0px 0 1px grey, 0 7px 0 1px grey, 0 14px 0 1px grey;
 }
-
 /*back to top*/
 
 .cd-top {
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  position: fixed;
-  bottom: 40px;
-  right: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-  /* image replacement properties */
-  overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap;
-  background: rgba(232, 98, 86, 0.8) url(../img/cd-top-arrow.svg) no-repeat center 50%;
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
-  -moz-transition: opacity .3s 0s, visibility 0s .3s;
-  transition: opacity .3s 0s, visibility 0s .3s;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    /* image replacement properties */
+
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    background: rgba(232, 98, 86, 0.8) url(../img/cd-top-arrow.svg) no-repeat center 50%;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+    -moz-transition: opacity .3s 0s, visibility 0s .3s;
+    transition: opacity .3s 0s, visibility 0s .3s;
 }
 .cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
-  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
-  -moz-transition: opacity .3s 0s, visibility 0s 0s;
-  transition: opacity .3s 0s, visibility 0s 0s;
+    -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+    -moz-transition: opacity .3s 0s, visibility 0s 0s;
+    transition: opacity .3s 0s, visibility 0s 0s;
 }
 .cd-top.cd-is-visible {
-  /* the button becomes visible */
-  visibility: visible;
-  opacity: 1;
+    /* the button becomes visible */
+
+    visibility: visible;
+    opacity: 1;
 }
 .cd-top.cd-fade-out {
-  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
-  opacity: .5;
+    /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+
+    opacity: .5;
 }
 .no-touch .cd-top:hover {
-  background-color: #e86256;
-  opacity: 1;
+    background-color: #e86256;
+    opacity: 1;
 }
 @media only screen and (min-width: 768px) {
-  .cd-top {
-    right: 20px;
-    bottom: 20px;
-  }
+    .cd-top {
+        right: 20px;
+        bottom: 20px;
+    }
 }
 @media only screen and (min-width: 1024px) {
-  .cd-top {
-    height: 60px;
-    width: 60px;
-    right: 30px;
-    bottom: 30px;
-  }
+    .cd-top {
+        height: 60px;
+        width: 60px;
+        right: 30px;
+        bottom: 30px;
+    }
 }
