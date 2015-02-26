@@ -5,6 +5,9 @@
 .MFL, #skoleveienMenu{
     display: none;
 }
+.kanalS,.mfl,.menu, .barnehage {
+  margin-bottom: 100px;
+}
 
 
 /*---------Headerområde!!---------*/
@@ -262,7 +265,7 @@ html, body {height: 100%;}
 
 #footer {
   position: relative;
-  margin-top: -90px; /* negative value of footer height */
-  height: 90px;
+  margin-top: -80px; /* negative value of footer height */
+  height: 80px;
   clear:both;
 }
