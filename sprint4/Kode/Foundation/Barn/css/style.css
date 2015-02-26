@@ -101,10 +101,6 @@ body {
 /*---------Hovedområde SLUTT!!---------*/
 
 
-
-
-
-
 /*---------Footer!!-----------*/
 #footer{
     width: 100%;
@@ -131,17 +127,23 @@ body {
 }
 
 #footerMid{
-    margin-top: 40px;
+    margin-top: 20px;
+}
+
+#footerMid li{
+    float: left;
+    margin: 5px;
+    list-style: none;
 }
 #footerMid li a{
-    color: white;
+    color: rgb(250,250,250);
 }
 #footerMid li a:hover{
     color: rgb(200,200,200);
 }
 
 #socialLinks img{
-    width: 60px;
+    width: 40px;
     margin: 5px;
     margin-top: 20px;
     cursor: pointer;
