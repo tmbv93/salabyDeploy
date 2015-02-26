@@ -7,6 +7,7 @@
     <title>Forside Barn</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/forsideStyle.css" />
+    <link rel="stylesheet" href="css/mobileStyle.css" />
 
     <script src="js/vendor/modernizr.js"></script>
 </head>
@@ -42,22 +43,22 @@
     <div class="row menu">
         <div class="large-12 columns">
             <div class="row">
-                <div id="barnehageButton" class="large-3 medium-6 small-6 columns">
+                <div id="barnehageButton" class="large-3 medium-6 columns">
                     <div class="menu-option">
                         <img src="img/barnehage.png">
                     </div>
                 </div>
-                <div id="skoleveienButton" class="large-3 medium-6 small-6 columns">
+                <div id="skoleveienButton" class="large-3 medium-6 columns">
                     <div class="menu-option">
                         <img src="img/Skoleveien.png">
                     </div>
                 </div>
-                <div id="kanalSButton" class="large-3 medium-6 small-6 columns">
+                <div id="kanalSButton" class="large-3 medium-6 columns">
                     <div class="menu-option">
                         <img src="img/kanalS.png">
                     </div>
                 </div>
-                <div id="MFLButton" class="large-3 medium-6 small-6 columns">
+                <div id="MFLButton" class="large-3 medium-6 columns">
                     <div class="menu-option">
                         <img src="img/MFL.png">
                     </div>
@@ -67,40 +68,16 @@
     </div>
     <!--!!!!!!!!!!!!!!MENY SLUTT!!!!!!!!!!!!!!-->
 
-        <!--!!!!!!!!!!!!!!!!SKOLEVEIEN MENY!!!!!!!!!!!!!!!!!!!!-->
-    <div class="row menu" id="skoleveienMenu">
-        <div class="large-12 columns">
-            <div class="row">
-                <div id="barnehageButton" class="large-3 medium-6 small-6 columns">
-                    <div class="menu-option">
-                        <img src="img/undermenySkoleVeien/1-2.png">
-                    </div>
-                </div>
-                <div id="skoleveienButton" class="large-3 medium-6 small-6 columns">
-                    <div class="menu-option">
-                        <img src="img/undermenySkoleVeien/3-4.png">
-                    </div>
-                </div>
-                <div id="kanalSButton" class="large-3 medium-6 small-6 columns">
-                    <div class="menu-option">
-                        <img src="img/undermenySkoleVeien/morsmål.png">
-                    </div>
-                </div>
-                <div id="MFLButton" class="large-3 medium-6 small-6 columns">
-                    <div class="menu-option">
-                        <img src="img/undermenySkoleVeien/skolestart.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!--!!!!!!!!!!!!!!!!SKOLEVEIEN MENY SLUTT!!!!!!!!!!!!!!!!!!!!-->
-
+    
      <!--!!!!!!!!!!!!!!!!! MAIN CONTENT!!!!!!!!!!!!!!!!!!!!-->
     <div id="wrapper">
     <!--!!!!!!!!!!!!!!!!!BARNEHAGE FAG!!!!!!!!!!!!!!!!!!!!!!-->
+    <!-- mobil meny -->
+    <div id="barnehageButtonMobil" class="small-12 columns">
+        <div class="menu-option">
+            <img src="img/barnehage.png">
+        </div>
+    </div>
     <div class="row barnehage">
         <div class="large-4 small-6 columns">
             <div class="align-center">
@@ -130,7 +107,49 @@
     </div>
     <!--!!!!!!!!!!!!!!!!BARNEHAGE FAG SLUTT!!!!!!!!!!!!!!!!!!!!-->
 
+    <!--!!!!!!!!!!!!!!!!SKOLEVEIEN MENY!!!!!!!!!!!!!!!!!!!!-->
+    <!-- mobil meny -->
+    <div id="skoleveienButtonMobil" class="small-12 columns">
+        <div class="menu-option">
+            <img src="img/Skoleveien.png">
+        </div>
+    </div>
+    <div class="row menu" id="skoleveienMenu">
+        <div class="large-12 columns">
+            <div class="row">
+                <div id="barnehageButton" class="large-3 medium-6 small-6 columns">
+                    <div class="menu-option">
+                        <img src="img/undermenySkoleVeien/1-2.png">
+                    </div>
+                </div>
+                <div id="skoleveienButton" class="large-3 medium-6 small-6 columns">
+                    <div class="menu-option">
+                        <img src="img/undermenySkoleVeien/3-4.png">
+                    </div>
+                </div>
+                <div id="kanalSButton" class="large-3 medium-6 small-6 columns">
+                    <div class="menu-option">
+                        <img src="img/undermenySkoleVeien/morsmål.png">
+                    </div>
+                </div>
+                <div id="MFLButton" class="large-3 medium-6 small-6 columns">
+                    <div class="menu-option">
+                        <img src="img/undermenySkoleVeien/skolestart.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--!!!!!!!!!!!!!!!!SKOLEVEIEN MENY SLUTT!!!!!!!!!!!!!!!!!!!!-->
+
+
     <!--!!!!!!!!!!!!!!!!!!!!KANALS FAG!!!!!!!!!!!!!!!!!!!-->
+    <!-- mobil meny -->
+    <div id="kanalSButtonMobil" class="small-12 columns">
+        <div class="menu-option">
+            <img src="img/kanalS.png">
+        </div>
+    </div>
     <div class="row kanalS">
         <div class="large-4 small-6 columns">
             <div class="align-center">
@@ -198,6 +217,12 @@
     <!--!!!!!!!!!!!!!!!!!!!!KANALS FAG SLUTT!!!!!!!!!!!!!!!!!!!-->
 
     <!--!!!!!!!!!!!!!!!!!MFL FAG!!!!!!!!!!!!!!!!!!!!!!-->
+    <!-- mobil meny -->
+    <div id="MFLButtonMobil" class="small-12 columns">
+        <div class="menu-option">
+            <img src="img/MFL.png">
+        </div>
+    </div>
     <div class="row MFL">
         <div class="large-4 small-12 columns">
             <div class="align-center">
@@ -256,6 +281,7 @@
     <script src="js/foundation.min.js"></script>
     <script src="js/menuHeadScript.js"></script>
     <script src="js/showDivsScript.js"></script>
+    <script src="js/showDivsMobilScript.js"></script>
     <script src="js/main.js"></script>
     <script>
     $(document).foundation();

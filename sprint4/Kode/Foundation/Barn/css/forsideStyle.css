@@ -1,3 +1,12 @@
+/*Gjemmer elementer som ikke skal vises før de skal :P*/
+/*HIDE ELEMENTS*/
+.kanalS, #barnehageButtonMobil, #skoleveienButtonMobil, 
+#kanalSButtonMobil, #MFLButtonMobil, .barnehage, 
+.MFL, #skoleveienMenu{
+    display: none;
+}
+
+
 /*---------Headerområde!!---------*/
 #mainHeader {
     width: 100%;
@@ -138,21 +147,6 @@ body {
 /*---------Footer SLUTT!!-----------*/
 
 
-
-/*HIDE ELEMENTS*/
-.kanalS{
-    display: none;
-}
-.barnehage{
-    display: none;
-}
-.MFL{
-    display: none;
-}
-#skoleveienMenu{
-    display: none;
-}
-
 /*MENY*/
 .top-bar{
     height: 52px;
@@ -227,7 +221,7 @@ box-shadow: 0 0px 0 1px grey, 0 7px 0 1px grey, 0 14px 0 1px grey;
   transition: opacity .3s 0s, visibility 0s 0s;
 }
 .cd-top.cd-is-visible {
-  /* the button becomes visible */
+  /* Knappen blir synlig */
   visibility: visible;
   opacity: 1;
 }
@@ -253,5 +247,6 @@ box-shadow: 0 0px 0 1px grey, 0 7px 0 1px grey, 0 14px 0 1px grey;
     bottom: 30px;
   }
 }
+/*!!!!!!!!!!!!STYLE FOR BACK TO TOP BTN SLUTT!!!!!!!!!!!*/
 
-/*!!!!!!!!!!!!STYLE FOR BACK TO TOP BTN!!!!!!!!!!!*/
+
