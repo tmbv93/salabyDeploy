@@ -58,8 +58,9 @@
 
 
 body {
-    background: url("../img/skoleveien.jpg") no-repeat scroll center top;
-
+    background: url("../img/skoleveien.jpg") no-repeat;
+    background-attachment:fixed;
+    background-position:center bottom;
     background-size: cover;
 }
 
