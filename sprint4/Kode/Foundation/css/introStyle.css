@@ -1,4 +1,7 @@
-
+.synlig {
+    color: pink;
+    font-size: 15pt;
+}
 
     /*CONSTRUCTORS*/
 body {
