@@ -12,85 +12,93 @@
 </head>
 
 <body>
-    <div id="mainHeader">
-        <div class="row">
-            <div class="large-12 columns">
-                <div class="large-8 small-4 columns">
-                    <a href="barnForside.html"><img id="siteLogo" src="./img/logos/salaby_logo_enkel_rød.png">
-                    </a>
-                </div>
-                <div class="large-4 small-8 columns">
-                    <div class="menuHeader">
-                        <ul>
-                            <li><a href="#">Lærer/foreldre siden</a>
-                            </li>
-                            <li><a href="#">Min side</a>
-                            </li>
-                            <li><a href="#">Logg ut</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+<!--MENU-->
+    <div class="fixed">
+        <nav class="top-bar" data-topbar role="navigation">
+            <ul class="title-area">
+                <li class="name">
+                    <img id="siteLogo" src="img/logos/salaby_logo_enkel_rød.png">
+                </li>
+                <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+                <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a>
+                </li>
+            </ul>
+
+            <section class="top-bar-section">
+                <!-- Right Nav Section -->
+                <ul class="right">
+                    <li><a href="../voksen/voksenForside.html">Lærer/foreldre siden</a>
+                    </li>
+                    <li><a href="#">Min side</a>
+                    </li>
+                    <li><a href="#">Logg ut</a>
+                    </li>
+                </ul>
+            </section>
+        </nav>
     </div>
+
+
 
     <section id="test">
-    <div class="row" id="mainMenu">
-        <div class="large-12 columns">
-            <div class="row">
-                <div class="large-3 medium-6 small-12 columns">
-                    <div class="menu-option">
-                        <img src="./img/RLE/logo_liten.png">
-                    </div>
-                </div>
-                <div class="large-3 medium-6 small-12 columns">
-                    <div class="menu-option">
-                        <a href="./RLE_SIDE.html"><img src="./img/arrowback.png"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="row">
-        <div class="large-4 small-12 columns">
-            <div class="align-center" id="align_center">
-                <img src="./img/hinduisme/shiva.png">
+        <div class="row" id="mainMenu">
+            <div class="large-12 columns">
+                <div class="row">
+                    <div class="large-3 medium-6 small-6 columns">
+                        <div class="menu-option">
+                            <img src="./img/RLE/logo_liten.png">
+                        </div>
+                    </div>
+                    <div class="large-3 medium-6 small-6 columns">
+                        <div class="menu-option">
+                            <a href="./RLE_SIDE.html"><img src="./img/arrowback.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="large-4 small-12 columns">
-            <div class="align-center" id="align_center">
-                <img src="./img/hinduisme/ganesha.png">
+
+        <div class="row">
+            <div class="large-4 small-6 columns">
+                <div class="align-center" id="align_center">
+                    <img src="./img/hinduisme/shiva.png">
+                </div>
+            </div>
+            <div class="large-4 small-6 columns">
+                <div class="align-center" id="align_center">
+                    <img src="./img/hinduisme/ganesha.png">
+                </div>
+            </div>
+            <div class="large-4 small-6 columns">
+                <div class="align-center" id="align_center">
+                    <img src="./img/hinduisme/murugan.png">
+                </div>
             </div>
         </div>
-        <div class="large-4 small-12 columns">
-            <div class="align-center" id="align_center">
-                <img src="./img/hinduisme/murugan.png">
+        <div class="row">
+            <div class="large-4 small-6 columns">
+                <div class="align-center" id="align_center">
+                    <img src="./img/hinduisme/durga.png">
+                </div>
+            </div>
+            <div class="large-4 small-6 columns">
+                <div class="align-center" id="align_center">
+                    <img src="./img/hinduisme/film.png">
+                </div>
+            </div>
+            <div class="large-4 small-6 columns">
+                <div class="align-center" id="align_center">
+                    <img src="./img/hinduisme/tegn.png">
+                </div>
             </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="large-4 small-12 columns">
-            <div class="align-center" id="align_center">
-                <img src="./img/hinduisme/durga.png">
-            </div>
         </div>
-        <div class="large-4 small-12 columns">
-            <div class="align-center" id="align_center">
-                <img src="./img/hinduisme/film.png">
-            </div>
-        </div>
-        <div class="large-4 small-12 columns">
-            <div class="align-center" id="align_center">
-                <img src="./img/hinduisme/tegn.png">
-            </div>
-        </div>
-    </div>
-    </div>
     </section>
-   <!-- Footer -->
- <footer id="footer" class="large-12 columns">
+    <!-- Footer -->
+    <footer id="footer" class="large-12 columns">
         <div id="footerLogo" class="large-4 columns">
             <img src="img/logos/salaby_logo_enkel_grå.png">
         </div>
@@ -113,16 +121,17 @@
             <a href="https://www.youtube.com/user/SalabyGyldendal">
                 <img src="img/social/youtube_logo.png">
             </a>
-        </footer>
+            <a href="#0" class="cd-top">Top</a>
+    </footer>
 
     <!-- FOOTER SLUTT -->
 
     <script src="./js/vendor/jquery.js"></script>
     <script src="./js/foundation.min.js"></script>
     <script src="./js/menuHeadScript.js"></script>
+    <script src="js/main.js"></script>
     <script>
     $(document).foundation();
-
     </script>
 </body>
 

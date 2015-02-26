@@ -3,16 +3,19 @@
 body {
     /*background-image: url("../img/skoleveien.jpg");*/
     background-color: #ccc;
-
 }
 
 .breadcrumbs {
     background-color: transparent;
 }
  #wrapper {
-     padding-top: 10em;
+     padding-top: 5em;
+     min-height: 100%;
  }
 
+#kompetanse {
+    min-height: 100%;
+}
 
 
 /*---------HEADER START---------*/
@@ -25,10 +28,8 @@ body {
     position: fixed;
     z-index: 10;
 }
-
-
-
 /*HEADER SLUTT*/
+
 #siteLogo {
     width: 200px;
     /*margin-left: -50px;*/
@@ -47,18 +48,31 @@ body {
 }
 /*---------Headerområde SLUTT---------*/
 /*---------PROMOOMRÅDE START---------*/
-#promoBanner {
+#promoBanner{
     width: 100%;
-    height: 400px;
-    background-color: rgba(200,50,20,0.5);
+    height: 350px;
+    /*background-color: rgba(200,50,20,0.5);*/
 }
+#promobannerTextBox{
+    width: 300px;
+    height: 350px;
+    padding: 20px;
+    overflow: hidden;
+}
+#promoBanner *{
+    float: left;
+}
+#promoBanner img{
+    margin: 20px;
+}
+
 /*---------PROMOOMRÅDE SLUTT---------*/
 /*---------ARTICLEOMRÅDE START---------*/
 
 #articleOmrade {
     width: 100%;
-    height: auto;
-    padding-top: 2em;
+    height: 30em;
+    padding-top: 1em;
 }
 
 #articleOmrade article {
@@ -85,15 +99,12 @@ body {
 
 
 
-
-
 /*---------Footer!!-----------*/
 #footer{
     width: 100%;
     background-color: #858585;
     height: auto;
-    position:static;
-    bottom: 0px;
+    bottom: 0;
     margin-top: 50px;
 }
 
@@ -168,58 +179,3 @@ ul li {
 }
 
 
-
-/*STYLE FOR KOMPETANSE SIDEN*/
-#innholdWrapper {
-    margin-bottom: 5em;
-    width: 100%;
-    height: 300px;
-}
-
-#samfunnAco, #norskAco, #engelskAco, #mohAco, #kohAco, #naturAco, #rleAco, #matteAco, #naturAco, #musikkAco  {
-    display: none;
-}
-
-#samfunnAco:target {
-    display: inherit;
-}
-
-#norskAco:target {
-    display: inherit;
-}
-
-#engelskAco:target {
-    display: inherit;
-}
-
-#mohAco:target {
-    display: inherit;
-}
-
-#kohAco:target {
-    display: inherit;
-}
-
-#naturAco:target {
-    display: inherit;
-}
-
-#rleAco:target {
-    display: inherit;
-}
-
-#matteAco:target {
-    display: inherit;
-}
-
-#samfunnAco:target {
-    display: inherit;
-}
-
-#naturAco:target {
-    display: inherit;
-}
-
-#musikkAco:target {
-    display: inherit;
-}

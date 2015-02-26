@@ -12,48 +12,52 @@
 </head>
 
 <body>
-    <div id="mainHeader">
-        <div class="row">
-            <div class="large-12 columns">
-                <div class="large-8 small-4 columns">
+    <!--MENU-->
+    <div class="fixed">
+        <nav class="top-bar" data-topbar role="navigation">
+            <ul class="title-area">
+                <li class="name">
                     <img id="siteLogo" src="img/logos/salaby_logo_enkel_rød.png">
-                </div>
-                <div class="large-4 small-8 columns">
-                    <div class="menuHeader">
-                        <ul>
-                            <li><a href="../Voksen/voksenForside">Lærer/foreldre siden</a>
-                            </li>
-                            <li><a href="#">Min side</a>
-                            </li>
-                            <li><a href="#">Logg ut</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+                </li>
+                <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+                <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a>
+                </li>
+            </ul>
+
+            <section class="top-bar-section">
+                <!-- Right Nav Section -->
+                <ul class="right">
+                    <li><a href="../Voksen/voksenForside.html">Lærer/foreldre siden</a>
+                    </li>
+                    <li><a href="#">Min side</a>
+                    </li>
+                    <li><a href="#">Logg ut</a>
+                    </li>
+                </ul>
+            </section>
+        </nav>
     </div>
 
     <!--!!!!!!!!!!!!!!MENY!!!!!!!!!!!!!!-->
     <div class="row menu">
         <div class="large-12 columns">
             <div class="row">
-                <div id="barnehageButton" class="large-3 medium-6 small-12 columns">
+                <div id="barnehageButton" class="large-3 medium-6 small-6 columns">
                     <div class="menu-option">
                         <img src="img/barnehage.png">
                     </div>
                 </div>
-                <div id="skoleveienButton" class="large-3 medium-6 small-12 columns">
+                <div id="skoleveienButton" class="large-3 medium-6 small-6 columns">
                     <div class="menu-option">
                         <img src="img/Skoleveien.png">
                     </div>
                 </div>
-                <div id="kanalSButton" class="large-3 medium-6 small-12 columns">
+                <div id="kanalSButton" class="large-3 medium-6 small-6 columns">
                     <div class="menu-option">
                         <img src="img/kanalS.png">
                     </div>
                 </div>
-                <div id="MFLButton" class="large-3 medium-6 small-12 columns">
+                <div id="MFLButton" class="large-3 medium-6 small-6 columns">
                     <div class="menu-option">
                         <img src="img/MFL.png">
                     </div>
@@ -67,22 +71,22 @@
     <div class="row menu" id="skoleveienMenu">
         <div class="large-12 columns">
             <div class="row">
-                <div id="barnehageButton" class="large-3 medium-6 small-12 columns">
+                <div id="barnehageButton" class="large-3 medium-6 small-6 columns">
                     <div class="menu-option">
                         <img src="img/undermenySkoleVeien/1-2.png">
                     </div>
                 </div>
-                <div id="skoleveienButton" class="large-3 medium-6 small-12 columns">
+                <div id="skoleveienButton" class="large-3 medium-6 small-6 columns">
                     <div class="menu-option">
                         <img src="img/undermenySkoleVeien/3-4.png">
                     </div>
                 </div>
-                <div id="kanalSButton" class="large-3 medium-6 small-12 columns">
+                <div id="kanalSButton" class="large-3 medium-6 small-6 columns">
                     <div class="menu-option">
                         <img src="img/undermenySkoleVeien/morsmål.png">
                     </div>
                 </div>
-                <div id="MFLButton" class="large-3 medium-6 small-12 columns">
+                <div id="MFLButton" class="large-3 medium-6 small-6 columns">
                     <div class="menu-option">
                         <img src="img/undermenySkoleVeien/skolestart.png">
                     </div>
@@ -97,29 +101,28 @@
      <!--!!!!!!!!!!!!!!!!! MAIN CONTENT!!!!!!!!!!!!!!!!!!!!-->
     <div id="wrapper">
     <!--!!!!!!!!!!!!!!!!!BARNEHAGE FAG!!!!!!!!!!!!!!!!!!!!!!-->
-
     <div class="row barnehage">
-        <div class="large-4 small-12 columns">
+        <div class="large-4 small-6 columns">
             <div class="align-center">
                 <img src="img/barnehage/biblioteket.png">
             </div>
         </div>
-        <div class="large-4 small-12 columns">
+        <div class="large-4 small-6 columns">
             <div class="align-center">
                 <img src="img/barnehage/billehagen.png">
             </div>
         </div>
-        <div class="large-4 small-12 columns">
+        <div class="large-4 small-6 columns">
             <div class="align-center">
                 <img src="img/barnehage/musikkfilm.png">
             </div>
         </div>
-        <div class="large-4 small-12 columns">
+        <div class="large-4 small-6 columns">
             <div class="align-center">
                 <img src="img/barnehage/TilDeVoksene.png">
             </div>
         </div>
-        <div class="large-4 small-12 columns">
+        <div class="large-4 small-6 columns">
             <div class="align-center">
                 <img src="img/barnehage/trampoline.png">
             </div>
@@ -129,70 +132,94 @@
 
     <!--!!!!!!!!!!!!!!!!!!!!KANALS FAG!!!!!!!!!!!!!!!!!!!-->
     <div class="row kanalS">
-        <div class="large-4 small-12 columns">
+        <div class="large-4 small-6 columns">
             <div class="align-center">
                 <img src="img/kanalS/Engelsk.png">
             </div>
         </div>
-        <div class="large-4 small-12 columns">
+        <div class="large-4 small-6 columns">
             <div class="align-center">
                 <img src="img/kanalS/sammfunn.png">
             </div>
         </div>
-        <div class="large-4 small-12 columns">
+        <div class="large-4 small-6 columns">
             <div class="align-center">
                 <img src="img/kanalS/grunnlovsjub.png">
             </div>
         </div>
-        <div class="large-4 small-12 columns">
+        <div class="large-4 small-6 columns">
             <div class="align-center">
                 <img src="img/kanalS/historieNorge.png">
             </div>
         </div>
-        <div class="large-4 small-12 columns">
+        <div class="large-4 small-6 columns">
             <div class="align-center">
                 <img src="img/kanalS/historieEuropa.png">
             </div>
         </div>
-        <div class="large-4 small-12 columns">
+        <div class="large-4 small-6 columns">
             <div class="align-center">
                 <img src="img/kanalS/kunst.png">
             </div>
         </div>
-        <div class="large-4 small-12 columns">
+        <div class="large-4 small-6 columns">
             <div class="align-center">
                 <img src="img/kanalS/matOghelse.png">
             </div>
         </div>
-        <div class="large-4 small-12 columns">
+        <div class="large-4 small-6 columns">
             <div class="align-center">
                 <img src="img/kanalS/matte.png">
             </div>
         </div>
-        <div class="large-4 small-12 columns">
+        <div class="large-4 small-6 columns">
             <div class="align-center">
                 <img src="img/kanalS/naturfag.png">
             </div>
         </div>
-        <div class="large-4 small-12 columns">
+        <div class="large-4 small-6 columns">
             <div class="align-center">
                 <img src="img/kanalS/norsk.png">
             </div>
         </div>
-        <div class="large-4 small-12 columns">
+        <div class="large-4 small-6 columns">
             <div class="align-center">
                 <a href="RLE_side.html">
                 <img src="img/kanalS/RLE.png">
                 </a>
             </div>
         </div>
-        <div class="large-4 small-12 columns">
+        <div class="large-4 small-6 columns">
             <div class="align-center">
                 <img src="img/kanalS/sammfunn.png">
             </div>
         </div>
     </div>
     <!--!!!!!!!!!!!!!!!!!!!!KANALS FAG SLUTT!!!!!!!!!!!!!!!!!!!-->
+
+    <!--!!!!!!!!!!!!!!!!!MFL FAG!!!!!!!!!!!!!!!!!!!!!!-->
+    <div class="row MFL">
+        <div class="large-4 small-12 columns">
+            <div class="align-center">
+                <img src="img/mfl/mflbarnehage.png">
+            </div>
+        </div>
+        <div class="large-4 small-12 columns">
+            <div class="align-center">
+                <img src="img/mfl/mflmatematikk.png">
+            </div>
+        </div>
+        <div class="large-4 small-12 columns">
+            <div class="align-center">
+                <img src="img/mfl/mflnaturfag.png">
+            </div>
+        </div>
+    </div>
+    <!--!!!!!!!!!!!!!!!!MFL FAG SLUTT!!!!!!!!!!!!!!!!!!!!-->
+
+
+
+
     </div>
     <!--!!!!!!!!!!!!!!!!! MAIN SLUTT!!!!!!!!!!!!!!!!!!!!-->
 
@@ -214,13 +241,14 @@
             </ul>
         </div>
         <!-- sosiale medier -->
-        <div id="socialLinks" class="large-2 columns">
+        <div id="socialLinks" class="large-2 small-12 columns">
             <a href="https://www.facebook.com/salaby">
                 <img src="img/social/facebook_logo.png">
             </a>
             <a href="https://www.youtube.com/user/SalabyGyldendal">
                 <img src="img/social/youtube_logo.png">
             </a>
+            <a href="#0" class="cd-top">top</a>
         </footer>
     <!--!!!!!!!!!!!!!!!!!!FOOTER SLUTT!!!!!!!!!!!!!!!!!!!!!!-->
 
@@ -228,6 +256,7 @@
     <script src="js/foundation.min.js"></script>
     <script src="js/menuHeadScript.js"></script>
     <script src="js/showDivsScript.js"></script>
+    <script src="js/main.js"></script>
     <script>
     $(document).foundation();
     </script>
