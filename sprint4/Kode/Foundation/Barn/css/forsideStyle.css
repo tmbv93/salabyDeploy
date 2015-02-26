@@ -1,7 +1,7 @@
 /*Gjemmer elementer som ikke skal vises før de skal :P*/
 /*HIDE ELEMENTS*/
-.kanalS, #barnehageButtonMobil, #skoleveienButtonMobil, 
-#kanalSButtonMobil, #MFLButtonMobil, .barnehage, 
+.kanalS, #barnehageButtonMobil, #skoleveienButtonMobil,
+#kanalSButtonMobil, #MFLButtonMobil, .barnehage,
 .MFL, #skoleveienMenu{
     display: none;
 }
@@ -67,7 +67,12 @@
     /*----------Hovedmeny SLUTT!!-----------*/
 
 body {
-    background-image: url("../img/skoleveien.jpg");
+    body {
+    background: url("../img/skoleveien.jpg") no-repeat;
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-size: cover;
+}
 }
 
 #wrapper{
@@ -108,7 +113,7 @@ body {
 #footerLogo img{
     width: 160px;
     margin: 15px;
-   
+
 }
 
 #footerMid{
