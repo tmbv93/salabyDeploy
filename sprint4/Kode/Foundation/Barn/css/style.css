@@ -179,10 +179,16 @@ body {
 
 /*HINDUISME*/
 
-.top-bar {
+.top-bar{
     height: 52px;
     background-color: #f2f2f2;
-    border-bottom: solid thin #222;
+    border-bottom: solid thin #dcdcdc;
+
+}
+
+.title-area {
+    height: 52px;
+    border-bottom: solid thin #dcdcdc;
 
 }
 
@@ -206,9 +212,12 @@ background-color: grey !important;
 }
 
 
-.top-bar-section li:not(.has-form) a:not(.button) {
+.top-bar .toggle-topbar.menu-icon a, .toggle-topbar.menu-icon {
 
-line-height: 51px;
+color: grey;
 
 }
 
+.top-bar .toggle-topbar.menu-icon a span::after {
+box-shadow: 0 0px 0 1px grey, 0 7px 0 1px grey, 0 14px 0 1px grey;
+}
