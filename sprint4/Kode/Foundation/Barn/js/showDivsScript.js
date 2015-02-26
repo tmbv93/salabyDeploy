@@ -20,10 +20,16 @@ $(function(){
 	function buttonEvents(){
 		// For klikk på barnehage knapp
 		$barnehageButton.click(function(){
-			if($barnehageDivs.is(":hidden") && $skoleveienMenuDivs.is(":hidden")){
+			if($barnehageDivs.is(":hidden")){
 			$barnehageDivs.slideDown();
 				if($kanalSDivs.is(":visible")){
 					($kanalSDivs).slideUp();
+				}
+				if($skoleveienMenuDivs.is(":visible")){
+					($skoleveienMenuDivs).slideUp();
+				}
+				if($MFLDivs.is(":visible")){
+					($MFLDivs).slideUp();
 				}
 
 			}else{
@@ -40,7 +46,10 @@ $(function(){
 				}
 				if($kanalSDivs.is(":visible")){
 					($kanalSDivs).slideUp();
-				}	
+				}
+				if($MFLDivs.is(":visible")){
+					($MFLDivs).slideUp();
+				}
 			}else {
 			$skoleveienMenuDivs.slideUp();
 			}
@@ -48,10 +57,16 @@ $(function(){
 	
 		// For klikk på kanalS knapp
 		$kanalSButton.click(function(){
-			if($kanalSDivs.is(":hidden") && $skoleveienMenuDivs.is(":hidden")){
+			if($kanalSDivs.is(":hidden")){
 			$kanalSDivs.slideDown();
 				if($barnehageDivs.is(":visible")){
 					($barnehageDivs).slideUp();
+				}
+				if($skoleveienMenuDivs.is(":visible")){
+					($skoleveienMenuDivs).slideUp();
+				}
+				if($MFLDivs.is(":visible")){
+					($MFLDivs).slideUp();
 				}
 			}else{
 			$kanalSDivs.slideUp();
