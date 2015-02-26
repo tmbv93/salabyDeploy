@@ -122,16 +122,21 @@ body {
     opacity: 0.7;
 }
 #footerMid {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 #footerMid li a {
     color: white;
+}
+#footerMid li{
+    float: left;
+    margin: 5px;
+    list-style: none;
 }
 #footerMid li a:hover {
     color: rgb(200, 200, 200);
 }
 #socialLinks img {
-    width: 60px;
+    width: 40px;
     margin: 5px;
     margin-top: 20px;
     cursor: pointer;

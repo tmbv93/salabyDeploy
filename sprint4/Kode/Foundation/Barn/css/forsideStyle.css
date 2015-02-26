@@ -111,11 +111,10 @@ body {
 #footerLogo img{
     width: 160px;
     margin: 15px;
-
 }
 
 #footerMid{
-    margin-top: 20px;
+    margin-top: 30px;
 }
 #footerMid li{
     float: left;
