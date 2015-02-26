@@ -159,21 +159,6 @@ body {
 /*---------Footer SLUTT!!-----------*/
 
 
-ul {
-    list-style: none;
-    display: inline-block;
-}
-li a {
-    display: block;
-    margin-left: 10px;
-    color: #888;
-}
-li a:hover {
-    color: #007095;
-}
-ul li {
-    display: inline-block;
-}
 
 
 /*HIDE ELEMENTS*/
