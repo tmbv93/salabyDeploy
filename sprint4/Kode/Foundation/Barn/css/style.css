@@ -58,9 +58,9 @@
 
 
 body {
-    background-image: url("../img/skoleveien.jpg");
+    background: url("../img/skoleveien.jpg") no-repeat scroll center top;
+
     background-size: cover;
-    min-height: 100%;
 }
 
 
@@ -194,6 +194,7 @@ body {
 
 .top-bar-section ul{
 margin-top: 0px;
+height: 100% !important;
 
 }
 
@@ -217,6 +218,7 @@ background-color: grey !important;
 color: grey;
 
 }
+
 
 .top-bar .toggle-topbar.menu-icon a span::after {
 box-shadow: 0 0px 0 1px grey, 0 7px 0 1px grey, 0 14px 0 1px grey;
