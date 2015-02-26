@@ -59,6 +59,7 @@
 
 body {
     background-image: url("../img/skoleveien.jpg");
+    background-size: cover;
     min-height: 100%;
 }
 
