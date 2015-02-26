@@ -7,20 +7,28 @@
     <title>Forside Barn</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/styleVoksen.css" />
+    <link rel="stylesheet" href="../css/headerStyle.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    
 
     <script src="js/vendor/modernizr.js"></script>
+    <script src="../Barn/js/menuHeadScript.js"></script>
 </head>
 
 <body>
-    <div id="mainHeader">
-        <div class="row">
-            <div class="large-12 columns">
-                <div class="large-6 small-4 columns">
+    <div class="fixed">
+        <nav class="top-bar" data-topbar role="navigation">
+            <ul class="title-area">
+                <li class="name">
                     <img id="siteLogo" src="img/logos/salaby_logo_enkel_rød.png">
-                </div>
-                <div class="large-6 small-8 columns">
-                    <div class="menuHeader">
-                        <ul>
+                </li>
+                <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+                <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a>
+                </li>
+            </ul>
+            <section class="top-bar-section">
+                <!-- Right Nav Section -->
+                        <ul class="right">
                             <li><a href="voksenForside.html">Hjem</a>
                             </li>
                             <li><a href="bestilling.html">Bestillinger</a>
@@ -32,25 +40,30 @@
                             <li><a href="../Barn/barnForside.html">Til Barnesiden</a>
                             </li>
                         </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+            </section>
+        </nav>
     </div>
+    
+
     <div id="wrapper">
         <!--SLIDER-->
         <div class="row">
             <div class="large-12 columns">
                 <aside id="promoBanner">
-                    <div id="promobannerTextBox">
-                    <h3>HISTORIEN OM EUROPA</h3>
-                    <p>NYHET: Helt ferske temasider om 
-                    romertiden, middelalderen, 
-                    renessansen og opplysningstiden 
-                    er nå tilgjengelig under
-                    «Historien om Europa» for 5.-7. trinn.</p>
-                    </div>
+                    <div class="large-8 small-12 columns">
                     <img src="img/nyheter/historienOmEuropa.png">
+                    </div>
+                    <div class="large-4 small-12 columns">
+                    <div id="promobannerTextBox">
+                            <h3>HISTORIEN OM EUROPA</h3>
+                            <p>NYHET: Helt ferske temasider om 
+                            romertiden, middelalderen, 
+                            renessansen og opplysningstiden 
+                            er nå tilgjengelig under
+                            «Historien om Europa» for 5.-7. trinn.</p>
+                            </div>
+                    </div>
+
                 </aside>
             </div>
         </div>
