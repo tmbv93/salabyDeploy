@@ -265,7 +265,7 @@ html, body {height: 100%;}
 
 #footer {
   position: relative;
-  margin-top: -80px; /* negative value of footer height */
-  height: 80px;
+  margin-top: -85px; /* negative value of footer height */
+  height: 85px;
   clear:both;
 }
