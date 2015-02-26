@@ -67,12 +67,10 @@
     /*----------Hovedmeny SLUTT!!-----------*/
 
 body {
-    body {
     background: url("../img/skoleveien.jpg") no-repeat;
     background-attachment: fixed;
     background-position: center bottom;
     background-size: cover;
-}
 }
 
 #wrapper{
