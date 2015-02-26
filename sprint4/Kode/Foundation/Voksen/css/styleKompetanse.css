@@ -13,6 +13,7 @@
 #samfunnAco, #norskAco, #engelskAco, #mohAco, #kohAco, #naturAco, #rleAco, #matteAco, #naturAco, #musikkAco  {
     display: none;
     width: 100%;
+    opacity: 0;
 }
 
 

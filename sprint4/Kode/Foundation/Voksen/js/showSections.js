@@ -11,10 +11,10 @@ $(function () {
     function settEvents() {
         $engelskBtn.click(function() {
             if($engelskSection.is(":hidden")) {
-                $engelskSection.slideDown();
+                $engelskSection.slideDown().dequeue().fadeTo(500,1);
 
             } else {
-                $engelskSection.slideUp();
+                $engelskSection.slideUp().dequeue().fadeTo(500,1);
             }
         });
 
