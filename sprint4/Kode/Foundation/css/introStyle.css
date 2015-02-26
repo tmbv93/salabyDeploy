@@ -86,6 +86,7 @@ body {
     min-width: 100%;
     z-index: 2;  
     right: 1px;
+        background-color: rgba(0,0,0,0.5);
     }
     
     #personPos {
@@ -97,7 +98,7 @@ body {
 
 /*****************ADULT SECTION MOBIL**************/
 #adultSection {
-    max-height: 10%;
+    max-height: 50%;
     max-width: 120%;
     -webkit-transform: rotate(0deg);
     position: absolute;
@@ -123,11 +124,11 @@ body {
 .overlay{
     width: 100%;
     height: auto;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(0,0,0,0.5);
     position: relative;
     padding: 5px;
     text-align: center;
-    top: 25em;
+    top: 5em;;
     left:0em;
     z-index: 2;
     
