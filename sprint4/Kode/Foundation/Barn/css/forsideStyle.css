@@ -252,3 +252,17 @@ box-shadow: 0 0px 0 1px grey, 0 7px 0 1px grey, 0 14px 0 1px grey;
 /*!!!!!!!!!!!!STYLE FOR BACK TO TOP BTN SLUTT!!!!!!!!!!!*/
 
 
+html, body {height: 100%;}
+#wrapper {min-height: 100%;}
+
+#main {
+  overflow:auto;
+  padding-bottom: 180px; /* must be same height as the footer */
+}
+
+#footer {
+  position: relative;
+  margin-top: -90px; /* negative value of footer height */
+  height: 90px;
+  clear:both;
+}
