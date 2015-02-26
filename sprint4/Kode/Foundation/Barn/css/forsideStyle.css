@@ -47,8 +47,12 @@
     opacity: 0.7;
 }
 
-#mainMenu{
-    margin-bottom: 20px;
+.menu{
+    margin-bottom: 10px;
+}
+/*for å tilpasse skoleveien menyen til hovedmenyen!!*/
+#skoleveienMenu .columns .menu-option{
+    margin-top: 0;
 }
 
     /*----------Hovedmeny SLUTT!!-----------*/
@@ -160,5 +164,8 @@ ul li {
     display: none;
 }
 .barnehage{
+    display: none;
+}
+#skoleveienMenu{
     display: none;
 }
