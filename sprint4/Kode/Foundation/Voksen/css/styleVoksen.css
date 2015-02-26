@@ -3,7 +3,6 @@
 body {
     /*background-image: url("../img/skoleveien.jpg");*/
     background-color: #ccc;
-
 }
 
 .breadcrumbs {
@@ -11,8 +10,12 @@ body {
 }
  #wrapper {
      padding-top: 10em;
+     min-height: 100%;
  }
 
+#kompetanse {
+    min-height: 100%;
+}
 
 
 /*---------HEADER START---------*/
@@ -92,8 +95,7 @@ body {
     width: 100%;
     background-color: #858585;
     height: auto;
-    position:static;
-    bottom: 0px;
+    bottom: 0;
     margin-top: 50px;
 }
 
@@ -169,6 +171,8 @@ ul li {
 
 
 
+
+/*********************************************************************************************************/
 /*STYLE FOR KOMPETANSE SIDEN*/
 #innholdWrapper {
     margin-bottom: 5em;
@@ -180,6 +184,8 @@ ul li {
     display: none;
 }
 
+
+/**********************EVENTS************************/
 #samfunnAco:target {
     display: inherit;
 }
@@ -222,4 +228,15 @@ ul li {
 
 #musikkAco:target {
     display: inherit;
+}
+
+/***************************LISTE ELEMENTER*******************************************/
+
+
+ul {
+
+}
+
+.accordion-navigation ul li {
+    display: inline;
 }
