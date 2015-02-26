@@ -1,5 +1,6 @@
-/*CONSTRUCTORS*/
 
+
+    /*CONSTRUCTORS*/
 body {
     background-image: url(../img/skoleveien.jpg);
     background-repeat: no-repeat;
@@ -13,8 +14,8 @@ body {
 /*ADULT SECTION STYLES*/
 
 #adultSection {
-    height: 37em;
-    width: 80em;
+    max-height: 37em;
+    max-width: 100%;
     -webkit-transform: rotate(-40deg);
     position: absolute;
     top: -10em;
@@ -27,6 +28,7 @@ body {
 #adultSection img {
     -webkit-transform: rotate(40deg);
     margin-top: 10em;
+    min-width: 100%;
     transition: .2s all ease-in-out 0s;
 }
 
@@ -55,9 +57,10 @@ body {
 
 #childSection {
     position: absolute;
-    right: 10px;
-    top: 400px;
-    width: 800px;
+    right: 20em;;
+    bottom: 0px;
+    max-width: 800px;
+    height: auto;
     z-index: 2;
 
 }
@@ -71,4 +74,64 @@ body {
     right: 0;
     bottom: 0;
     width: 25em;
+}
+/***************MOBIL*********************/
+@media only screen and (max-width: 40em) {
+
+    #childSection {
+    position: absolute;
+    min-width: 100%;
+    z-index: 2;  
+    right: 1px;
+    }
+    
+    #personPos {
+    display: none;
+}
+    
+    
+    
+
+/*****************ADULT SECTION MOBIL**************/
+#adultSection {
+    max-height: 30em;
+    max-width: 120%;
+    -webkit-transform: rotate(0deg);
+    position: absolute;
+    top: -5em;
+    left: -5em;
+    overflow: hidden;
+    border-bottom: black solid 5px;
+
+}
+
+#adultSection img {
+    -webkit-transform: rotate(0deg);
+    margin-top: 0em;
+    min-width: 100em;
+    transition: .2s all ease-in-out 0s;
+}
+
+#adultSection img:hover {
+    -webkit-transform: rotate(0deg) scale(1,1);
+    opacity: 0.5;
+}
+
+.overlay{
+    width: 100%;
+    height: auto;
+    background-color: rgba(255,255,255,0.5);
+    position: relative;
+    padding: 5px;
+    text-align: center;
+    top: 25em;
+    left:0em;
+    z-index: 2;
+    
+}
+.overlay a {
+    color: black;
+    font-size: 20pt;
+
+}
 }
