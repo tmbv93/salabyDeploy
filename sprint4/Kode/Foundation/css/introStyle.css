@@ -97,7 +97,7 @@ body {
 
 /*****************ADULT SECTION MOBIL**************/
 #adultSection {
-    max-height: 30em;
+    max-height: 50%;
     max-width: 120%;
     -webkit-transform: rotate(0deg);
     position: absolute;
