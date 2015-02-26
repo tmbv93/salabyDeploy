@@ -38,7 +38,22 @@
             </div>
         </div>
     </div>
-    <div id="wrapper">
+<div id="wrapper">
+            <div class="row">
+            <div class="large-12 columns">
+                <aside id="promoBanner">
+                    <div id="promobannerTextBox">
+                    <h3>HISTORIEN OM EUROPA</h3>
+                    <p>NYHET: Helt ferske temasider om 
+                    romertiden, middelalderen, 
+                    renessansen og opplysningstiden 
+                    er nå tilgjengelig under
+                    «Historien om Europa» for 5.-7. trinn.</p>
+                    </div>
+                    <img src="img/nyheter/historienOmEuropa.png">
+                </aside>
+            </div>
+        </div>
 <section id="kompetanse">
         <!--OMRÅDE FOR ARTIKLER-->
         <div class="row">
@@ -47,7 +62,7 @@
 <!-- Also works with <dl>'s and <dt>'s in place of <ul>'s and <li>'s. --> 
                     <dl class="sub-nav">
                       <dt>Filter:</dt>
-                      <dd><a href="#engelskAco">Engelsk</a></dd>
+                      <dd><a id="engelskBtn" href="#engelskAco">Engelsk</a></dd>
                       <dd><a href="#norskAco">Norsk</a></dd>
                       <dd><a href="#naturAco">Naturfag</a></dd>
                       <dd><a href="#kohAco">Kunst og Håndverk</a></dd>
@@ -57,6 +72,7 @@
                       <dd><a href="#matteAco">Mattematikk</a></dd>
                       <dd><a href="#samfunnAco">Samfunnsfag</a></dd>
                     </dl>
+                    
                     <div id="innholdWrapper">
                     <!--ACCORD START-->
                     <dl id="engelskAco" class="accordion" data-accordion>
@@ -95,7 +111,7 @@
                       <dd class="accordion-navigation">
                         <a href="#panel2b">Engelsk / Etter 4. årstrinn</a>
                         <div id="panel2b" class="content">
- <ul>
+<ul>
                                 <li><h3>Språklæring</h3></li>
                                 <li>bruke enkle lytte- og talestrategier</li>
                                 <li>identifisere situasjoner der det kan være nyttig eller nødvendig å kunne engelsk</li>
@@ -124,11 +140,6 @@
                             </ul>
                             <ul>
                                 <li><h3>Kultur, samfunn og litteratur</h3></li>
-                                <li>kjenne igjen sammenhengen mellom noen engelske språklyder og stavemønstre</li>
-                                <li>eksperimentere med å lese og skrive engelske ord, uttrykk og enkle setninger knyttet til nære omgivelser og egne interesser</li>
-                            </ul>
-                            <ul>
-                                <li><h3>Kultur, samfunn og litteratur</h3></li>
                                 <li>gi noen eksempler på engelskspråklige land og kjente personer derfra</li>
                                 <li>samtale om noen sider ved ulike levesett, tradisjoner og skikker i engelskspråklige land og i Norge</li>
                                 <li>delta i framføring av engelskspråklige rim, regler, sanger, korte skuespill og fortellinger</li>
@@ -140,7 +151,7 @@
                       <dd class="accordion-navigation">
                         <a href="#panel3b">Engelsk / Etter 7. årstrinn</a>
                         <div id="panel3b" class="content">
-                            <ul>
+                          <ul>
                                 <li><h3>Språklæring</h3></li>
                                 <li>identifisere og bruke ulike situasjoner og læringsstrategier for å utvide egne ferdigheter i engelsk</li>
                                 <li>beskrive eget arbeid med å lære engelsk</li>
@@ -401,6 +412,7 @@
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/menuHeadScript.js"></script>
+    <script src="js/showSections.js"></script>
     <script>
         $(document).foundation();
     </script>

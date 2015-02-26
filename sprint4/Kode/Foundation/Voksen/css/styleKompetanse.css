@@ -1,18 +1,22 @@
 
+#kompetanse {
+    width: auto;
+    height: auto;
+}
 
 /*********************************************************************************************************/
 /*STYLE FOR KOMPETANSE SIDEN*/
 #innholdWrapper {
     width: 100%;
-    height: 300px;
 }
 
 #samfunnAco, #norskAco, #engelskAco, #mohAco, #kohAco, #naturAco, #rleAco, #matteAco, #naturAco, #musikkAco  {
     display: none;
+    width: 100%;
 }
 
 
-/**********************EVENTS************************/
+/**********************EVENTS************************
 #samfunnAco:target {
     display: inherit;
 }
