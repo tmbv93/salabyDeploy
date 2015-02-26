@@ -2,8 +2,13 @@ $(function () {
 
     var $engelskSection, $engelskBtn;
     var $norskSection, $norskBtn;
-    var $kohSection, $kohBtn;
     var $mohSection, $mohBtn;
+    var $kohSection, $kohBtn;
+    var $naturSection, $naturBtn;
+    var $rleSection, $rleBtn;
+    var $musikkSection, $musikkBtn;
+    var $matteSection, $matteBtn;
+    var $samfunnSection, $samfunnBtn;
     var $rolledDown;
 
     function settHTML() {
@@ -14,11 +19,26 @@ $(function () {
         $norskSection = $("#norskAco");
         $norskBtn = $("#norskBtn");
         
+        $naturSection = $("#naturAco");
+        $naturBtn = $("#naturBtn");
+        
         $kohSection = $("#kohAco");
         $kohBtn = $("#kohBtn");
         
         $mohSection = $("#mohAco");
         $mohBtn = $("#mohBtn");
+        
+        $rleSection = $("#rleAco");
+        $rleBtn = $("#rleBtn");
+        
+        $musikkSection = $("#musikkAco");
+        $musikkBtn = $("#musikkBtn");
+        
+        $matteSection = $("#matteAco");
+        $matteBtn = $("#matteBtn");
+        
+        $samfunnSection = $("#samfunnAco");
+        $samfunnBtn = $("#samfunnBtn");
     };
 
     function settEvents() {
@@ -33,6 +53,21 @@ $(function () {
         });
         $mohBtn.click(function() {
             sectionSlide($mohSection);
+        });
+        $naturBtn.click(function() {
+            sectionSlide($naturSection);
+        });
+        $rleBtn.click(function() {
+            sectionSlide($rleSection);
+        });
+        $musikkBtn.click(function() {
+            sectionSlide($musikkSection);
+        });
+        $samfunnBtn.click(function() {
+            sectionSlide($samfunnSection);
+        });
+        $matteBtn.click(function() {
+            sectionSlide($matteSection);
         });
 
     };
