@@ -10,11 +10,13 @@
 }
 #siteLogo {
     width: 200px;
-    /*margin-left: -50px;*/
-
+    z-index: 1000 !important;
     margin-bottom: 10px;
     cursor: pointer;
 }
+
+
+
 .menuHeader {
     width: 100%;
     height: 25px;
@@ -30,7 +32,7 @@
     background-color: white;*/
 
     text-align: center;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 .menu-option img {
     max-width: 300px;
@@ -56,7 +58,7 @@
 /*----------Hovedmeny SLUTT!!-----------*/
 
 body {
-    background: url("../img/skoleveien.jpg") no-repeat;
+    background: url("../img/hinduisme/hinduismebak.jpg") no-repeat;
     background-attachment: fixed;
     background-position: center bottom;
     background-size: cover;
@@ -181,6 +183,7 @@ body {
 .top-bar-section ul {
     margin-top: 0px;
     height: 100% !important;
+
 }
 .top-bar-section ul li a {
     color: black;
@@ -254,3 +257,4 @@ body {
         bottom: 30px;
     }
 }
+
