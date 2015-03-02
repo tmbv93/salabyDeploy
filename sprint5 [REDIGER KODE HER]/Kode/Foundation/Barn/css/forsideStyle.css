@@ -1,0 +1,271 @@
+/*Gjemmer elementer som ikke skal vises før de skal :P*/
+/*HIDE ELEMENTS*/
+.kanalS, #barnehageButtonMobil, #skoleveienButtonMobil,
+#kanalSButtonMobil, #MFLButtonMobil, .barnehage,
+.MFL, #skoleveienMenu{
+    display: none;
+}
+.kanalS,.mfl,.menu, .barnehage {
+  margin-bottom: 140px;
+}
+
+
+/*---------Headerområde!!---------*/
+#mainHeader {
+    width: 100%;
+    background-color: #f2f2f2;
+    border-bottom: solid thin #222;
+    margin-bottom: 20px;
+    position: fixed;
+    z-index: 10;
+}
+#siteLogo {
+    width: 200px;
+    /*margin-left: -50px;*/
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.menuHeader {
+    width: 100%;
+    height: 25px;
+    top: 25px;
+    position: relative;
+}
+/*---------Headerområde SLUTT!!---------*/
+
+/*---------Hovedområde!!---------*/
+
+    /*----------Hovedmeny!!-----------*/
+.menu-option {
+/*  border: solid thin #444;
+    background-color: white;*/
+    text-align: center;
+    margin-top: 100px;
+}
+
+.menu-option img {
+    max-width: 300px;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out 0s;
+    -webkit-transition: all 0.15s ease-in-out 0s;
+    -moz-transition: all 0.15s ease-in-out 0s;
+    -o-transition: all 0.15s ease-in-out 0s;
+}
+
+.menu-option img:hover{
+    transform: scale(1.1,1.1);
+    -ms-transform: scale(1.1,1.1); /* IE 9 */
+    -webkit-transform: scale(1.1,1.1); /* Chrome, Safari, Opera */
+
+}
+
+.menu{
+    margin-bottom: 10px;
+}
+/*for å tilpasse skoleveien menyen til hovedmenyen!!*/
+#skoleveienMenu .columns .menu-option{
+    margin-top: 0;
+}
+
+    /*----------Hovedmeny SLUTT!!-----------*/
+
+body {
+    background: url("../img/skoleveien.jpg") no-repeat;
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-size: cover;
+}
+
+#wrapper{
+    min-height: 100%;
+}
+
+.align-center{
+    margin-bottom: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out 0s;
+    -webkit-transition: all 0.15s ease-in-out 0s;
+    -moz-transition: all 0.15s ease-in-out 0s;
+    -o-transition: all 0.15s ease-in-out 0s;
+}
+
+.align-center:hover{
+    transform: scale(1.1,1.1);
+    -ms-transform: scale(1.1,1.1); /* IE 9 */
+    -webkit-transform: scale(1.1,1.1); /* Chrome, Safari, Opera */
+
+}
+
+/*---------Hovedområde SLUTT!!---------*/
+
+
+
+/*---------Footer!!-----------*/
+#footer{
+    width: 100%;
+    background-color: #858585;
+    height: auto;
+    margin-top: 50px;
+    /*position: absolute;*/
+    bottom: 0;
+}
+
+#footerLogo img{
+    width: 160px;
+    margin: 15px;
+}
+
+#footerMid{
+    margin-top: 30px;
+}
+#footerMid li{
+    float: left;
+    margin: 5px;
+    list-style: none;
+}
+#footerMid li a{
+    color: rgb(250,250,250);
+}
+#footerMid li a:hover{
+    color: rgb(200,200,200);
+}
+
+#socialLinks img{
+    width: 40px;
+    margin: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out 0s;
+    -webkit-transition: all 0.15s ease-in-out 0s;
+    -moz-transition: all 0.15s ease-in-out 0s;
+    -o-transition: all 0.15.s ease-in-out 0s;
+}
+
+#socialLinks img:hover{
+    transform: scale(1.1,1.1);
+    -ms-transform: scale(1.1,1.1); /* IE 9 */
+    -webkit-transform: scale(1.1,1.1); /* Chrome, Safari, Opera */
+    opacity: 0.7;
+}
+
+/*---------Footer SLUTT!!-----------*/
+
+
+/*MENY*/
+.top-bar{
+    height: 52px;
+    background-color: #f2f2f2;
+    border-bottom: solid thin #dcdcdc;
+
+}
+
+.title-area {
+    height: 52px;
+    border-bottom: solid thin #dcdcdc;
+
+}
+
+.top-bar-section ul{
+margin-top: 0px;
+
+}
+
+
+.top-bar-section ul li a{
+color: black;
+background-color: #f2f2f2 !important;
+}
+
+.top-bar-section ul li a:hover{
+background-color: grey !important;
+}
+
+.top-bar.expanded .title-area {
+ background-color: #f2f2f2;
+}
+
+
+.top-bar .toggle-topbar.menu-icon a, .toggle-topbar.menu-icon {
+
+color: grey;
+
+}
+
+.top-bar .toggle-topbar.menu-icon a span::after {
+box-shadow: 0 0px 0 1px grey, 0 7px 0 1px grey, 0 14px 0 1px grey;
+}
+
+
+
+
+/*!!!!!!!!!!!!STYLE FOR BACK TO TOP BTN!!!!!!!!!!!*/
+
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgba(232, 98, 86, 0.8) url(../img/cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* Knappen blir synlig */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.no-touch .cd-top:hover {
+  background-color: #e86256;
+  opacity: 1;
+}
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+/*!!!!!!!!!!!!STYLE FOR BACK TO TOP BTN SLUTT!!!!!!!!!!!*/
+
+
+html, body {height: 100%;}
+#wrapper {min-height: 100%;}
+
+#main {
+  overflow:auto;
+  padding-bottom: 180px; /* must be same height as the footer */
+}
+
+#footer {
+  position: relative;
+  margin-top: -85px; /* negative value of footer height */
+
+  clear:both;
+}
