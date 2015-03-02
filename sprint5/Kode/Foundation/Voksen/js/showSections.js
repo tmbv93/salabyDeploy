@@ -95,7 +95,6 @@ $(function () {
     }
     
     function slideDown(){
-        
         if($rolledDown != null)
             $rolledDown.slideUp().dequeue().fadeTo(500,1);
     }
