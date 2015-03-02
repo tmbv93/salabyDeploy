@@ -2,6 +2,7 @@ $(function(){
     
         var typedText = $("#userField").val();
         var loginBtn = $("#loginBtn");
+        var isTyped = false;
     
     
     function settEvents(){
