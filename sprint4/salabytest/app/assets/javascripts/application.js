@@ -11,8 +11,11 @@
 // about supported directives.
 //= require jquery
 //= require jquery_ujs
+//= require jquery.cookie
 //= require foundation
 //= require turbolinks
+//= require fastclick
+//= require placeholder
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
