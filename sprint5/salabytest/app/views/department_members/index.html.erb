@@ -1,0 +1,23 @@
+<h1>Listing department_members</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @department_members.each do |department_member| %>
+      <tr>
+        <td><%= link_to 'Show', department_member %></td>
+        <td><%= link_to 'Edit', edit_department_member_path(department_member) %></td>
+        <td><%= link_to 'Destroy', department_member, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Department member', new_department_member_path %>
