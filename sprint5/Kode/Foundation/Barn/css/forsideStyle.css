@@ -75,6 +75,8 @@ body {
     background: url("../img/skoleveien.jpg") no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    overflow:scroll;
+    overflow-x: hidden;
 }
 
 #wrapper{
