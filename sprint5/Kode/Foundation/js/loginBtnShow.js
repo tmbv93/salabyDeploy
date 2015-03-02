@@ -1,31 +1,44 @@
-$(function(){
-    
-        var typedText = $("#userField").val();
-        var loginBtn = $("#loginBtn");
-        var isTyped = false;
-    
-    
-    function settEvents(){
-        $("#userField").keypress(function(){
+$(function () {
+
+    var typedText = $("#userField").val();
+    var loginBtn = $("#loginBtn");
+    var isTyped = true;
+
+
+    function settEvents() {
+        $("#userField").keypress(function () {
             loginBtn
-            .css("background-color", "green")
-            .attr("value", "Logg inn");
+                .css("background-color", "green")
+                .attr("value", "Logg inn");
+            isTyped = true;
+             alert("sads");
         });
-    
-        if(typedText == ""){
+
+        $("userField").keyup(function () {
+            if (typedText == "") {
+                loginBtn
+                    .css("background-color", "red")
+                    .attr("value", "Fortsett uten å logge inn");
+                isTyped = false;
+            } else {}
+        });
+
+        if (isTyped) {
             loginBtn
-            .css("background-color", "red")
-            .attr("value", "Fortsett uten å logge inn");
-        }else {
+                .css("background-color", "red")
+                .attr("value", "Fortsett uten å logge inn");
+            isTyped = false;
+
+        } else {
             loginBtn
-            .css("background-color", "green")
-            .attr("value", "Logg inn");
+                .css("background-color", "green")
+                .attr("value", "Logg inn");
         };
     };
-    var init = function(){
+    var init = function () {
         settEvents();
     }();
-    
-    
-    
+
+
+
 });
