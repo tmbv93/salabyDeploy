@@ -1,7 +1,7 @@
 body {
     background-image: url(../img/skoleveien.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-clip: content-box;
 }
 
 
@@ -36,10 +36,6 @@ body {
 /*CHILD SECTION STYLES*/
 
 #childSection {
-    position: absolute;
-    right: 10px;
-    top: 400px;
-    width: 800px;
 
 
 
