@@ -4,7 +4,8 @@
 /*HIDE ELEMENTS*/
 .kanalS, #barnehageButtonMobil, #skoleveienButtonMobil,
 #kanalSButtonMobil, #MFLButtonMobil, .barnehage,
-.MFL, #skoleveienMenu, .skolestart, .forste, .andre, .morsmaal{
+.MFL, #skoleveienMenu, #skolestartBtn, #forsteBtn, 
+#andreBtn, #morsmaalBtn, .skolestart, .forste, .andre, .morsmaal{
     display: none;
 }
 .kanalS,.mfl,.menu, .barnehage {
