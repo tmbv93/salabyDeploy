@@ -5,10 +5,10 @@ $(function(){
 	var $barnehageDivs, $kanalSDivs, $skoleveienMenuDivs, $MFLDivs;
 
 	function setHTMLObjects(){
-		$barnehageButton = $("#barnehageButton");
-		$skoleveienButton =$("#skoleveienButton");
-		$kanalSButton = $("#kanalSButton");
-		$MFLButton = $("#MFLButton");
+		$barnehageButton = $(".barnehageButton");
+		$skoleveienButton =$(".skoleveienButton");
+		$kanalSButton = $(".kanalSButton");
+		$MFLButton = $(".MFLButton");
 
 		$barnehageDivs = $(".barnehage");
 		$skoleveienMenuDivs = $("#skoleveienMenu");
@@ -36,6 +36,8 @@ $(function(){
 			$barnehageDivs.slideUp();
 			}
 		});
+
+		// HUSKE Å LEGG INN ANIMASJON FOR SKOLEVEIENS FAG OGSÅ!!!
 
 		// For klikk på skoleveien knapp
 		$skoleveienButton.click(function(){
