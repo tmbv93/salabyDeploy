@@ -2,8 +2,7 @@
 /*HIDE ELEMENTS*/
 .kanalS, #barnehageButtonMobil, #skoleveienButtonMobil,
 #kanalSButtonMobil, #MFLButtonMobil, .barnehage,
-.MFL, #skoleveienMenu{
-  /*, .1-2Klasse, .3-4Klasse, .morsmaal*/
+.MFL, #skoleveienMenu, .1-2Klasse, .3-4Klasse, .morsmaal{
     display: none;
 }
 .kanalS,.mfl,.menu, .barnehage {
