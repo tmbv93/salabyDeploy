@@ -12,10 +12,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery.cookie
-//= require foun
 //= require turbolinks
 //= require fastclick
 //= require placeholder
+//= require foundation
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
