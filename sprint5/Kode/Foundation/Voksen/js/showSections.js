@@ -1,5 +1,7 @@
 $(function () {
 
+    //DECLARE VARIABLES FOR THE
+    //DIFFERENT SECTIONS AND BUTTONS
     var $engelskSection, $engelskBtn;
     var $norskSection, $norskBtn;
     var $mohSection, $mohBtn;
@@ -11,36 +13,43 @@ $(function () {
     var $samfunnSection, $samfunnBtn;
     var $rolledDown;
 
+    
+    //"LINK" BUTTONS AND SECTIONS TO 
+    //THERE VARIABLES
     function settHTML() {
-
         $engelskSection = $("#engelskAco");
-        $engelskBtn = $("#engelskBtn");
+        $engelskBtn = $("#engelskBtn"); //Button
         
         $norskSection = $("#norskAco");
-        $norskBtn = $("#norskBtn");
+        $norskBtn = $("#norskBtn"); //Button
         
         $naturSection = $("#naturAco");
         $naturBtn = $("#naturBtn");
         
         $kohSection = $("#kohAco");
-        $kohBtn = $("#kohBtn");
+        $kohBtn = $("#kohBtn"); //Button
         
         $mohSection = $("#mohAco");
-        $mohBtn = $("#mohBtn");
+        $mohBtn = $("#mohBtn"); //Button
         
         $rleSection = $("#rleAco");
-        $rleBtn = $("#rleBtn");
+        $rleBtn = $("#rleBtn"); //Button
         
         $musikkSection = $("#musikkAco");
-        $musikkBtn = $("#musikkBtn");
+        $musikkBtn = $("#musikkBtn"); //Button
         
         $matteSection = $("#matteAco");
-        $matteBtn = $("#matteBtn");
+        $matteBtn = $("#matteBtn"); //Button
         
         $samfunnSection = $("#samfunnAco");
-        $samfunnBtn = $("#samfunnBtn");
+        $samfunnBtn = $("#samfunnBtn"); //Button
     };
 
+    
+    //EVENT CONNECTOR TO APPLY
+    //THE FUNCTION TO EACH BUTTON
+    //AS WELL AS GIVING THE FUNCTION
+    //THE CORRECT PARAMETER
     function settEvents() {
         $engelskBtn.click(function() {  
             sectionSlide($engelskSection);
@@ -73,13 +82,10 @@ $(function () {
     };
     
     
-    function removeSection(){
-      $( ".accordion" ).remove();
 
-    };
-    
-    
     function sectionSlide(para1){
+        //STORES CURRENT ACCORDION
+        //IN THIS VARIABLE
         $exSection =  $( ".accordion" );
         
             if(para1.is(":hidden")) {
