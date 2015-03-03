@@ -12,7 +12,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery.cookie
-//= require foundation
+//= require foun
 //= require turbolinks
 //= require fastclick
 //= require placeholder
