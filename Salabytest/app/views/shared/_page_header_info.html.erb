@@ -1,0 +1,40 @@
+<div class="fixed">
+  <nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="name">
+        <img id="siteLogo" src="/assets/logos/salaby_logo_enkel_rod.png">
+      </li>
+      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a>
+      </li>
+    </ul>
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li><%=link_to "Hjem", static_pages_info_forside_path %>
+        </li>
+        <li><%=link_to "Bestillinger", static_pages_info_bestilling_path %>
+        </li>
+        <li><%=link_to "Kompetanse", static_pages_info_kompetanse_path %>
+        </li>
+        <li><%=link_to "Informasjon", static_pages_info_informasjon_path %>
+        </li>
+          <% if logged_in? %>
+          <li>
+              <a href="#" data-dropdown="hover1" data-options="is_hover:true; hover_timeout:5000">
+              Min Side <b class="caret"></b></a>
+            <ul id="hover1" class="f-dropdown" data-dropdown-content>
+                <li><%=link_to "Instillinger", users_path %></li>
+                <li class="divider"></li>
+                <li><%= link_to "Log out", logout_path %></li>
+            </ul>
+          </li>
+        <% else %>
+            <li><%= link_to "Log in", login_path %></li>
+        <% end %>   
+        <li><%=link_to "Til Barnesiden", static_pages_barn_forside_path %>
+        </li>
+      </ul>
+    </section>
+  </nav>
+</div>

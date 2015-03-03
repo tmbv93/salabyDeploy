@@ -7,4 +7,7 @@ class StaticPages::BarnController < ApplicationController
 
   def rle
   end
+
+  def islam
+  end
 end
