@@ -5,14 +5,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Forside Barn</title>
-  <link rel="stylesheet" href="css/foundation.css" />
-  <link rel="stylesheet" href="css/styleVoksen.css" />
-  <link rel="stylesheet" href="../css/headerStyle.css" />
-  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="/assets/shared/footer.css" />
+  <link rel="stylesheet" href="/assets/shared/header.css" />
+  <link rel="stylesheet" href="/assets/voksen/voksen_shared.css" />
+  <link rel="stylesheet" href="/assets/voksen/kompetanse.css" />
 
-
-  <script src="js/vendor/modernizr.js"></script>
-  <script src="../Barn/js/menuHeadScript.js"></script>
 </head>
 
 <body>
@@ -29,15 +26,15 @@
     <section class="top-bar-section">
       <!-- Right Nav Section -->
       <ul class="right">
-        <li><a href="voksenForside.html">Hjem</a>
+        <li><%=link_to "Hjem", static_pages_info_forside_path %>
         </li>
-        <li><a href="bestilling.html">Bestillinger</a>
+        <li><%=link_to "Bestillinger", static_pages_info_bestilling_path %>
         </li>
-        <li><a href="kompetanse.html">Kompetansemål</a>
+        <li><%=link_to "Kompetanse", static_pages_info_kompetanse_path %>
         </li>
-        <li><a href="informasjon.html">Informasjon</a>
+        <li><%=link_to "Informasjon", static_pages_info_informasjon_path %>
         </li>
-        <li><a href="../Barn/barnForside.html">Til Barnesiden</a>
+        <li><%=link_to "Til Barnesiden", static_pages_barn_forside_path %>
         </li>
       </ul>
     </section>
@@ -47,16 +44,21 @@
   <!--SLIDER-->
   <div class="row">
     <div class="large-12 columns">
-      <aside id="promoBanner">
-        <div id="promobannerTextBox">
-          <h3>HISTORIEN OM EUROPA</h3>
-          <p>NYHET: Helt ferske temasider om
-            romertiden, middelalderen,
-            renessansen og opplysningstiden
-            er nå tilgjengelig under
-            «Historien om Europa» for 5.-7. trinn.</p>
+<aside id="promoBanner">
+        <div class="large-8 small-12 columns">
+          <img src="/assets/voksen/nyheter/historienOmEuropa.png">
         </div>
-        <img src="img/nyheter/historienOmEuropa.png">
+        <div class="large-4 small-12 columns">
+          <div id="promobannerTextBox">
+            <h3>HISTORIEN OM EUROPA</h3>
+            <p>NYHET: Helt ferske temasider om
+              romertiden, middelalderen,
+              renessansen og opplysningstiden
+              er nå tilgjengelig under
+              «Historien om Europa» for 5.-7. trinn.</p>
+          </div>
+        </div>
+
       </aside>
     </div>
   </div>

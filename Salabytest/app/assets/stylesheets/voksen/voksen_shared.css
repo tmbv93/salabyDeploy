@@ -4,15 +4,17 @@ body {
     background-color: #ccc;
 }
 
+
 @media only screen and (min-width: 64.063em) {
     /***********************************CONSTRUCTORS**************************************/
-    
+    .row {
+    min-width: 70em;
+}
     .breadcrumbs {
         background-color: transparent;
     }
     #wrapper {
         padding-top: 5em;
-        min-height: 100%;
     }
     #kompetanse {
         min-height: 100%;

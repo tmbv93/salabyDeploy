@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Forside Barn</title>
+  <title>Salaby | Forside Voksen</title>
   <link rel="stylesheet" href="/assets/shared/footer.css" />
   <link rel="stylesheet" href="/assets/shared/header.css" />
   <link rel="stylesheet" href="/assets/voksen/voksen_shared.css" />
@@ -28,15 +28,15 @@
     <section class="top-bar-section">
       <!-- Right Nav Section -->
       <ul class="right">
-        <li><a href="voksenForside.html">Hjem</a>
+        <li><%=link_to "Hjem", static_pages_info_forside_path %>
         </li>
-        <li><a href="bestilling.html">Bestillinger</a>
+        <li><%=link_to "Bestillinger", static_pages_info_bestilling_path %>
         </li>
-        <li><a href="kompetanse.html">Kompetansemål</a>
+        <li><%=link_to "Kompetanse", static_pages_info_kompetanse_path %>
         </li>
-        <li><a href="informasjon.html">Informasjon</a>
+        <li><%=link_to "Informasjon", static_pages_info_informasjon_path %>
         </li>
-        <li><a href="../Barn/barnForside.html">Til Barnesiden</a>
+        <li><%=link_to "Til Barnesiden", static_pages_barn_forside_path %>
         </li>
       </ul>
     </section>
@@ -155,10 +155,10 @@
   <!-- sosiale medier -->
   <div id="socialLinks" class="large-2 columns">
     <a href="https://www.facebook.com/salaby">
-      <img src="img/social/facebook_logo.png">
+      <img src="/assets/voksen/social/Facebook_logo.png">
     </a>
     <a href="https://www.youtube.com/user/SalabyGyldendal">
-      <img src="img/social/youtube_logo.png">
+      <img src="/assets/voksen/social/youtube_logo.png">
     </a>
   </div>
 </footer>
