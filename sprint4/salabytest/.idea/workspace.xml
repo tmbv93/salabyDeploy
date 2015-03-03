@@ -270,6 +270,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Salabytest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Salabytest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -288,11 +310,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Sites\salabyRepo\sprint4\Salabytest\app\assets\images" />
       <recent name="C:\Sites\salabyRepo\sprint4\Salabytest\app\views\static_pages" />
       <recent name="C:\Sites\salabyRepo\sprint4\Salabytest\app\views\static_pages\info_pages" />
       <recent name="C:\Sites\salabyRepo\sprint4\Salabytest\vendor\assets\stylesheets" />
       <recent name="C:\Sites\salabyRepo\sprint4\Salabytest\app\assets\img" />
-      <recent name="C:\Sites\salabyRepo\sprint4\Salabytest\vendor\assets\javascripts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Sites\salabyRepo\sprint4\Salabytest\app\assets\images\index" />
