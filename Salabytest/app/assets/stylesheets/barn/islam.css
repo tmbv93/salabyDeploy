@@ -68,7 +68,7 @@
 /*----------Hovedmeny SLUTT!!-----------*/
 
 body {
-    background: url("../img/islam/islambkg.jpg") no-repeat;
+    background: url("/assets/barn/islam/islambkg.jpg") no-repeat;
     background-attachment: fixed;
     background-color: white;
     background-size: cover;
