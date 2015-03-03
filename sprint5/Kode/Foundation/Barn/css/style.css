@@ -13,6 +13,7 @@
     z-index: 1000 !important;
     margin-bottom: 10px;
     cursor: pointer;
+    overflow: none !important;
 }
 
 
@@ -52,7 +53,7 @@
 
 }
 #mainMenu {
-    margin-bottom: 20px;
+    margin-top: 40px;
 }
 
 
@@ -63,12 +64,13 @@
     right: 20px;
 }
 
+
 /*----------Hovedmeny SLUTT!!-----------*/
 
 body {
     background: url("../img/hinduisme/hinduismebak.jpg") no-repeat;
     background-attachment: fixed;
-    background-color: red;
+    background-color: white;
     background-size: cover;
 }
 /*----------Gjelder kun på religion bildene på RLE siden-----------*/
@@ -113,7 +115,7 @@ body {
     margin-top: -30px;
 }
 #footerLogo img {
-    width: 200px;
+    width: 110px;
     margin: 15px;
     cursor: pointer;
     transition: all 0.3s ease-in-out 0s;
@@ -131,9 +133,7 @@ body {
 
     opacity: 0.7;
 }
-#footerMid {
-    margin-top: 30px;
-}
+
 #footerMid li a {
     color: white;
 }
@@ -175,7 +175,7 @@ body {
     /*display: none;*/
 }
 #test {
-    min-height: 100%;
+    margin-bottom: 216px;
 }
 /*HINDUISME*/
 
@@ -273,6 +273,20 @@ body {
     }
 }
 
-.fagh {
-    margin-left: 0.3em;
+
+@media only screen and (min-width: 40.063em) {
+.top-bar-section li:not(.has-form) a:not(.button) {
+line-height: 52px;
 }
+}
+
+@media only screen and (min-width: 40.063em) {
+.contain-to-grid .top-bar {
+max-width: 69.5rem;
+
+}}
+
+.contain-to-grid {
+    background-color: #f2f2f2;
+}
+
