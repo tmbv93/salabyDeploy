@@ -1,5 +1,17 @@
 Rails.application.routes.draw do
   namespace :static_pages do
+  get 'barn/forside'
+  end
+
+  namespace :static_pages do
+  get 'barn/hinduisme'
+  end
+
+  namespace :static_pages do
+  get 'barn/rle'
+  end
+
+  namespace :static_pages do
   get 'info/bestilling'
   end
 
