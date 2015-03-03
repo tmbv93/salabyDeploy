@@ -19,28 +19,21 @@
         </li>
         <li><%=link_to "Informasjon", static_pages_info_informasjon_path %>
         </li>
-        <li><%=link_to "Min Side", users_path %>
-        </li>
-        <li><%=link_to "Til Barnesiden", static_pages_barn_forside_path %>
-        </li>
-        <% if logged_in? %>
-          <li><%= link_to "Users", '#' %></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              Account <b class="caret"></b>
-            </a>
-            <ul class="dropdown-menu">
-              <li><%= link_to "Profile", current_user %></li>
-              <li><%= link_to "Settings", '#' %></li>
-              <li class="divider"></li>
-              <li>
-                <%= link_to "Log out", logout_path, method: "delete" %>
-              </li>
+          <% if logged_in? %>
+          <li>
+              <a href="#" data-dropdown="hover1" data-options="is_hover:true; hover_timeout:5000">
+              Min Side <b class="caret"></b></a>
+            <ul id="hover1" class="f-dropdown" data-dropdown-content>
+                <li><%=link_to "Instillinger", users_path %></li>
+                <li class="divider"></li>
+                <li><%= link_to "Log out", logout_path %></li>
             </ul>
           </li>
         <% else %>
-          <li><%= link_to "Log in", login_path %></li>
+            <li><%= link_to "Log in", login_path %></li>
         <% end %>   
+        <li><%=link_to "Til Barnesiden", static_pages_barn_forside_path %>
+        </li>
       </ul>
     </section>
   </nav>
