@@ -15,33 +15,8 @@
 </head>
 
 <body>
-<div class="fixed">
-  <nav class="top-bar" data-topbar role="navigation">
-    <ul class="title-area">
-      <li class="name">
-        <img id="siteLogo" src="/assets/voksen/logos/salaby_logo_enkel_r%C3%B8d.png">
-      </li>
-      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a>
-      </li>
-    </ul>
-    <section class="top-bar-section">
-      <!-- Right Nav Section -->
-      <ul class="right">
-        <li><%=link_to "Hjem", static_pages_info_forside_path %>
-        </li>
-        <li><%=link_to "Bestillinger", static_pages_info_bestilling_path %>
-        </li>
-        <li><%=link_to "Kompetanse", static_pages_info_kompetanse_path %>
-        </li>
-        <li><%=link_to "Informasjon", static_pages_info_informasjon_path %>
-        </li>
-        <li><%=link_to "Til Barnesiden", static_pages_barn_forside_path %>
-        </li>
-      </ul>
-    </section>
-  </nav>
-</div>
+    
+<%= render 'shared/page_header_info' %>
 
 
 <div id="wrapper">
@@ -135,34 +110,6 @@
     </div>
   </div>
 </div>
-<!-- FOOTER -->
-<!-- salaby logo -->
-<footer id="footer" class="large-12 columns">
-  <div id="footerLogo" class="large-4 columns">
-    <img src="/assets/voksen/logos/salaby_logo_enkel_r%C3%B8d.png">
-  </div>
-  <!-- lenker i midten -->
-  <div id="footerMid" class="large-6 columns">
-    <ul>
-      <li><a href="http://www.gyldendal.no/">© Gyldendal Norsk Forlag</a>
-      </li>
-      <li><a href="http://web3.gyldendal.no/support/specification/salaby">Systemkrav</a>
-      </li>
-      <li><a href="http://web3.gyldendal.no/support/contact/salaby">Send tilbakemelding</a>
-      </li>
-    </ul>
-  </div>
-  <!-- sosiale medier -->
-  <div id="socialLinks" class="large-2 columns">
-    <a href="https://www.facebook.com/salaby">
-      <img src="/assets/voksen/social/Facebook_logo.png">
-    </a>
-    <a href="https://www.youtube.com/user/SalabyGyldendal">
-      <img src="/assets/voksen/social/youtube_logo.png">
-    </a>
-  </div>
-</footer>
-<!-- FOOTER SLUTT -->
 
 <script src="js/vendor/jquery.js"></script>
 <script src="js/foundation.min.js"></script>

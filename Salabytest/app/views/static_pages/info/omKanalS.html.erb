@@ -13,33 +13,8 @@
 </head>
 
 <body>
-<div class="fixed">
-  <nav class="top-bar" data-topbar role="navigation">
-    <ul class="title-area">
-      <li class="name">
-        <img id="siteLogo" src="img/logos/salaby_logo_enkel_rød.png">
-      </li>
-      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a>
-      </li>
-    </ul>
-    <section class="top-bar-section">
-      <!-- Right Nav Section -->
-      <ul class="right">
-        <li><%=link_to "Hjem", static_pages_info_forside_path %>
-        </li>
-        <li><%=link_to "Bestillinger", static_pages_info_bestilling_path %>
-        </li>
-        <li><%=link_to "Kompetanse", static_pages_info_kompetanse_path %>
-        </li>
-        <li><%=link_to "Informasjon", static_pages_info_informasjon_path %>
-        </li>
-        <li><%=link_to "Til Barnesiden", static_pages_barn_forside_path %>
-        </li>
-      </ul>
-    </section>
-  </nav>
-</div>
+<%= render 'shared/page_header_info' %>
+    
 <div id="wrapper">
   <!--SLIDER-->
   <div class="row">
