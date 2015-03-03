@@ -73,7 +73,7 @@
     /*----------Hovedmeny SLUTT!!-----------*/
 
 body {
-    background: url("../img/skoleveien.jpg") no-repeat;
+    background: url("/assets/barn/skoleveien.jpg") no-repeat;
     background-attachment: fixed;
     background-size: cover;
     overflow:scroll;
@@ -82,6 +82,10 @@ body {
 
 #wrapper{
     min-height: 100%;
+}
+
+.row{
+  min-width: 70em;
 }
 
 .align-center{
@@ -260,16 +264,9 @@ box-shadow: 0 0px 0 1px grey, 0 7px 0 1px grey, 0 14px 0 1px grey;
 
 
 html, body {height: 100%;}
-#wrapper {min-height: 100%;}
+
 
 #main {
   overflow:auto;
   padding-bottom: 180px; /* must be same height as the footer */
 }
-
-/*#footer {
-  position: relative;
-  margin-top: -85px;  negative value of footer height 
-
-  clear:both;
-}*/
