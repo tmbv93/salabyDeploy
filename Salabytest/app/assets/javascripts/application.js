@@ -15,6 +15,7 @@
 //= require turbolinks
 //= require fastclick
 //= require placeholder
+//= require foundation
 //= require_tree .
 
 $(function(){ $(document).foundation(); });

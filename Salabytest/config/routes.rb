@@ -8,6 +8,10 @@ Rails.application.routes.draw do
   end
 
   namespace :static_pages do
+    get 'barn/islam'
+  end
+
+  namespace :static_pages do
   get 'barn/rle'
   end
 
@@ -16,7 +20,7 @@ Rails.application.routes.draw do
   end
 
   namespace :static_pages do
-  get 'info/informasjon'
+    get 'info/informasjon'
   end
 
   namespace :static_pages do
