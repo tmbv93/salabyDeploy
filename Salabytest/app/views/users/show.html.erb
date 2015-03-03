@@ -1,5 +1,11 @@
 <p id="notice"><%= notice %></p>
 
+<%=render 'shared/page_header'%>
+
+<% if logged_in? %>
+    <p>Velkommen, <%= current_user.username%></p>
+    <%end%>
+
 <p>
   <strong>First name:</strong>
   <%= @user.first_name %>

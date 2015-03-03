@@ -1,0 +1,2 @@
+module StaticPages::BarnHelper
+end
