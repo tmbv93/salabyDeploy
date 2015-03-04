@@ -31,12 +31,25 @@ $(function() {
 
     var $element = $(".align-center");
 
-    function hoverGray() {
+    function hoverOverGray() {
+    	$($element).not(this).css({
+    		"filter":"gray",
+    		"filter":"grayscale(1)",
+    		"-webkit-filter":"grayscale(1)"
+    	});
+    }
 
+    function hoverLeaveNormal() {
+    	$($element).not(this).css({
+    		"filter":"none",
+    		"filter":"grayscale(0)",
+    		"-webkit-filter":"grayscale(0)"
+    	});
     }
 
     function settEvent() {
-        $element.on('click', hoverGray);
+        $element.on('mouseenter', hoverOverGray);
+        $element.on('mouseleave', hoverLeaveNormal)
     }
 
     var init = function(){
