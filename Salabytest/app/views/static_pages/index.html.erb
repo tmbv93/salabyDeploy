@@ -10,6 +10,8 @@
 
 <body>
 
+<img src="/assets/barn/skoleveien.jpg" id="background-image" alt="bakgrunnsbilde">    
+    
 <!--ADULT SECTION-->
 <div id="adultSection">
   <div class="row">
@@ -44,9 +46,58 @@
     </div>
   </div>
 </div>
+    
+<script>
+    
+    $(function () {
 
-<script src="../js/loginBtnShow.js"></script>
-<script src="js/menuHeadScript.js"></script>
+    var $adultSection, $childSection;
+
+    function settHTML(){
+
+        $adultSection = $('#adultSection');
+        $childSection = $('#childSection');
+        
+    };
+    
+    function settEvents(){
+//        
+//        object.addEventListener("mouseover", hoverAdult);
+//        object.addEventListener("mouseover", hoverAdult);
+        
+        
+        $adultSection.onmouseover(function(){
+            alert("hello");
+            $adultSection.css("-webkit-filter", "grayscale(0)");
+            $childSection.css("-webkit-filter", "grayscale(1)");
+        });
+        $childSection.onmouseover(function(){
+            $adultSection.css("-webkit-filter", "grayscale(1)");
+            $childSection.css("-webkit-filter", "grayscale(0)");
+        });
+        
+    };
+        
+//       function hoverAdult(){
+//            alert("hello");
+//            $adultSection.css('-webkit-filter', 'grayscale(0)');
+//            $childSection.css('-webkit-filter', 'grayscale(1)'); 
+//        };
+//        function hoverAdult(){
+//            $adultSection.css('-webkit-filter', 'grayscale(1)');
+//            $childSection.css('-webkit-filter', 'grayscale(0)'); 
+//        }
+    
+        var init = function () {
+        settHTML();
+        settEvents();
+                
+    }();
+    
+    
+});
+    
+    </script>
 </body>
 
 </html>

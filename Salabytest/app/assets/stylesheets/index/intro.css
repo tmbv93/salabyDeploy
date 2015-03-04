@@ -5,9 +5,18 @@
 
 /****************************************************CONSTRUCTORS********************/
 body {
-    background-image: url(/assets/index/skoleveien.jpg);
+    /*background-image: url(/assets/index/skoleveien.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
+}
+
+#background-image{
+      position: fixed; 
+      top: 0; 
+      left: 0; 
+      min-width: 100em; 
+      min-height: 100%;
+
 }
 
 /*******************************************************************************************/
@@ -22,6 +31,7 @@ body {
     left: -25em;
     overflow: hidden;
     border-bottom: black solid 5px;
+    /*-webkit-filter: grayscale(1);*/
 
 }
 
@@ -33,6 +43,8 @@ body {
 #adultSection img:hover {
     -webkit-transform: scale(1.1,1.1);
 }
+
+
 
 
 /*******************************************************************************************/
@@ -64,15 +76,14 @@ body {
     width: 20em;
     
 }
+/*
 
-
-#adultSection:hover + #childSection {
-    background-image: none;
-    background-color: red;
+#adultSection:hover {
+    -webkit-filter: grayscale(0);
 }
 
-#childSection:hover + #adultSection {
-    background-color: red;
+#adultSection:hover ~ #background-image {
+    -webkit-filter: grayscale(1);
 }
 
 /***************MOBIL*********************/
