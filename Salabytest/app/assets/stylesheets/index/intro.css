@@ -81,6 +81,12 @@ body {
     width: 20em;
     
 }
+
+
+#adultSection img:hover ~ body {
+    background-color: red;
+}
+
 /***************MOBIL*********************/
 @media only screen and (max-width: 40em) {
 
