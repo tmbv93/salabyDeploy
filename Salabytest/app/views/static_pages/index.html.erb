@@ -28,22 +28,16 @@
 <!--CHILD SECTION-->
 <div id="childSection">
   <div class="row">
-    <div class="large-6 small-12 columns">
+    <div class="large-12 small-12 columns">
       <h2>Velkommen til Salaby</h2>
     </div>
   </div>
   <div id="row">
     <div class="large-12 medium-12 small-12 columns">
-      <label>Innlogging
-        <input id="userField" type="text" placeholder="Brukernavn" />
-        <input id="passField" type="password" placeholder="Passord" />
-        <input id="loginBtn" type="button" class="button expand" value="Logg inn">
-        <div class="small-12 small-12 medium-12 columns">
+<%= render 'sessions/form' %>
         <div class="synlig">
         <%= link_to "Alternativ link til barneforside.", static_pages_barn_forside_path %>
         </div>
-        </div>
-      </label>
     </div>
   </div>
 </div>
