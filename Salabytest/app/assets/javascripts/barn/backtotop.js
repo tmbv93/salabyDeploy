@@ -29,7 +29,7 @@ jQuery(document).ready(function($){
 
 $(function() {
 
-    var $element = $("");
+    var $element = $(".bilde-hover");
 
     function hoverOverGray() {
     	$($element).not(this).css({
