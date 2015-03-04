@@ -4,10 +4,6 @@ body {
     background-color: #ccc;
 }
 
-#hover1 li {
-    display: inline-block;
-}
-
 
 @media only screen and (min-width: 64.063em) {
     /***********************************CONSTRUCTORS**************************************/
