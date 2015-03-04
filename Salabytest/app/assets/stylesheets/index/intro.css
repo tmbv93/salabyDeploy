@@ -8,7 +8,14 @@ body {
     /*background-image: url(/assets/index/skoleveien.jpg);
     background-repeat: no-repeat;
     background-size: cover;*/
+    font-family: sans-serif;
 }
+
+@font-face {
+    font-family: slapstick;
+    src: url(/assets/SF_Slapstick_Comic.ttf);
+};
+
 
 #background-image{
       position: fixed; 
@@ -45,7 +52,14 @@ body {
 }
 
 
+input[type="submit"]{
+    font-family: slapstick;
+    font-size: 20pt;
+}
 
+input[type="text"]{
+    font-family: helvetica;
+}
 
 /*******************************************************************************************/
 /*CHILD SECTION STYLES*/
@@ -58,6 +72,7 @@ body {
     width: auto;
     background-color: rgba(0,0,0,0.5);
     margin-bottom: 5em;
+    font-family: slapstick;
     
 }
 
@@ -67,6 +82,7 @@ body {
 
 #childSection h2 {
     color: white;
+    font-family: slapstick;
 }
 
 #personPos {
