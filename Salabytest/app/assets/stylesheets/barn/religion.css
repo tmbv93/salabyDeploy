@@ -119,8 +119,12 @@ body {
 .barnehage {
     /*display: none;*/
 }
-#test {
-    margin-bottom: 216px;
+#test{
+    margin-bottom: 100px;
+}
+
+.test{
+    margin-bottom: 25px;
 }
 /*HINDUISME*/
 
