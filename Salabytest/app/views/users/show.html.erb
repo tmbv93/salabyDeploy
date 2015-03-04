@@ -1,20 +1,73 @@
-<p id="notice"><%= notice %></p>
 
-<%=render 'shared/page_header'%>
 
-<% if logged_in? %>
-    <p>Dette er deg!</p>
-    <%end%>
+<!doctype html>
+<html class="no-js" lang="en">
 
-<p>
-  <strong>First name:</strong>
-  <%= @user.first_name %>
-</p>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salaby | Min Side</title>
+  <link rel="stylesheet" href="/assets/barn/forside_barn.css" />
+  <link rel="stylesheet" href="/assets/barn/mobile.css" />
 
-<p>
-  <strong>Last name:</strong>
-  <%= @user.last_name %>
-</p>
+</head>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<body>
+
+<%= render 'shared/page_header' %>
+
+<div id="wrapper">
+    <div class="row">
+        <div class="large-12 columns">
+            <div class="panel">
+                <div id="userInfo">
+                    <% if logged_in? %>
+                        <p>Dette er deg!</p>
+                    <% else %>
+                    <%end%>
+                    <h1>Profilside</h1>
+                        <p>Her er informasjon om deg og annen viktig informasjon</p>
+                    <p>
+                      <strong>Navn:</strong>
+                        <%= current_user.first_name %> <%= current_user.last_name %>
+                    </p>
+                        <%= link_to 'Endre innstillinger', edit_user_path(@user) %> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-8 columns">
+                        <div id="contentArea">
+                            <% if current_user.class_admin?%>
+                            <!-- //HVIS BRUKER ER LÆRER, VIS KLASSER
+                            
+                            <% else %>
+                            //HVIS BRUKER ER ELEV, VIS LEKSER 
+                            //Hente frem hver lekse
+
+-->
+                            
+                            <% end %> 
+                        <div class="large-4 columns">
+                            <div id="favorites">  
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%= render 'shared/page_footer' %>
+
+
+
+
+
+<script src="js/showDivsScript.js"></script>
+<script src="js/showDivsMobilScript.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
