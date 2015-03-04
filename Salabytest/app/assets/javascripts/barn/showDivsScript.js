@@ -19,6 +19,7 @@ $(function(){
 
 		$menu = $(".menu");
 		$backgroundImage = $("#background-image");
+		
 
 
 		
@@ -42,7 +43,7 @@ $(function(){
 
 			}else{
 			$barnehageDivs.slideUp();
-			$backgroundImage.animate({"-webkit-filter": "grayscale(0.1)"}, 1500 );
+			$backgroundImage.css("-webkit-filter", "grayscale(0)");
 			}
 		});
 
@@ -52,6 +53,7 @@ $(function(){
 		$skoleveienButton.click(function(){
 			if($skoleveienMenuDivs.is(":hidden")){
 			$skoleveienMenuDivs.slideDown();
+			$backgroundImage.css("-webkit-filter", "grayscale(0.8)");
 				if($barnehageDivs.is(":visible")){
 					($barnehageDivs).slideUp();
 				}
@@ -63,6 +65,7 @@ $(function(){
 				}
 			}else {
 			$skoleveienMenuDivs.slideUp();
+			$backgroundImage.css("-webkit-filter", "grayscale(0)");
 			}
 		});
 	
@@ -70,6 +73,7 @@ $(function(){
 		$kanalSButton.click(function(){
 			if($kanalSDivs.is(":hidden")){
 			$kanalSDivs.slideDown();
+			$backgroundImage.css("-webkit-filter", "grayscale(0.8)");
 				if($barnehageDivs.is(":visible")){
 					($barnehageDivs).slideUp();
 				}
@@ -81,6 +85,7 @@ $(function(){
 				}
 			}else{
 			$kanalSDivs.slideUp();
+			$backgroundImage.css("-webkit-filter", "grayscale(0)");
 			}
 		});
 
@@ -88,6 +93,7 @@ $(function(){
 		$MFLButton.click(function(){
 			if($MFLDivs.is(":hidden")){
 			$MFLDivs.slideDown();
+			$backgroundImage.css("-webkit-filter", "grayscale(0.8)");
 				if($barnehageDivs.is(":visible")){
 					($barnehageDivs).slideUp();
 				}
@@ -99,6 +105,7 @@ $(function(){
 				}
 			}else{
 			$MFLDivs.slideUp();
+			$backgroundImage.css("-webkit-filter", "grayscale(0)");
 			}
 		});
 	}

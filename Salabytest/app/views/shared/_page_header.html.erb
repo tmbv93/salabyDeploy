@@ -17,7 +17,7 @@
     <section class="top-bar-section">
       <!-- Right Nav Section -->
       <ul class="right">
-        <li><%=link_to "Til voksenside", static_pages_info_forside_path %>
+        <li><%=link_to "Hjem", static_pages_barn_forside_path %>
         </li>
         <!--SCRIPT FOR Å SJEKKE OM BRUKER ER LOGGET INN-->
         <% if logged_in? %>
@@ -33,6 +33,8 @@
         <% else %>
             <li><%= link_to "Logg inn", login_path %></li>
         <% end %>
+        <li><%=link_to "Til voksenside", static_pages_info_forside_path %>
+        </li>
       </ul>
     </section>
   </nav>

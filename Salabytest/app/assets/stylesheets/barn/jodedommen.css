@@ -64,11 +64,10 @@
 }
 
 /*----------Hovedmeny SLUTT!!-----------*/
-
 body {
-    background: url("../img/jodedommen/jodebkg.jpg") no-repeat;
+    background: url("/assets/barn/jodedommen/jodebkg.jpg") no-repeat;
     background-attachment: fixed;
-    background-color: red;
+    background-color: steelblue;
     background-size: cover;
 }
 /*----------Gjelder kun på religion bildene på RLE siden-----------*/
