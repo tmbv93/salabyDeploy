@@ -26,3 +26,21 @@ jQuery(document).ready(function($){
 	});
 
 });
+
+$(function() {
+
+    var $element = $(".align-center");
+
+    function hoverGray() {
+
+    }
+
+    function settEvent() {
+        $element.on('click', hoverGray);
+    }
+
+    var init = function(){
+        settEvent();
+    }();
+
+});
