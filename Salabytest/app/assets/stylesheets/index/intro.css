@@ -14,7 +14,7 @@ body {
 /*ADULT SECTION STYLES*/
 
 #adultSection {
-    max-height: 37em;
+    max-height: 30em;
     max-width: 100%;
     -webkit-transform: rotate(-40deg);
     position: absolute;
@@ -57,7 +57,7 @@ body {
 
 #childSection {
     position: absolute;
-    right: 20em;;
+    right: 20em;
     bottom: 0px;
     max-width: 800px;
     height: auto;
@@ -73,7 +73,7 @@ body {
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 25em;
+    width: 20em;
 }
 /***************MOBIL*********************/
 @media only screen and (max-width: 40em) {
