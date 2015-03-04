@@ -4,7 +4,7 @@
     function settHTML(){
 
         $adultSection = $('#adultSection');
-        $background = $('#background-image');
+        $background = $('#background_image');
         $childSection = $('#childSection');
         
     };

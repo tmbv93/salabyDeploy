@@ -1,6 +1,43 @@
-<h1>Editing user</h1>
+<!doctype html>
+<html class="no-js" lang="en">
 
-<%= render 'form' %>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salaby | Min Side</title>
+  <link rel="stylesheet" href="/assets/shared/userpageStyle.css" />
 
-<%= link_to 'Show', @user %> |
-<%= link_to 'Back', users_path %>
+    
+
+</head>
+
+<body>
+
+<%= render 'shared/page_header' %>
+
+    
+<div id="wrapper">
+    <div class="row">
+        <div class="large-12 columns">
+            <div class="panel">
+                <div id="userInfo">
+                        <h1>Editing user</h1>
+
+                            <%= render 'form' %>
+
+                            <%= link_to 'Vis Brukere', @user %> |
+                            <%= link_to 'Tilbake', users_path %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<%= render 'shared/page_footer' %>
+
+
+
+</body>
+
+</html>
