@@ -26,8 +26,6 @@
                 <div id="userInfo">
                     <% if logged_in? %>
                         <p>Dette er deg!</p>
-                    <% else %>
-                    <%end%>
                     <h1>Profilside</h1>
                         <p>Her er informasjon om deg og annen viktig informasjon</p>
                     <p>
@@ -40,18 +38,21 @@
                 <div class="row">
                     <% if current_user.class_admin? %>
                     <div class="large-8 columns">
-                            <div class="panel">
-                                <div id="classesArea">    
-                                    <h3>Klasser</h3>
-                                </div>
-                        </div>
+                  <div class="panel">
+                    <div id="classesArea">
+                      <h3>Klasser</h3>
+                      <%=link_to "Lag ny klasse", new_department_path %>
+
                     </div>
+                  </div>
+                </div>
                     <!--SLUTT PÅ AREA-->
                     <% else %>
                     <div class="large-8 columns">
                             <div class="panel">
                                 <div id="homeworkArea">    
                                     <h3>Lekser</h3>
+                                  <% #Lekser renderes her %>
                                 </div>
                         </div>
                     </div>
@@ -72,15 +73,11 @@
             </div>
         </div>
     </div>
+                  <%end%>
+
 <%= render 'shared/page_footer' %>
 
 
-
-
-
-<script src="js/showDivsScript.js"></script>
-<script src="js/showDivsMobilScript.js"></script>
-<script src="js/main.js"></script>
 
 </body>
 

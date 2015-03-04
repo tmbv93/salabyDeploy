@@ -11,12 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150226103934) do
+ActiveRecord::Schema.define(version: 20150304123957) do
 
   create_table "department_members", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
+    t.integer  "department_id"
   end
+
+  add_index "department_members", ["department_id"], name: "index_department_members_on_department_id"
+  add_index "department_members", ["user_id"], name: "index_department_members_on_user_id"
 
   create_table "departments", force: true do |t|
     t.string   "name"
