@@ -59,10 +59,15 @@ body {
     position: absolute;
     right: 20em;
     bottom: 0px;
-    max-width: 800px;
     height: auto;
-    z-index: 2;
+    width: auto;
+    background-color: rgba(0,0,0,0.5);
+    margin-bottom: 5em;
+    
+}
 
+#childSection label {
+    color: white;
 }
 
 #childSection h2 {
@@ -74,6 +79,7 @@ body {
     right: 0;
     bottom: 0;
     width: 20em;
+    
 }
 /***************MOBIL*********************/
 @media only screen and (max-width: 40em) {
@@ -88,7 +94,6 @@ body {
     min-width: 100%;
     z-index: 2;  
     right: 1px;
-        background-color: rgba(0,0,0,0.5);
     }
     
     #personPos {
