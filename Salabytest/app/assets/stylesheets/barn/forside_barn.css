@@ -73,11 +73,18 @@
     /*----------Hovedmeny SLUTT!!-----------*/
 
 body {
-    background: url("/assets/barn/skoleveien.jpg") no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
     overflow:scroll;
     overflow-x: hidden;
+}
+
+#background-image{
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+
 }
 
 #wrapper{
