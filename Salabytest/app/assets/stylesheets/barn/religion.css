@@ -211,4 +211,6 @@ max-width: 69.5rem;
     background-color: #f2f2f2;
 }
 
-
+#wrapper {
+    max-height: 100%;
+}
