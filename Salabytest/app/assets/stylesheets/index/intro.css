@@ -26,32 +26,15 @@ body {
 }
 
 #adultSection img {
-    -webkit-transform: rotate(40deg);
-    margin-top: 10em;
     min-width: 100%;
     transition: .2s all ease-in-out 0s;
 }
 
 #adultSection img:hover {
-    -webkit-transform: rotate(40deg) scale(1.1,1.1);
+    -webkit-transform: scale(1.1,1.1);
 }
 
-.overlay{
-    width: auto;
-    height: auto;
-    background-color: rgba(255,255,255,0.5);
-    position: absolute;
-    padding: 5px;
-    top: 34em;
-    left:10em;
-    z-index: 2;
-    
-}
-.overlay a {
-    color: black;
-    font-size: 20pt;
 
-}
 /*******************************************************************************************/
 /*CHILD SECTION STYLES*/
 
@@ -83,7 +66,12 @@ body {
 }
 
 
-#adultSection img:hover ~ body {
+#adultSection:hover + #childSection {
+    background-image: none;
+    background-color: red;
+}
+
+#childSection:hover + #adultSection {
     background-color: red;
 }
 
@@ -123,32 +111,15 @@ body {
 }
 
 #adultSection img {
-    -webkit-transform: rotate(0deg);
+    -webkit-transform: rotate(-10deg);
     margin-top: 0em;
-    min-width: 100em;
+    min-width: 50em;
     transition: .2s all ease-in-out 0s;
 }
 
 #adultSection img:hover {
-    -webkit-transform: rotate(0deg) scale(1,1);
+    -webkit-transform: rotate(-10deg) scale(1,1);
     opacity: 0.5;
 }
 
-.overlay{
-    width: 100%;
-    height: auto;
-    background-color: rgba(0,0,0,0.5);
-    position: relative;
-    padding: 5px;
-    text-align: center;
-    top: 5em;;
-    left:0em;
-    z-index: 2;
-    
-}
-.overlay a {
-    color: black;
-    font-size: 20pt;
-
-}
 }
