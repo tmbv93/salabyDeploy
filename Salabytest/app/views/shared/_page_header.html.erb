@@ -1,3 +1,5 @@
+  <link rel="stylesheet" href="/assets/shared/header.css" />
+
 <!--MENU-->
 <div class="fixed">
   <nav class="top-bar" data-topbar role="navigation">
@@ -15,16 +17,22 @@
     <section class="top-bar-section">
       <!-- Right Nav Section -->
       <ul class="right">
-        <li><a href="../info/forside.html">Lærer/foreldre siden</a>
+        <li><%=link_to "Til voksenside", static_pages_info_forside_path %>
         </li>
-        <li><a href="#">Min side</a>
-        </li>
-        <li><% if logged_in?%>
-              <%= link_to "Logg ut", logout_path, method: "delete"%>
-          <%else%>
-              <%= link_to "Logg inn", login_path %>
-          <%end%>
-        </li>
+        <!--SCRIPT FOR Å SJEKKE OM BRUKER ER LOGGET INN-->
+        <% if logged_in? %>
+          <li>
+              <a href="#" data-dropdown="hover1" data-options="is_hover:true; hover_timeout:5000">
+                  Min Side <b class="caret"></b></a>
+                <ul id="hover1" class="f-dropdown" data-dropdown-content>
+                    <li><%=link_to "Instillinger", users_path %></li>
+                    <li class="divider"></li>
+                    <li><%= link_to "Log ut", logout_path %></li>
+            </ul>
+          </li>
+        <% else %>
+            <li><%= link_to "Logg inn", login_path %></li>
+        <% end %>
       </ul>
     </section>
   </nav>

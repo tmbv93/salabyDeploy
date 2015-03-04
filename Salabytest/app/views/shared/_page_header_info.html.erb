@@ -1,8 +1,12 @@
+  <link rel="stylesheet" href="/assets/shared/header.css" />
+
 <div class="fixed">
   <nav class="top-bar" data-topbar role="navigation">
     <ul class="title-area">
       <li class="name">
-        <img id="siteLogo" src="/assets/logos/salaby_logo_enkel_rod.png">
+          
+        <%=link_to image_tag("logos/salaby_logo_enkel_rod.png", border: 0), root_path, {class: 'dock-item'}%>
+          
       </li>
       <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
       <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a>
@@ -27,7 +31,7 @@
                 <ul id="hover1" class="f-dropdown" data-dropdown-content>
                     <li><%=link_to "Instillinger", users_path %></li>
                     <li class="divider"></li>
-                    <li><%= link_to "Log out", logout_path %></li>
+                    <li><%= link_to "Logg ut", logout_path %></li>
             </ul>
           </li>
             <% else %>
