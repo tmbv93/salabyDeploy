@@ -15,92 +15,104 @@
           background-color: rgba(255,214,133, 0.3);
       }
   </style>
-  <script src="js/vendor/modernizr.js"></script>
 </head>
 
 <body>
-<!--MENU-->
+
+<!--HEADER-->
 <%= render 'shared/page_header' %>
+<!--HEADER END-->
 
-<div class="row" id="mainMenu">
-
-  <div class="large-3 medium-6 small-6 columns">
-    <img src="/assets/barn/RLE/logo_liten.png" alt="logo">
+<section id="test">
+  <div class="row" id="mainMenu">
+    <div class="large-3 medium-6 small-6 columns">
+      <img src="/assets/barn/RLE/logo_liten.png" alt="logo">
+    </div>
+    
+    <div class="large-3 medium-6 small-6 columns">
+      <a href="./forside.html"><img id="backArrow" src="/assets/barn/arrowback.png" alt="Pil tilbake"></a>
+    </div>
   </div>
-  <div class="large-3 medium-6 small-6 columns">
-    <a href="./forside.html"><img id="backArrow" src="/assets/barn/arrowback.png" alt="Pil tilbake">
-    </a>
-
-  </div>
-</div>
-<div class="row">
-  <div class="large-12 columns">
-    <h1 class="fagh">RLE</h1>
-  </div>
-</div>
-
-<div class="test">
-
+  
   <div class="row">
-    <div class="large-3 small-6 medium-4 columns">
-      <div id="align_center" class="align-center">
-        <a href="hinduisme.html"><img src="/assets/barn/RLE/hinduisme.png" alt="Hinduismebilde">
-        </a>
-      </div>
+    <div class="large-12 columns">
+      <h1 class="fagh">RLE</h1>
     </div>
-    <div class="large-3 small-6 medium-4 columns">
-      <div id="align_center" class="align-center">
-        <a href="islam.html"><img src="/assets/barn/RLE/islam.png" alt="Islambilde"> </a>
-      </div>
-    </div>
-    <div class="large-3 small-6 medium-4 columns">
-      <div id="align_center" class="align-center">
-        <img src="/assets/barn/RLE/kristendom.png" alt="Kristendombilde">
-      </div>
-    </div>
-    <div class="large-3 small-6 medium-4 columns">
+  </div>
 
+  <div class="test">
+
+    <div class="row">
+
+      <div class="large-3 small-6 medium-4 columns">
+        <div id="align_center" class="align-center">
+          <a href="hinduisme.html"><img src="/assets/barn/RLE/hinduisme.png" alt="Hinduismebilde">
+          </a>
+        </div>
+      </div>
+
+      <div class="large-3 small-6 medium-4 columns">
+        <div id="align_center" class="align-center">
+          <a href="islam.html"><img src="/assets/barn/RLE/islam.png" alt="Islambilde"> </a>
+        </div>
+      </div>
+
+      <div class="large-3 small-6 medium-4 columns">
+        <div id="align_center" class="align-center">
+          <img src="/assets/barn/RLE/kristendom.png" alt="Kristendombilde">
+        </div>
+      </div>
+
+<<<<<<< Updated upstream
       <div id="align_center" class="align-center">
         <a href="jodedom.html"><img src="/assets/barn/RLE/jøde.png" alt="Jødedommenbilde">
+=======
+      <div class="large-3 small-6 medium-4 columns">
+        <div id="align_center" class="align-center">
+          <img src="/assets/barn/RLE/jøde.png" alt="Jødedommenbilde">
+        </div>
+>>>>>>> Stashed changes
       </div>
 
-    </div>
-    <div class="large-3 small-6 medium-4 columns">
-      <div id="align_center" class="align-center">
-        <img src="/assets/barn/RLE/budd.png" alt="Buddhismebilde">
+      <div class="large-3 small-6 medium-4 columns">
+        <div id="align_center" class="align-center">
+          <img src="/assets/barn/RLE/budd.png" alt="Buddhismebilde">
+        </div>
       </div>
-    </div>
-    <div class="large-3 small-6 medium-4 columns">
-      <div id="align_center" class="align-center">
-        <img src="/assets/barn/RLE/sikhisme.png" alt="Sikhismebilde">
+
+      <div class="large-3 small-6 medium-4 columns">
+        <div id="align_center" class="align-center">
+          <img src="/assets/barn/RLE/sikhisme.png" alt="Sikhismebilde">
+        </div>
       </div>
-    </div>
-    <div class="large-3 small-6 medium-4 columns">
-      <div id="align_center" class="align-center">
-        <img src="/assets/barn/RLE/etikk.png" alt="Etikkbilde">
+
+      <div class="large-3 small-6 medium-4 columns">
+        <div id="align_center" class="align-center">
+          <img src="/assets/barn/RLE/etikk.png" alt="Etikkbilde">
+        </div>
       </div>
-    </div>
-    <div class="large-3 small-6 medium-4 columns">
-      <div id="align_center" class="align-center">
-        <img src="/assets/barn/RLE/kirke.png" alt="Kirkebilde">
+
+      <div class="large-3 small-6 medium-4 columns">
+        <div id="align_center" class="align-center">
+          <img src="/assets/barn/RLE/kirke.png" alt="Kirkebilde">
+        </div>
       </div>
-    </div>
-    <div class="large-3 small-6 medium-4 columns">
-      <div id="align_center" class="align-center">
-        <img src="/assets/barn/RLE/kunst2.png" alt="Kunstbilde">
+
+      <div class="large-3 small-6 medium-4 columns">
+        <div id="align_center" class="align-center">
+          <img src="/assets/barn/RLE/kunst2.png" alt="Kunstbilde">
+        </div>
       </div>
+      <div class="large-3"></div>
     </div>
-    <div class="large-3"></div>
   </div>
-</div>
+</section>
 
 <!-- Footer -->
-
 
 <%= render 'shared/page_footer' %>
 
 <!-- FOOTER SLUTT -->
-
 
 
 <script>
