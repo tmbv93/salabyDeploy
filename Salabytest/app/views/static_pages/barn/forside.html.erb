@@ -259,10 +259,7 @@
   <div class="row kanalS">
     <div class="large-4 small-6 columns">
       <div class="align-center">
-
-        <a href="RLE_side.html">
-          <img src="/assets/barn/kanalS/RLE.png" alt="RLE fag">
-        </a>
+         <%=link_to image_tag("barn/kanalS/RLE.png", border: 0),  {action: 'rle', controller: 'static_pages/barn'},{class: 'dock-item'}%>
       </div>
     </div>
     <div class="large-4 small-6 columns">
@@ -349,15 +346,12 @@
   </div>
   <!--!!!!!!!!!!!!!!!!MFL FAG SLUTT!!!!!!!!!!!!!!!!!!!!-->
 </div>
+
 <%= render 'shared/page_footer' %>
 
 
 
 <!--!!!!!!!!!!!!!!!!! MAIN SLUTT!!!!!!!!!!!!!!!!!!!!-->
-
-<script src="js/showDivsScript.js"></script>
-<script src="js/showDivsMobilScript.js"></script>
-<script src="js/main.js"></script>
 
 </body>
 
