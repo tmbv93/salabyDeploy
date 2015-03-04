@@ -68,10 +68,14 @@
 /*----------Hovedmeny SLUTT!!-----------*/
 
 body {
-    background: url("../img/hinduisme/hinduismebak.jpg") no-repeat;
+    background: url("/assets/barn/hinduisme/hinduismebak.jpg") no-repeat;
     background-attachment: fixed;
     background-color: white;
     background-size: cover;
+}
+
+.hinduisme {
+
 }
 /*----------Gjelder kun på religion bildene på RLE siden-----------*/
 
