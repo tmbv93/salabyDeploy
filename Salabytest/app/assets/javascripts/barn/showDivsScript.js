@@ -19,6 +19,7 @@ $(function(){
 
 		$menu = $(".menu");
 		$backgroundImage = $("#background-image");
+		
 
 
 		
@@ -81,10 +82,10 @@ $(function(){
 				}
 				if($MFLDivs.is(":visible")){
 					($MFLDivs).slideUp();
-					$backgroundImage.css("-webkit-filter", "grayscale(0)");
 				}
 			}else{
 			$kanalSDivs.slideUp();
+			$backgroundImage.css("-webkit-filter", "grayscale(0)");
 			}
 		});
 
@@ -101,10 +102,10 @@ $(function(){
 				}
 				if($kanalSDivs.is(":visible")){
 					($kanalSDivs).slideUp();
-					$backgroundImage.css("-webkit-filter", "grayscale(0)");
 				}
 			}else{
 			$MFLDivs.slideUp();
+			$backgroundImage.css("-webkit-filter", "grayscale(0)");
 			}
 		});
 	}
