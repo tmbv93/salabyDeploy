@@ -18,6 +18,9 @@ $(function(){
 		$MFLDivs = $(".MFL");
 
 		$menu = $(".menu");
+		$backgroundImage = $("#background-image");
+
+
 		
 	}
 
@@ -26,7 +29,7 @@ $(function(){
 		$barnehageButton.click(function(){
 			if($barnehageDivs.is(":hidden")){
 			$barnehageDivs.slideDown();
-			$menu.css("filter", "grayscale(100%)");
+			$backgroundImage.css("-webkit-filter", "grayscale(0.8)");
 				if($kanalSDivs.is(":visible")){
 					($kanalSDivs).slideUp();
 				}
@@ -39,6 +42,7 @@ $(function(){
 
 			}else{
 			$barnehageDivs.slideUp();
+			$backgroundImage.animate({"-webkit-filter": "grayscale(0.1)"}, 1500 );
 			}
 		});
 
