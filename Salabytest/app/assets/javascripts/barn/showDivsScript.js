@@ -4,6 +4,8 @@ $(function(){
 
 	var $barnehageDivs, $kanalSDivs, $skoleveienMenuDivs, $MFLDivs;
 
+	var $menu
+
 	function setHTMLObjects(){
 		$barnehageButton = $(".barnehageButton");
 		$skoleveienButton =$(".skoleveienButton");
@@ -14,6 +16,8 @@ $(function(){
 		$skoleveienMenuDivs = $("#skoleveienMenu");
 		$kanalSDivs = $(".kanalS");
 		$MFLDivs = $(".MFL");
+
+		$menu = $(".menu");
 		
 	}
 
@@ -22,6 +26,7 @@ $(function(){
 		$barnehageButton.click(function(){
 			if($barnehageDivs.is(":hidden")){
 			$barnehageDivs.slideDown();
+			$menu.css("filter", "grayscale(100%)");
 				if($kanalSDivs.is(":visible")){
 					($kanalSDivs).slideUp();
 				}
