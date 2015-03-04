@@ -29,7 +29,7 @@ jQuery(document).ready(function($){
 
 $(function() {
 
-    var $element = $(".align-center");
+    var $element = $(".bilde-hover");
 
     function hoverOverGray() {
     	$($element).not(this).css({
@@ -49,7 +49,7 @@ $(function() {
 
     function settEvent() {
         $element.on('mouseenter', hoverOverGray);
-        $element.on('mouseleave', hoverLeaveNormal)
+        $element.on('mouseleave', hoverLeaveNormal);
     }
 
     var init = function(){

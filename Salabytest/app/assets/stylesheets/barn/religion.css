@@ -79,12 +79,14 @@ body {
 }
 /*----------Gjelder kun på religion bildene på RLE siden-----------*/
 
-#align_center {
+
+
+.bilde-hover {
     margin-bottom: 15px;
 }
 /*----------SLUTT!!-----------*/
 
-.align-center {
+.align-center{
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -96,7 +98,6 @@ body {
     -moz-transition: all 0.15s ease-in-out 0s;
     -o-transition: all 0.15s ease-in-out 0s;
 
-
 }
 
 
@@ -105,7 +106,6 @@ body {
     transform: scale(1.1, 1.1);
     -ms-transform: scale(1.1, 1.1);
     /* IE 9 */
-
     -webkit-transform: scale(1.1, 1.1);
     /* Chrome, Safari, Opera */
 
