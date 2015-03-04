@@ -19,14 +19,14 @@
         </li>
         <li><%=link_to "Informasjon", static_pages_info_informasjon_path %>
         </li>
-          <% if logged_in? %>
+        <% if logged_in? %>
           <li>
               <a href="#" data-dropdown="hover1" data-options="is_hover:true; hover_timeout:5000">
-              Min Side <b class="caret"></b></a>
-            <ul id="hover1" class="f-dropdown" data-dropdown-content>
-                <li><%=link_to "Instillinger", users_path %></li>
-                <li class="divider"></li>
-                <li><%= link_to "Log out", logout_path %></li>
+                  Min Side <b class="caret"></b></a>
+                <ul id="hover1" class="f-dropdown" data-dropdown-content>
+                    <li><%=link_to "Instillinger", users_path %></li>
+                    <li class="divider"></li>
+                    <li><%= link_to "Log out", logout_path %></li>
             </ul>
           </li>
         <% else %>
