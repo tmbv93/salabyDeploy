@@ -1,5 +1,59 @@
 Rails.application.routes.draw do
   namespace :static_pages do
+  namespace :barn do
+    get 'rle/islam'
+    end
+  end
+
+  namespace :static_pages do
+  namespace :barn do
+    get 'rle/jodedom'
+    end
+  end
+
+  namespace :static_pages do
+  namespace :barn do
+    get 'rle/hinduisme'
+    end
+  end
+
+  namespace :static_pages do
+  namespace :barn do
+    get 'rle/buddhisme'
+    end
+  end
+
+  namespace :static_pages do
+  namespace :barn do
+    get 'rle/kristendom'
+    end
+  end
+
+  namespace :static_pages do
+  namespace :barn do
+    get 'rle/sikhisme'
+    end
+  end
+
+  namespace :static_pages do
+  namespace :barn do
+    get 'rle/etikk_filosofi'
+    end
+  end
+
+  namespace :static_pages do
+  namespace :barn do
+    get 'rle/kunst'
+    end
+  end
+
+  namespace :static_pages do
+  namespace :barn do
+    get 'rle/kirkehistorie'
+    end
+  end
+
+  namespace :static_pages do
   get 'barn/forside'
   end
 
