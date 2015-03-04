@@ -5,42 +5,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Forside Barn</title>
-  <link rel="stylesheet" href="/assets/rle/rle.css" />
+  <link rel="stylesheet" href="/assets/barn/religion.css" />
 </head>
 
 <body>
 
 <!--MENU-->
-<header>
-  <div class="fixed contain-to-grid">
-
-    <nav class="top-bar" data-topbar role="navigation">
-
-      <ul class="title-area">
-        <li class="name">
-          <a href="./barnForside.html"><img id="siteLogo" src="/assets/barn/logos/salaby_logo_enkel_rød.png" alt="logo">
-
-          </a>
-        </li>
-        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a>
-        </li>
-      </ul>
-
-      <section class="top-bar-section">
-        <!-- Right Nav Section -->
-        <ul class="right">
-          <li><a href="../info/forside.html">Lærer/foreldre siden</a>
-          </li>
-          <li><a href="#">Min side</a>
-          </li>
-          <li><a href="#">Logg ut</a>
-          </li>
-        </ul>
-      </section>
-    </nav>
-  </div>
-</header>
+<%= render 'shared/page_header' %>
 
 
 
@@ -107,40 +78,7 @@
 <!-- Footer -->
 
 
-<footer id="footer">
-  <div class="row">
-    <div class="large-4 columns">
-      <div id="footerLogo">
-        <img src="/assets/barn/logos/salaby_logo_enkel_grå.png" alt="logo">
-      </div>
-    </div>
-
-    <div class="large-6 columns">
-      <div id="footerMid">
-        <ul>
-          <li><a href="http://www.gyldendal.no/">© Gyldendal Norsk Forlag</a>
-          </li>
-          <li><a href="http://web3.gyldendal.no/support/specification/salaby">Systemkrav</a>
-          </li>
-          <li><a href="http://web3.gyldendal.no/support/contact/salaby">Send tilbakemelding</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="large-2 columns">
-      <div id="socialLinks">
-        <a href="https://www.facebook.com/salaby">
-          <img src="/assets/barn/social/Facebook_logo.png" alt="Facebooklogo">
-        </a>
-        <a href="https://www.youtube.com/user/SalabyGyldendal">
-          <img src="/assets/barn/social/youtube_logo.png" alt="Youtubelogo">
-        </a>
-      </div>
-    </div>
-  </div>
-  <a href="#0" class="cd-top">Top</a>
-</footer>
+<%= render 'shared/page_footer' %>
 
 <!-- FOOTER SLUTT -->
 
