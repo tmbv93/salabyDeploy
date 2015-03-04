@@ -23,11 +23,11 @@
         <% if logged_in? %>
           <li>
               <a href="#" data-dropdown="hover1" data-options="is_hover:true; hover_timeout:5000">
-                  Min Side <b class="caret"></b></a>
+                  Bruker <b class="caret"></b></a>
                 <ul id="hover1" class="f-dropdown" data-dropdown-content>
-                    <li><%=link_to "Instillinger", user_path(current_user) %></li>
+                    <li><%=link_to "Min Side", user_path(current_user) %></li>
                     <li class="divider"></li>
-                    <li><%= link_to "Log ut", logout_path %></li>
+                    <li><%= link_to "Logg ut", logout_path %></li>
             </ul>
           </li>
         <% else %>
