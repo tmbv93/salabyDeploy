@@ -85,7 +85,6 @@ body {
   position: fixed; 
   top: 0; 
   left: 0; 
- 
   min-width: 100em;
   min-height: 100%;
 }
@@ -168,53 +167,6 @@ body {
 }
 
 /*---------Footer SLUTT!!-----------*/
-
-
-/*MENY*/
-.top-bar{
-    height: 52px;
-    background-color: #f2f2f2;
-    border-bottom: solid thin #dcdcdc;
-
-}
-
-.title-area {
-    height: 52px;
-    border-bottom: solid thin #dcdcdc;
-
-}
-
-.top-bar-section ul{
-margin-top: 0px;
-
-}
-
-
-.top-bar-section ul li a{
-color: black;
-background-color: #f2f2f2 !important;
-}
-
-.top-bar-section ul li a:hover{
-background-color: grey !important;
-}
-
-.top-bar.expanded .title-area {
- background-color: #f2f2f2;
-}
-
-
-.top-bar .toggle-topbar.menu-icon a, .toggle-topbar.menu-icon {
-
-color: grey;
-
-}
-
-.top-bar .toggle-topbar.menu-icon a span::after {
-box-shadow: 0 0px 0 1px grey, 0 7px 0 1px grey, 0 14px 0 1px grey;
-}
-
-
 
 
 /*!!!!!!!!!!!!STYLE FOR BACK TO TOP BTN!!!!!!!!!!!*/
