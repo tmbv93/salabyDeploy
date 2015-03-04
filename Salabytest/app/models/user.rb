@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
 
   # int status
-  enum status: %w('system_admin', 'school_admin', 'class_admin', 'student')
+  enum status: [:system_admin, :school_admin, :class_admin, :student]
 
   # Relations
   has_many :game, through: :favorite
@@ -16,5 +16,4 @@ class User < ActiveRecord::Base
   validates :last_name, presence: true, length: {maximum: 35}
   validates :password, length: {minimum: 6}
   validates :username, presence: true, length: {minimum: 6, maximum: 25}, uniqueness: {case_sensitive: false}
-
 end
