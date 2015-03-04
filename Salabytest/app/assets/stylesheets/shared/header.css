@@ -39,6 +39,16 @@ box-shadow: 0 0px 0 1px grey, 0 7px 0 1px grey, 0 14px 0 1px grey;
 }
 
 
+#hover1 li {
+    display: block;
+    width: 100%;
+}
+
+#hover1 ul li :hover {
+    color: black;
+}
+
+
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
 
 .top-bar {

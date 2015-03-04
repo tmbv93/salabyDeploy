@@ -33,6 +33,10 @@ body {
     max-height: 30em;
     max-width: 100%;
     -webkit-transform: rotate(-40deg);
+    -moz-transform: rotate(-40deg);
+    -o-transform: rotate(-40deg);
+    transform: rotate(-40deg);
+    
     position: absolute;
     top: -10em;
     left: -25em;
@@ -49,6 +53,9 @@ body {
 
 #adultSection img:hover {
     -webkit-transform: scale(1.1,1.1);
+    -moz-transform: scale(1.1,1.1);
+    -o-transform: scale(1.1,1.1);
+    transform: scale(1.1,1.1);
 }
 
 
