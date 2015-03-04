@@ -7,43 +7,56 @@ $(function(){
 	var $menu
 
 	function setHTMLObjects(){
+		// Alle de fire første knappene
 		$barnehageButton = $(".barnehageButton");
 		$skoleveienButton =$(".skoleveienButton");
 		$kanalSButton = $(".kanalSButton");
 		$MFLButton = $(".MFLButton");
 
+		//Klasser for fagene som ligger inne i de fire første knappene
 		$barnehageDivs = $(".barnehage");
 		$skoleveienMenuDivs = $("#skoleveienMenu");
 		$kanalSDivs = $(".kanalS");
 		$MFLDivs = $(".MFL");
 
+		//menyen dekker alle de fire knappene
 		$menu = $(".menu");
+
+		//Id til bakgrunsbildet
 		$backgroundImage = $("#background-image");
-		
-
-
-		
+				
 	}
 
 	function buttonEvents(){
 		// For klikk på barnehage knapp
 		$barnehageButton.click(function(){
+			//hvis barnehage er gjemt
 			if($barnehageDivs.is(":hidden")){
 			$barnehageDivs.slideDown();
 			$backgroundImage.css("-webkit-filter", "grayscale(0.8)");
+			$barnehageButton.css("-webkit-filter", "grayscale(0)");
+			$barnehageButton.siblings("div").css("-webkit-filter", "grayscale(0.8)");
+
+				//hvis kanals er synlig(dette gjentaes på alle knappene 
+				//og burde kunne taes vekkmed sibling senere)
+
 				if($kanalSDivs.is(":visible")){
 					($kanalSDivs).slideUp();
+					$kanalSButton.css("-webkit-filter", "grayscale(0.8)");
 				}
 				if($skoleveienMenuDivs.is(":visible")){
 					($skoleveienMenuDivs).slideUp();
+					$skoleveienButton.css("-webkit-filter", "grayscale(0.8)");
 				}
 				if($MFLDivs.is(":visible")){
 					($MFLDivs).slideUp();
+					$MFLButton.css("-webkit-filter", "grayscale(0.8)");
 				}
-
 			}else{
+			//hvis synlig
 			$barnehageDivs.slideUp();
 			$backgroundImage.css("-webkit-filter", "grayscale(0)");
+			$barnehageButton.siblings("div").css("-webkit-filter", "grayscale(0)");
 			}
 		});
 
@@ -54,18 +67,24 @@ $(function(){
 			if($skoleveienMenuDivs.is(":hidden")){
 			$skoleveienMenuDivs.slideDown();
 			$backgroundImage.css("-webkit-filter", "grayscale(0.8)");
+			$skoleveienButton.css("-webkit-filter", "grayscale(0)");
+			$skoleveienButton.siblings("div").css("-webkit-filter", "grayscale(0.8)");
 				if($barnehageDivs.is(":visible")){
 					($barnehageDivs).slideUp();
+					$barnehageButton.css("-webkit-filter", "grayscale(0.8)");
 				}
 				if($kanalSDivs.is(":visible")){
 					($kanalSDivs).slideUp();
+					$kanalSButton.css("-webkit-filter", "grayscale(0.8)");
 				}
 				if($MFLDivs.is(":visible")){
 					($MFLDivs).slideUp();
+					$MFLButton.css("-webkit-filter", "grayscale(0.8)");
 				}
 			}else {
 			$skoleveienMenuDivs.slideUp();
 			$backgroundImage.css("-webkit-filter", "grayscale(0)");
+			$skoleveienButton.siblings("div").css("-webkit-filter", "grayscale(0)");
 			}
 		});
 	
@@ -74,18 +93,24 @@ $(function(){
 			if($kanalSDivs.is(":hidden")){
 			$kanalSDivs.slideDown();
 			$backgroundImage.css("-webkit-filter", "grayscale(0.8)");
+			$kanalSButton.css("-webkit-filter", "grayscale(0)");
+			$kanalSButton.siblings("div").css("-webkit-filter", "grayscale(0.8)");
 				if($barnehageDivs.is(":visible")){
 					($barnehageDivs).slideUp();
+					$barnehageButton.css("-webkit-filter", "grayscale(0.8)");
 				}
 				if($skoleveienMenuDivs.is(":visible")){
 					($skoleveienMenuDivs).slideUp();
+					$skoleveienButton.css("-webkit-filter", "grayscale(0.8)");
 				}
 				if($MFLDivs.is(":visible")){
 					($MFLDivs).slideUp();
+					$MFLButton.css("-webkit-filter", "grayscale(0.8)");
 				}
 			}else{
 			$kanalSDivs.slideUp();
 			$backgroundImage.css("-webkit-filter", "grayscale(0)");
+			$kanalSButton.siblings("div").css("-webkit-filter", "grayscale(0)");
 			}
 		});
 
@@ -94,18 +119,24 @@ $(function(){
 			if($MFLDivs.is(":hidden")){
 			$MFLDivs.slideDown();
 			$backgroundImage.css("-webkit-filter", "grayscale(0.8)");
+			$MFLButton.css("-webkit-filter", "grayscale(0)");
+			$MFLButton.siblings("div").css("-webkit-filter", "grayscale(0.8)");
 				if($barnehageDivs.is(":visible")){
 					($barnehageDivs).slideUp();
+					$barnehageButton.css("-webkit-filter", "grayscale(0.8)");
 				}
 				if($skoleveienMenuDivs.is(":visible")){
 					($skoleveienMenuDivs).slideUp();
+					$skoleveienButton.css("-webkit-filter", "grayscale(0.8)");
 				}
 				if($kanalSDivs.is(":visible")){
 					($kanalSDivs).slideUp();
+					$kanalSButton.css("-webkit-filter", "grayscale(0.8)");
 				}
 			}else{
 			$MFLDivs.slideUp();
 			$backgroundImage.css("-webkit-filter", "grayscale(0)");
+			$MFLButton.siblings("div").css("-webkit-filter", "grayscale(0)");
 			}
 		});
 	}
