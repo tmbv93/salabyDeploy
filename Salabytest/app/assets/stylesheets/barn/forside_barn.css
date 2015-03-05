@@ -82,16 +82,10 @@ body {
 
 
 #background-image{
-<<<<<<< HEAD
   position: fixed;
   top: 0;
   left: 0;
 
-=======
-  position: fixed; 
-  top: 0; 
-  left: 0; 
->>>>>>> origin/master
   min-width: 100em;
   min-height: 100%;
 }
@@ -176,13 +170,77 @@ body {
 /*---------Footer SLUTT!!-----------*/
 
 
-<<<<<<< HEAD
+
+.top-bar {
+    height: 6em;
+    background-color: #f2f2f2;
+    border-bottom: solid thin #dcdcdc;
+    color: #333;
+    margin-bottom: 2em;
+}
+
+.title-area {
+    height: 6em;
+    border-bottom: solid thin #dcdcdc;
+}
+
+.top-bar-section ul {
+    margin-top: 0px;
+    height: 100% !important;
+}
+
+.top-bar-section ul li a {
+    color: #333;
+    background-color: #f2f2f2 !important;
+}
+
+.top-bar-section ul li a:hover {
+    background-color: #333 !important;
+}
+
+.top-bar.expanded .title-area {
+    background-color: #f2f2f2;
+}
+
+.top-bar .toggle-topbar.menu-icon a,
+.toggle-topbar.menu-icon {
+    color: #333;
+}
+
+.top-bar .toggle-topbar.menu-icon a span::after {
+box-shadow: 0 0px 0 1px grey, 0 7px 0 1px grey, 0 14px 0 1px grey;
+}
+
+
+#hover1 li {
+    display: block;
+    width: 100%;
+}
+
+#hover1 ul li :hover {
+    color: black;
+}
+
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+.top-bar {
+    height: 5em;
+    background-color: #f2f2f2;
+    border-bottom: solid thin #dcdcdc;
+    color: #333;
+}
+
+.title-area {
+    height: 4em;
+    border-bottom: solid thin #dcdcdc;
+}
+
+
+}
 
 
 
-
-=======
->>>>>>> origin/master
 /*!!!!!!!!!!!!STYLE FOR BACK TO TOP BTN!!!!!!!!!!!*/
 
 .cd-top {
