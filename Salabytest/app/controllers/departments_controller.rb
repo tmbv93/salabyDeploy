@@ -30,6 +30,9 @@ class DepartmentsController < ApplicationController
       if @department.save
         format.html { redirect_to @department, notice: 'Department was successfully created.' }
         format.json { render :show, status: :created, location: @department }
+
+        #Make department administrator
+        DepartmentMember.create(user_id: current_user.id, department_id: @department.id)
       else
         format.html { render :new }
         format.json { render json: @department.errors, status: :unprocessable_entity }
