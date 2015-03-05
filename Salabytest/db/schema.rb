@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150304123957) do
+ActiveRecord::Schema.define(version: 20150305084006) do
 
   create_table "department_members", force: true do |t|
     t.datetime "created_at"
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 20150304123957) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "schoolyear"
+    t.text     "description"
   end
 
   create_table "favorites", force: true do |t|
@@ -41,6 +42,19 @@ ActiveRecord::Schema.define(version: 20150304123957) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "homeworks", force: true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.integer  "class_id"
+    t.integer  "game_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.date     "expiration"
+  end
+
+  add_index "homeworks", ["class_id"], name: "index_homeworks_on_class_id"
+  add_index "homeworks", ["game_id"], name: "index_homeworks_on_game_id"
 
   create_table "schools", force: true do |t|
     t.string   "name"
@@ -56,6 +70,7 @@ ActiveRecord::Schema.define(version: 20150304123957) do
     t.integer  "status"
     t.string   "password_digest"
     t.string   "username"
+    t.text     "description"
   end
 
 end

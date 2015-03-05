@@ -4,9 +4,15 @@ class User < ActiveRecord::Base
   enum status: [:system_admin, :school_admin, :class_admin, :student]
 
   # Relations
-  has_many :game, through: :favorite
   belongs_to :school
-  has_many :department, through: :department_member
+
+  has_many :favorites
+  has_many :games, through: :favorites
+
+  has_many :department_members
+  has_many :departments, through: :department_members
+
+  has_many :homeworks, through: :departments
 
   # Security
   has_secure_password

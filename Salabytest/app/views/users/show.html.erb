@@ -24,14 +24,12 @@
             <div class="panel">
                 <div id="userInfo">
                     <% if logged_in? %>
-                        <p>Dette er deg!</p>
-                    <h1>Profilside</h1>
-                        <p>Her er informasjon om deg og annen viktig informasjon</p>
-                    <p>
-                      <strong>Navn:</strong>
-                        <%= current_user.first_name %> <%= current_user.last_name %>
-                    </p>
-                        <%= link_to 'Endre innstillinger', edit_user_path(@user) %> 
+                    <h1><%= @user.first_name %> <%= @user.last_name %></h1>
+
+                        <p><%= @user.description %></p>
+                         <% if is_me? @user %>
+                        <%= link_to 'Rediger profil', edit_user_path(@user) %>
+                          <% end %>
                     </div>
                 </div>
                 <div class="row">
@@ -39,13 +37,30 @@
                     <div class="large-8 columns">
                   <div class="panel">
                     <div id="classesArea">
-                      <h3>Klasser</h3>
-                      <%=link_to "Lag ny klasse", new_department_path %>
+
+                      <!--KLASSER-->
+                      <h3>Mine klasser</h3>
+
+                      <% if departments = get_departments(@user) %>
+
+                          <ul>
+
+                          <% departments.each do |dep|%>
+                         <li><%= link_to dep.name, department_path(dep.id)%></li>
+
+                          <% end %>
+
+                             </ul>
+                         <% end %>
+
+                      <% if is_me? (@user) %>
+                      <%=link_to "Opprett ny klasse", new_department_path %>
+                          <% end %>
 
                     </div>
                   </div>
                 </div>
-                    <!--SLUTT PÅ AREA-->
+                    <!--LEKSER-->
                     <% else %>
                     <div class="large-8 columns">
                             <div class="panel">
@@ -56,12 +71,13 @@
                         </div>
                     </div>
                     <% end %>
-                    <!--SLUTT PÅ AREA-->
+                    <!--FAVORITTER-->
                     <div class="large-4 columns">
                         <div class="panel">
                             <div id="favorites">  
                                 <h3>Favoritter</h3>
                                 <ul>
+                                  <% #Favoritter renderes her %>
                                     <li>RLE</li>
                                     <li>NORSK</li>
                                 </ul>

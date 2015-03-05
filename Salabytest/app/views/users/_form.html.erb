@@ -18,7 +18,10 @@
         <label>Gjenta passordet</label>
         <%= f.password_field :password_confirmation %>
 
-        <%= f.submit "Lag konto", class: "button expand" %>
+        <label>Skriv litt om deg selv!</label>
+        <%= f.text_area :description %>
+
+        <%= f.submit "Opprett konto", class: "button expand" %>
     <% end %>
   </div>
 </div>

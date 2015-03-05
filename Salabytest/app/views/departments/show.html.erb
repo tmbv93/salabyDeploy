@@ -1,9 +1,17 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @department.name %>
-</p>
+<h1><%= @department.name %></h1>
+
+  <% depmeme = DepartmentMember.find_by_department_id (@department.id)%>
+
+     <% if depmeme %>
+        <% user = User.find_by_id(depmeme.user_id) %>
+        <p><strong>Lærer:</strong> <%= user.last_name %> <%= user.last_name %></p>
+
+    <% else %>
+    <p>Ingen lærer</p>
+
+    <%end%>
 
 <%= link_to 'Edit', edit_department_path(@department) %> |
 <%= link_to 'Back', departments_path %>

@@ -11,14 +11,18 @@
 
         <p><label><strong>Brukernavn</strong></label>
         <%= f.label @user.username %></p>
+
+        <label>Endre beskrivelse</label>
+        <%= f.text_area :description %>
+
         <br>
-        <label>Passord</label>
+        <label>Nytt passord</label>
         <%= f.password_field :password %>
 
         <label>Gjenta passordet</label>
         <%= f.password_field :password_confirmation %>
 
-        <%= f.submit "Lag konto", class: "button expand" %>
+        <%= f.submit "Rediger konto", class: "button expand" %>
     <% end %>
   </div>
 </div>

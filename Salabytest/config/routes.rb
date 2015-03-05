@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :homeworks
+
   namespace :static_pages do
   namespace :barn do
     get 'rle/islam'

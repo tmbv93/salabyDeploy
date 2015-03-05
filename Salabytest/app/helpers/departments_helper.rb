@@ -1,6 +1,9 @@
 module DepartmentsHelper
 
-  def set_member(department, member)
-    DepartmentMember.create(department: department, member: member)
+  def get_members
+
+    members = Department.joins(:users)
+
   end
+
 end
