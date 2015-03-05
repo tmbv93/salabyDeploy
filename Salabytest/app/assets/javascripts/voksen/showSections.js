@@ -12,6 +12,7 @@ $(function () {
     var $matteSection, $matteBtn;
     var $samfunnSection, $samfunnBtn;
     var $rolledDown;
+    var $isThisPressed;
 
     
     //"LINK" BUTTONS AND SECTIONS TO 
@@ -52,64 +53,82 @@ $(function () {
     //THE CORRECT PARAMETER
     function settEvents() {
         $engelskBtn.click(function() {  
-            sectionSlide($engelskSection);
+            sectionSlide($engelskSection, $engelskBtn);
         });
         $norskBtn.click(function() {  
-            sectionSlide($norskSection);
+            sectionSlide($norskSection, $norskBtn);
         });
         $kohBtn.click(function() {  
-            sectionSlide($kohSection);
+            sectionSlide($kohSection, $kohBtn);
         });
         $mohBtn.click(function() {
-            sectionSlide($mohSection);
+            sectionSlide($mohSection, $mohBtn);
         });
         $naturBtn.click(function() {
-            sectionSlide($naturSection);
+            sectionSlide($naturSection, $naturBtn);
         });
         $rleBtn.click(function() {
-            sectionSlide($rleSection);
+            sectionSlide($rleSection, $rleBtn);
         });
         $musikkBtn.click(function() {
-            sectionSlide($musikkSection);
+            sectionSlide($musikkSection, $musikkBtn);
         });
         $samfunnBtn.click(function() {
-            sectionSlide($samfunnSection);
+            sectionSlide($samfunnSection, $samfunnBtn);
         });
         $matteBtn.click(function() {
-            sectionSlide($matteSection);
+            sectionSlide($matteSection, $matteBtn);
         });
 
     };
     
     
 
-    function sectionSlide(para1){
+    function sectionSlide(para1, para2){
         //STORES CURRENT ACCORDION
         //IN THIS VARIABLE
-        $exSection =  $( ".accordion" );
+        
+        
         
             if(para1.is(":hidden")) {
                 slideDown();
+                
+                
+                
                 para1.slideDown().dequeue().fadeTo(500,1);
                 $rolledDown = para1;
+                para2.css("color", "red");
+                
+                $pressedBtn = para2.selector;
+                $pressedBtn.siblings("div").css("color", "black");
+                
+                
+                //Sibling av pressedBtn skal bli black.
+                
+                
+                console.log($pressedBtn);
+                $isThisPressed = true;
+                
             }
              else {
                 para1.slideUp().dequeue().fadeTo(500,1);
-                 para1 = null;
+                para1 = null; 
              }
                  
     }
+
     
     function slideDown(){
         if($rolledDown != null)
             $rolledDown.slideUp().dequeue().fadeTo(500,1);
+            
+            
     }
     
 
     var init = function () {
         settHTML();
         settEvents();
-
                 
     }();
 
