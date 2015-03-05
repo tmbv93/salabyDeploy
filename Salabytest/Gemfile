@@ -4,9 +4,6 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
 
-# Handle password security
-gem 'bcrypt', '~> 3.1.7'
-
 # Style, js resources
 gem 'foundation-rails', '5.4.3.1'
 
