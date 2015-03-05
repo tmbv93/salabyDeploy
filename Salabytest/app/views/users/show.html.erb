@@ -33,7 +33,8 @@
                     <% departments.each do |dep|%>
                     <%= link_to dep.name, department_path(dep.id)%>
                     <% end %>
-                        
+                        <% else %>
+                            Ingen klasse <!--PRINTE UT INGEN KLASSE, HOW!-->
                     <% end %>
                     </p>
                     
