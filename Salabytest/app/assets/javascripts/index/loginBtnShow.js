@@ -1,10 +1,10 @@
 $(function(){
     
         var typedText = $(".session_username").val();
-        var loginBtn = $(".button");
+        var loginBtn = $("#loginBtn");
         var beenTyped = false;
     
-    $(".button")
+    $("#loginBtn")
     .css("background-color", "red")
     .attr("value", "Fortsett uten å logge inn")
     
