@@ -21,10 +21,10 @@ $(function(){
 		$MFLDivs = $(".MFL");
 
 		//klasser for fagene som ligger inne i de fire skoleveien klassene
-		$skolestartButton = $("#skolestart");
-		$forsteButton = $("#forste");
-		$andreButton = $("#andre");
-		$morsmaalButton = $("#morsmaal");
+		$skolestartButton = $("#skolestartButton");
+		$forsteButton = $("#forsteButton");
+		$andreButton = $("#andreButton");
+		$morsmaalButton = $("#morsmaalButton");
 		
 
 		//Klasser for fagene som ligger inne i skoleveiens meny.
@@ -51,6 +51,7 @@ $(function(){
 				//hvis kanals er synlig(dette gjentaes på alle knappene 
 				//og burde kunne taes vekkmed sibling senere)
 
+
 				if($kanalSDivs.is(":visible")){
 					($kanalSDivs).slideUp();
 					$kanalSButton.css("-webkit-filter", "grayscale(0.9)");
@@ -63,14 +64,17 @@ $(function(){
 					($MFLDivs).slideUp();
 					$MFLButton.css("-webkit-filter", "grayscale(0.9)");
 				}
+
 			}else{
 			//hvis synlig
 			$barnehageDivs.slideUp();
 			$backgroundImage.css("-webkit-filter", "grayscale(0)");
 			$barnehageButton.siblings("div").css("-webkit-filter", "grayscale(0)");
-			}
+			
+		}
 		});
-
+		// lkdsfø sfl sldjfjsdflkjsdlkjflsdkøsdj lkf 
+		// asjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkfsadfsdsadlkfjsadf
 		// For klikk på skoleveien knapp
 		$skoleveienButton.click(function(){
 			if($skoleveienMenuDivs.is(":hidden")){
@@ -78,17 +82,17 @@ $(function(){
 			$backgroundImage.css("-webkit-filter", "grayscale(0.9)");
 			$skoleveienButton.css("-webkit-filter", "grayscale(0)");
 			$skoleveienButton.siblings("div").css("-webkit-filter", "grayscale(0.9)");
-				if($barnehageDivs.is(":visible")){
-					($barnehageDivs).slideUp();
+				if($forsteDivs.is(":visible")){
+					($forsteDivs).slideUp();
 					$barnehageButton.css("-webkit-filter", "grayscale(0.9)");
 				}
-				if($kanalSDivs.is(":visible")){
-					($kanalSDivs).slideUp();
+				if($andreDivs.is(":visible")){
+					($andreDivs).slideUp();
 					$kanalSButton.css("-webkit-filter", "grayscale(0.9)");
 				}
-				if($MFLDivs.is(":visible")){
-					($MFLDivs).slideUp();
-					$MFLButton.css("-webkit-filter", "grayscale(0.9)");
+				if($morsmaalDivs.is(":visible")){
+					($morsmaalDivs).slideUp();
+					$morsmaalButton.css("-webkit-filter", "grayscale(0.9)");
 				}
 			}else {
 			$skoleveienMenuDivs.slideUp();
@@ -96,14 +100,16 @@ $(function(){
 			$skoleveienButton.siblings("div").css("-webkit-filter", "grayscale(0)");
 			}
 		});
+		// sdøkfj sdafsøidføsdkføsdj-fjlsdkj fklsdjk jksdld
+		// dslkfjsldk følsk dløfk sdøl kosdk føoskodf opsd posdkfp
 
 		//Skoleveiens fag!!!!!!
-		$skoleveienButton.click(function(){
-			if($skoleveienMenuDivs.is(":hidden")){
-			$skoleveienMenuDivs.slideDown();
+		$skolestartButton.click(function(){
+			if($skolestartDivs.is(":hidden")){
+			$skolestartDivs.slideDown();
 			$backgroundImage.css("-webkit-filter", "grayscale(0.9)");
-			$skoleveienButton.css("-webkit-filter", "grayscale(0)");
-			$skoleveienButton.siblings("div").css("-webkit-filter", "grayscale(0.9)");
+			$skolestartButton.css("-webkit-filter", "grayscale(0)");
+			$skolestartButton.siblings("div").css("-webkit-filter", "grayscale(0.9)");
 				if($barnehageDivs.is(":visible")){
 					($barnehageDivs).slideUp();
 					$barnehageButton.css("-webkit-filter", "grayscale(0.9)");
@@ -117,9 +123,9 @@ $(function(){
 					$MFLButton.css("-webkit-filter", "grayscale(0.9)");
 				}
 			}else {
-			$skoleveienMenuDivs.slideUp();
+			$skolestartDivs.slideUp();
 			$backgroundImage.css("-webkit-filter", "grayscale(0)");
-			$skoleveienButton.siblings("div").css("-webkit-filter", "grayscale(0)");
+			$skolestartButton.siblings("div").css("-webkit-filter", "grayscale(0)");
 			}
 		});
 	
