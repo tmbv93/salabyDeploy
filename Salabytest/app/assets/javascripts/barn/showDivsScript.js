@@ -4,7 +4,6 @@ $(function(){
 
 	var $barnehageDivs, $kanalSDivs, $skoleveienMenuDivs, $MFLDivs;
 
-	var $menu
 
 	function setHTMLObjects(){
 		// Alle de fire første knappene
@@ -19,8 +18,7 @@ $(function(){
 		$kanalSDivs = $(".kanalS");
 		$MFLDivs = $(".MFL");
 
-		//menyen dekker alle de fire knappene
-		$menu = $(".menu");
+		
 
 		//Id til bakgrunsbildet
 		$backgroundImage = $("#background-image");
