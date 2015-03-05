@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:session][:password])
         #Login
         log_in(user)
-        redirect_to(user)
+        redirect_to static_pages_barn_forside_path
     else
       flash.now[:danger] = 'Ugylding kombinasjon av brukernavn/passord'
       render 'new'
