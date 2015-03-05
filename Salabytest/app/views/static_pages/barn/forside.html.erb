@@ -18,110 +18,19 @@
 
 <%= render 'shared/page_header' %>
 
-
-
 <div id="wrapper">
-  <!--!!!!!!!!!!!!!!MENY!!!!!!!!!!!!!!-->
-  <div class="row menu">
-    <div class="large-12 columns">
-      <div class="row">
-        <div class="large-3 medium-6 columns barnehageButton">
-          <div class="menu-option">
-            <img draggable="false" src="/assets/barn/menyer/barnehage.png" alt="barnehage meny">
-          </div>
-        </div>
-        <div class="large-3 medium-6 columns skoleveienButton">
-          <div class="menu-option">
-            <img draggable="false" src="/assets/barn/menyer/skoleveien.png" alt="skoleveien meny">
-          </div>
-        </div>
-        <div class="large-3 medium-6 columns kanalSButton">
-          <div class="menu-option">
-            <img draggable="false" src="/assets/barn/menyer/kanalS.png" alt="kanalS meny">
-          </div>
-        </div>
-        <div draggable="false" class="large-3 medium-6 columns MFLButton">
-          <div class="menu-option">
-            <img src="/assets/barn/menyer/MFL.png" alt="MFL meny">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--!!!!!!!!!!!!!!MENY SLUTT!!!!!!!!!!!!!!-->
+
+  <!--meny-->
+  <%= render 'meny' %>
 
   <!--!!!!!!!!!!!!!!!!MAIN CONTENT!!!!!!!!!!!!!!!!!!!!-->
 
-  <!--!!!!!!!!!!!!!!!!!BARNEHAGE FAG!!!!!!!!!!!!!!!!!!!!!!-->
-  <!-- mobil meny -->
-  <div id="barnehageButtonMobil" class="small-12 columns">
-    <div class="menu-option">
-      <img draggable="false" src="/assets/barn/menyer/barnehage.png" alt="barnehage meny">
-    </div>
-  </div>
-  <div class="row barnehage">
-    <div class="large-4 small-6 columns">
-      <div class="align-center">
-        <img draggable="false" src="/assets/barn/barnehage/biblioteket.png" alt="bibliotek fag">
-      </div>
-    </div>
-    <div class="large-4 small-6 columns">
-      <div class="align-center">
-        <img draggable="false" src="/assets/barn/barnehage/billehagen.png" alt="billehagen fag">
-      </div>
-    </div>
-    <div class="large-4 small-6 columns">
-      <div class="align-center">
-        <img draggable="false" src="/assets/barn/barnehage/musikkfilm.png" alt="mysikkfilm fag">
-      </div>
-    </div>
-    <div class="large-4 small-6 columns">
-      <div class="align-center">
-        <img draggable="false" src="/assets/barn/barnehage/TilDeVoksene.png" alt="til de voksene fag">
-      </div>
-    </div>
-    <div class="large-4 small-6 columns">
-      <div class="align-center">
-        <img draggable="false" src="/assets/barn/barnehage/trampoline.png" alt="trampoline fag">
-      </div>
-    </div>
-  </div>
-  <!--!!!!!!!!!!!!!!!!BARNEHAGE FAG SLUTT!!!!!!!!!!!!!!!!!!!!-->
+  <!--Barnehage fag-->
+  <%= render 'barnehageFag' %>
 
-  <!--!!!!!!!!!!!!!!!!SKOLEVEIEN MENY!!!!!!!!!!!!!!!!!!!!-->
-  <!-- mobil meny -->
-  <div id="skoleveienButtonMobil" class="small-12 columns">
-    <div class="menu-option">
-      <img draggable="false" src="/assets/barn/menyer/skoleveien.png" alt="skoleveien meny">
-    </div>
-  </div>
-  <div class="row menu" id="skoleveienMenu">
-    <div class="large-12 columns">
-      <div class="row">
-        <div id="forsteButton" class="large-3 medium-6 small-6 columns">
-          <div class="menu-option">
-            <img draggable="false" src="/assets/barn/menyer/forste.png" alt="1-2 klasse meny">
-          </div>
-        </div>
-        <div id="andreButton" class="large-3 medium-6 small-6 columns">
-          <div class="menu-option">
-            <img draggable="false" src="/assets/barn/menyer/andre.png" alt="3-4 klasse meny">
-          </div>
-        </div>
-        <div id="morsmaalButton" class="large-3 medium-6 small-6 columns">
-          <div class="menu-option">
-            <img draggable="false" src="/assets/barn/menyer/morsmaal.png" alt="morsmål meny">
-          </div>
-        </div>
-        <div id="skolestartButton" class="large-3 medium-6 small-6 columns">
-          <div class="menu-option">
-            <img draggable="false" src="/assets/barn/menyer/skolestart.png" alt="skolestart meny">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--!!!!!!!!!!!!!!!!SKOLEVEIEN MENY SLUTT!!!!!!!!!!!!!!!!!!!!-->
+  <!--Skoleveien meny-->
+  <%= render 'skoleveienMeny' %>
+ 
 
   <!--!!!!!!!!!!!!!!!!SKOLESTART FAG!!!!!!!!!!!!!!!!!!!!-->
   <div class="row skolestart">
@@ -260,6 +169,7 @@
       <img draggable="false" src="/assets/barn/menyer/kanalS.png" alt="kanalS meny">
     </div>
   </div>
+  <!-- mobil meny SLUTT!-->
   <div class="row kanalS">
     <div class="large-4 small-6 columns">
       <div class="align-center">
@@ -331,6 +241,7 @@
       <img draggable="false" src="/assets/barn/menyer/MFL.png" alt="MFL meny">
     </div>
   </div>
+  <!-- mobil meny SLUTT!-->
   <div class="row MFL">
     <div class="large-4 small-12 columns">
       <div class="align-center">
