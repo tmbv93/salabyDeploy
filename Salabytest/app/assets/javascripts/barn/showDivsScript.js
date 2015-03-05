@@ -4,6 +4,8 @@ $(function(){
 
 	var $barnehageDivs, $kanalSDivs, $skoleveienMenuDivs, $MFLDivs;
 
+	var $forste, $andre, $morsmål, $skolestart;
+
 
 	function setHTMLObjects(){
 		// Alle de fire første knappene
@@ -18,7 +20,18 @@ $(function(){
 		$kanalSDivs = $(".kanalS");
 		$MFLDivs = $(".MFL");
 
+		//klasser for fagene som ligger inne i de fire skoleveien klassene
+		$skolestartButton = $("#skolestart");
+		$forsteButton = $("#forste");
+		$andreButton = $("#andre");
+		$morsmaalButton = $("#morsmaal");
 		
+
+		//Klasser for fagene som ligger inne i skoleveiens meny.
+		$skolestartDivs = $(".skolestart");
+		$forsteDivs = $(".forste");
+		$andreDivs = $(".andre");
+		$morsmaalDivs = $(".morsmaal");
 
 		//Id til bakgrunsbildet
 		$backgroundImage = $("#background-image");
@@ -58,9 +71,33 @@ $(function(){
 			}
 		});
 
-		// HUSKE Å LEGG INN ANIMASJON FOR SKOLEVEIENS FAG OGSÅ!!!
-
 		// For klikk på skoleveien knapp
+		$skoleveienButton.click(function(){
+			if($skoleveienMenuDivs.is(":hidden")){
+			$skoleveienMenuDivs.slideDown();
+			$backgroundImage.css("-webkit-filter", "grayscale(0.9)");
+			$skoleveienButton.css("-webkit-filter", "grayscale(0)");
+			$skoleveienButton.siblings("div").css("-webkit-filter", "grayscale(0.9)");
+				if($barnehageDivs.is(":visible")){
+					($barnehageDivs).slideUp();
+					$barnehageButton.css("-webkit-filter", "grayscale(0.9)");
+				}
+				if($kanalSDivs.is(":visible")){
+					($kanalSDivs).slideUp();
+					$kanalSButton.css("-webkit-filter", "grayscale(0.9)");
+				}
+				if($MFLDivs.is(":visible")){
+					($MFLDivs).slideUp();
+					$MFLButton.css("-webkit-filter", "grayscale(0.9)");
+				}
+			}else {
+			$skoleveienMenuDivs.slideUp();
+			$backgroundImage.css("-webkit-filter", "grayscale(0)");
+			$skoleveienButton.siblings("div").css("-webkit-filter", "grayscale(0)");
+			}
+		});
+
+		//Skoleveiens fag!!!!!!
 		$skoleveienButton.click(function(){
 			if($skoleveienMenuDivs.is(":hidden")){
 			$skoleveienMenuDivs.slideDown();
