@@ -1,17 +1,100 @@
-<p id="notice"><%= notice %></p>
+<!doctype html>
+<html class="no-js" lang="en">
 
-<h1><%= @department.name %></h1>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salaby | Min Side</title>
+  <link rel="stylesheet" href="/assets/shared/userpageStyle.css" />
 
-  <% depmeme = DepartmentMember.find_by_department_id (@department.id)%>
+    
 
-     <% if depmeme %>
-        <% user = User.find_by_id(depmeme.user_id) %>
-        <p><strong>Lærer:</strong> <%= user.last_name %> <%= user.last_name %></p>
+</head>
 
-    <% else %>
-    <p>Ingen lærer</p>
+<body>
 
-    <%end%>
+<%= render 'shared/page_header' %>
 
-<%= link_to 'Edit', edit_department_path(@department) %> |
-<%= link_to 'Back', departments_path %>
+    
+<div id="wrapper">
+    <div class="row">
+        <div class="large-12 columns">
+            <div class="panel">
+                <div id="userInfo">
+                    <% if logged_in? %>
+                    <h1>Klasseside for <%= @department.name %></h1>                      
+                    <%= link_to 'Tilbake til min profil', user_path(current_user) %>
+                      <% depmeme = DepartmentMember.find_by_department_id (@department.id)%>
+                    <p id="notice"><%= notice %></p>
+
+                    <% if depmeme %>
+                        <% user = User.find_by_id(depmeme.user_id) %>
+                    <p><strong>Lærer: </strong> <%= user.last_name %> <%= user.last_name %></p>
+
+                    <% else %>
+                        <p>Ingen lærer</p>
+
+                        <%end%>
+                    </div>
+                </div>
+                <div class="row">
+                    <% if  %>
+                    <div class="large-8 columns">
+                    <div class="panel">
+                    <div id="classesArea">
+
+                      <!--KLASSER-->
+                      <h3>Lekser</h3>
+
+                        
+                      <!--Linke til Å LEGGE TIL lekser her-->
+                        
+                      <% if current_user.class_admin? %>
+                        <%=link_to "Legg til lekse", new_homework_path %> | 
+                        <%= link_to 'Rediger klasse', edit_department_path(@department) %>
+                        <% end %>
+
+                    </div>
+                  </div>
+                </div>
+                    <!--LEKSER-->
+                    <% else %>
+                    <div class="large-8 columns">
+                            <div class="panel">
+                                <div id="homeworkArea">    
+                                    <h3>Lekser</h3>
+                                  <!--Linke til å VISE LEKSER FOR KLASSEN HER-->
+                                </div>
+                        </div>
+                    </div>
+                    <% end %>
+                    <!--MEDLEMMER-->
+                    <div class="large-4 columns">
+                        <div class="panel">
+                            <div id="favorites">  
+                                <h3>Elever</h3>
+                                <ul>
+                                  <% #MEDLEMMER renderes her %>
+                                    <li>Håkon Wibergh</li>
+                                    <li>Alexander </li> 
+                                    <li>Davinder </li> 
+                                    <li>Vibeke </li> 
+                                    <li>Andreas </li> 
+                                    <li>Tomas </li> 
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                  <%end%>
+
+<%= render 'shared/page_footer' %>
+
+
+
+</body>
+
+</html>

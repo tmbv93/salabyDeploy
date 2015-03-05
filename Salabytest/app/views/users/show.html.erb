@@ -21,17 +21,31 @@
 <div id="wrapper">
     <div class="row">
         <div class="large-12 columns">
-            <div class="panel">
+                <div class="panel">
                 <div id="userInfo">
                     <% if logged_in? %>
-                    <h1><%= @user.first_name %> <%= @user.last_name %></h1>
-
-                        <p><%= @user.description %></p>
+                    <h1>Profilside for <%= @user.username %></h1>
+                    <p>
+                    <strong>Navn: </strong><%= @user.first_name %> <%= @user.last_name %>
+                    </p>
+                    <p><strong>Klasse: </strong>
+                    <% if departments = get_departments(@user) %>
+                    <% departments.each do |dep|%>
+                    <%= link_to dep.name, department_path(dep.id)%>
+                    <% end %>
+                        
+                    <% end %>
+                    </p>
+                    
+                    <strong>Beskrivelse: </strong>
+                    <p><%= @user.description %></p>
                          <% if is_me? @user %>
-                        <%= link_to 'Rediger profil', edit_user_path(@user) %>
+                            <%= link_to 'Rediger profil', edit_user_path(@user) %>
                           <% end %>
                     </div>
                 </div>
+            </div>
+        </div>
                 <div class="row">
                     <% if current_user.class_admin? %>
                     <div class="large-8 columns">
@@ -42,20 +56,15 @@
                       <h3>Mine klasser</h3>
 
                       <% if departments = get_departments(@user) %>
-
-                          <ul>
-
-                          <% departments.each do |dep|%>
-                         <li><%= link_to dep.name, department_path(dep.id)%></li>
-
-                          <% end %>
-
-                             </ul>
-                         <% end %>
-
+                        <ul><% departments.each do |dep|%>
+                            <li><%= link_to dep.name, department_path(dep.id)%></li>
+                            <% end %>
+                        </ul>
+                            <% end %>
                       <% if is_me? (@user) %>
+                        
                       <%=link_to "Opprett ny klasse", new_department_path %>
-                          <% end %>
+                            <% end %>
 
                     </div>
                   </div>
@@ -77,9 +86,11 @@
                             <div id="favorites">  
                                 <h3>Favoritter</h3>
                                 <ul>
-                                  <% #Favoritter renderes her %>
+                                  <!--RENDER FAVORITT FORM HER-->
                                     <li>RLE</li>
                                     <li>NORSK</li>
+                                    <li>SAMFUNN</li>
+                                    <li>RLE -> HINDUISME</li>
                                 </ul>
                             </div>
                         </div>
