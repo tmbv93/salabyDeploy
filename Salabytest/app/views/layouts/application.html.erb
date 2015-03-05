@@ -6,8 +6,8 @@
 
     <title><%= content_for?(:title) ? yield(:title) : "Salaby.no | En læringsportal" %></title>
 
-    <%= stylesheet_link_tag    "application" %>
-    <%= javascript_include_tag "vendor/modernizr" %>
+    <%= stylesheet_link_tag    "application", debug: :false %>
+    <%= javascript_include_tag "vendor/modernizr", debug: :false %>
     <%= csrf_meta_tags %>
     <%= favicon_link_tag 'favicon.ico' %>
   </head>
