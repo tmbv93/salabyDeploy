@@ -127,11 +127,12 @@ body {
     /*display: none;*/
 }
 #test{
-    margin-bottom: 100px;
+    min-height: 100%;
 }
 
 .test{
-    margin-bottom: 25px;
+    min-height: 100%;
+    margin-bottom: 50px;
 }
 /*HINDUISME*/
 
@@ -210,4 +211,6 @@ max-width: 69.5rem;
     background-color: #f2f2f2;
 }
 
-
+#wrapper {
+    max-height: 100%;
+}

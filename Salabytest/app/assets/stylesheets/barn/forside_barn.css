@@ -82,10 +82,16 @@ body {
 
 
 #background-image{
+<<<<<<< HEAD
   position: fixed;
   top: 0;
   left: 0;
 
+=======
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+>>>>>>> origin/master
   min-width: 100em;
   min-height: 100%;
 }
@@ -170,10 +176,13 @@ body {
 /*---------Footer SLUTT!!-----------*/
 
 
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> origin/master
 /*!!!!!!!!!!!!STYLE FOR BACK TO TOP BTN!!!!!!!!!!!*/
 
 .cd-top {
