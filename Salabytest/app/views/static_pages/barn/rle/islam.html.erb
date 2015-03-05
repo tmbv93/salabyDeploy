@@ -1,2 +1,130 @@
-<h1>StaticPages::Barn::Rle#islam</h1>
-<p>Find me in app/views/static_pages/barn/rle/islam.html.erb</p>
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Islam</title>
+  <link rel="stylesheet" href="/assets/barn/religion.css" />
+  <style>
+        body {
+          background: url("/assets/barn/islam/islambkg.jpg") no-repeat;
+          background-attachment: fixed;
+          background-position: center bottom;
+          background-size: cover;
+          background-color: rgba(0,163,204, 0.3);
+      }
+  </style>
+</head>
+
+<body>
+
+<!--HEADER-->
+<%= render 'shared/page_header' %>
+<!--HEADER END-->
+
+<section class="test">
+  <div class="row" id="mainMenu">
+    <div class="large-3 medium-6 small-6 columns">
+      <img src="/assets/barn/RLE/logo_liten.png" draggable="false" alt="logo">
+    </div>
+
+      <div class="large-3 medium-6 small-6 columns">
+        <a href="./rle.html"><img id="backArrow" src="/assets/barn/arrowback.png" draggable="false" alt="Pil tilbake"></a>
+      </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <h1 class="fagh">Islam</h1>
+    </div>
+  </div>
+
+  <div class="test">    
+
+  <div class="row">
+      <div class="large-3 small-6 medium-3 columns">
+        <div class="align-center bilde-hover">
+            <img src="/assets/barn/islam/fbonn.png" draggable="false" alt="Forberede bønn film">
+        </div>
+      </div>
+
+      <div class="small-3">
+        <div class="align-center bilde-hover"></div>
+      </div>
+
+      <div class="large-3 small-6 medium-3 columns">
+        <div class="align-center bilde-hover"> 
+           <img src="/assets/barn/islam/bonn.png" draggable="false" alt="Bønn film">
+        </div>
+      </div>
+
+      <div class="large-3 small-6 medium-3 columns">
+        <div class="align-center bilde-hover">
+            <img src="/assets/barn/islam/bonnest.png" draggable="false" alt="Bønnestillinger film">
+        </div>
+      </div>
+
+      <div class="large-3 small-6 medium-3 columns">
+        <div class="align-center bilde-hover">
+            <img src="/assets/barn/islam/bonnetelt.png" draggable="false" alt="Bønnetelt film">
+        </div>
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="large-3 small-6 medium-3 columns">
+        <div class="align-center bilde-hover">
+            <img src="/assets/barn/islam/mihrab.png" draggable="false" alt="Mihrab film">
+        </div>
+      </div>
+
+      <div class="large-3 small-6 medium-3 columns">
+        <div class="align-center bilde-hover">
+            <img src="/assets/barn/islam/minraet.png" draggable="false" alt="Minraet film">
+        </div>
+      </div>
+
+      <div class="large-3 small-6 medium-3 columns">
+        <div class="align-center bilde-hover">
+            <img src="/assets/barn/islam/kalligrafi.png" draggable="false" alt="Kalligrafi film">
+        </div>
+      </div>
+
+      <div class="large-3 small-6 medium-3 columns">
+        <div class="align-center bilde-hover">
+            <img src="/assets/barn/islam/kvinnedelen.png" draggable="false" alt="Kvinnedelen film">
+        </div>
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="large-6 small-6 medium-5 columns">
+        <div class="align-center bilde-hover">
+            <img src="/assets/barn/islam/film.png" draggable="false" alt="Film oppgaver">
+        </div>
+      </div>
+
+      <div class="large-6 small-6 medium-5 columns">
+        <div class="align-center bilde-hover">
+            <img src="/assets/barn/islam/tegn.png" draggable="false" alt="Film med tegnspråk">
+        </div>
+      </div>
+  </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+
+<%= render 'shared/page_footer' %>
+
+<!-- FOOTER SLUTT -->
+
+
+<script>
+    $(document).foundation();
+</script>
+</body>
+
+</html>
