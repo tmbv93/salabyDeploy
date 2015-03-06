@@ -94,10 +94,6 @@ body {
     min-height: 100%;
 }
 
-.row{
-  min-width: 70em;
-}
-
 .align-center{
     margin-bottom: 15px;
     text-align: center;
