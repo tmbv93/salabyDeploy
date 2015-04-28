@@ -53,7 +53,7 @@ $(function(){
                                         ($MFLDivs).slideUp();
                                         $MFLButton.addClass("grey");
                                 }
-                                $menu.animate({"margin-top": "-60px"}, 100);
+                                $menu.animate({"margin-top": "-50px"}, 100);
                         }else{
                         //hvis synlig
                         $menu.animate({"margin-top": "0"}, 100);
@@ -88,7 +88,7 @@ $(function(){
                                         $MFLButton.addClass("grey");
                                 }
                                 //flytter menyen opp
-                                $menu.animate({"margin-top": "-60px"}, 100);
+                                $menu.animate({"margin-top": "-50px"}, 100);
                         }else {
                         //hvis synlig
                         $menu.animate({"margin-top": "0"}, 100);
@@ -120,7 +120,7 @@ $(function(){
                                         $MFLButton.addClass("grey");
                                 }
                                  //flytter menyen opp
-                                $menu.animate({"margin-top": "-60px"}, 100);
+                                $menu.animate({"margin-top": "-50px"}, 100);
                         }else{
                         //hvis synlig
                         $menu.animate({"margin-top": "0"}, 100);
@@ -151,7 +151,7 @@ $(function(){
                                         $kanalSButton.addClass("grey");
                                 }
                                 //flytter menyen opp
-                                $menu.animate({"margin-top": "-60px"}, 100);
+                                $menu.animate({"margin-top": "-50px"}, 100);
                         }else{
                         //hvis synlig
                         $menu.animate({"margin-top": "0"}, 100);
