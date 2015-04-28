@@ -29,6 +29,10 @@
         margin-top: 80px;
     }
 
+    .kanalS,.mfl,.menu, .barnehage {
+        margin-bottom: 0;
+    }
+
     .breadcrumbs{
         width: 970px;
         margin-left: 0px;
