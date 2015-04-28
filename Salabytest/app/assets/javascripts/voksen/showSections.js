@@ -44,6 +44,8 @@ $(function () {
         
         $samfunnSection = $("#samfunnAco");
         $samfunnBtn = $("#samfunnBtn"); //Button
+        
+        $isThisPressed = false;
     };
 
     
@@ -88,26 +90,25 @@ $(function () {
         //STORES CURRENT ACCORDION
         //IN THIS VARIABLE
         
-        
-        
             if(para1.is(":hidden")) {
                 slideDown();
-                
-                
-                
+                -
                 para1.slideDown().dequeue().fadeTo(500,1);
                 $rolledDown = para1;
                 para2.css("color", "red");
                 
+                console.log("Rolleddown" + para1);
+                
                 $pressedBtn = para2.selector;
-                $pressedBtn.siblings("div").css("color", "black");
+                
                 
                 
                 //Sibling av pressedBtn skal bli black.
-                
-                
+                console.log("BEFORE " + $isThisPressed);
                 console.log($pressedBtn);
                 $isThisPressed = true;
+                
+                console.log("AFTER " + $isThisPressed);
                 
             }
              else {

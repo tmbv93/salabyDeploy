@@ -1,22 +1,8 @@
-<!doctype html>
-<html class="no-js" lang="en">
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Forside Barn</title>
-  <link rel="stylesheet" href="/assets/shared/footer.css" />
-  <link rel="stylesheet" href="/assets/shared/header.css" />
-  <link rel="stylesheet" href="/assets/voksen/voksen_shared.css" />
-  <link rel="stylesheet" href="/assets/voksen/kompetanse.css" />
-
-</head>
-
-<body>
 <%= render 'shared/page_header_info' %>
 
 
-<div id="wrapper">
+<div id="wrapperVoksen">
   <!--SLIDER-->
   <div class="row">
     <div class="large-12 columns">
@@ -40,7 +26,6 @@
   </div>
   <!--OMRÅDE FOR ARTIKLER-->
   <div class="row">
-
     <div class="large-12 columns">
       <h1>Bestilling</h1>
     </div>
@@ -49,11 +34,11 @@
     <div class="row">
       <div class="large-12 columns">
         <label>Velg type</label>
-        <input type="radio" name="kommune" value="Kommune" id="kommune">
-        <label for="kommune">Kommune</label>
-        <input type="radio" name="skole" value="Skole" id="skole">
-        <label for="skole">Skole</label>
-        <input type="radio" name="barnehage" value="Barnehagen" id="barnehage">
+            <input type="radio" name="kommune" value="Kommune" id="kommune">
+            <label for="kommune">Kommune</label>
+            <input type="radio" name="skole" value="Skole" id="skole">
+            <label for="skole">Skole</label>
+            <input type="radio" name="barnehage" value="Barnehagen" id="barnehage">
         <label for="barnehage">Barnehage</label>
       </div>
       <div class="row">
@@ -120,7 +105,3 @@
 
     <%= render 'shared/page_footer' %>
 
-
-</body>
-
-</html>
