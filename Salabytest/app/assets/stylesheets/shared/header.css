@@ -1,14 +1,13 @@
 .top-bar {
-    height: 6em;
-    background-color: #f2f2f2;
+    height: 3.5em;
+    background-color: #FFFFFF;
     border-bottom: solid thin #dcdcdc;
     color: #333;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 .title-area {
-    height: 6em;
-    border-bottom: solid thin #dcdcdc;
+    height: 3.5em;
 }
 
 .top-bar-section ul {
@@ -18,15 +17,17 @@
 
 .top-bar-section ul li a {
     color: #333;
-    background-color: #f2f2f2 !important;
+    background-color: #FFFFFF !important;
 }
 
 .top-bar-section ul li a:hover {
     background-color: #333 !important;
 }
-
+.top-bar img {
+max-height: 55px;
+}
 .top-bar.expanded .title-area {
-    background-color: #f2f2f2;
+    background-color: #FFFFFF;
 }
 
 .top-bar .toggle-topbar.menu-icon a,
@@ -48,5 +49,12 @@ box-shadow: 0 0px 0 1px grey, 0 7px 0 1px grey, 0 14px 0 1px grey;
     color: black;
 }
 
+/*HENTER FRA FOUNDATION CSS*/
 
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+    padding: 0 15px;
+    line-height: 55px;
+    color: white;
+    background: #008cba;
+  }
 
