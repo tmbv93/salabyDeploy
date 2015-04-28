@@ -81,6 +81,9 @@ body {
     overflow-x: hidden;
 }
 
+img {
+-webkit-transition:-webkit-filter 0.2s ease-in-out;        
+}
 
 #background-image{
   position: fixed;

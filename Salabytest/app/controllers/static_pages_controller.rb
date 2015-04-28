@@ -8,4 +8,7 @@ class StaticPagesController < ApplicationController
   def info_pages_bestilling_path
   end
 
+  def admin
+  end
+
 end

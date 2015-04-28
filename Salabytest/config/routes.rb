@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'static_pages/admin'
+  get 'static_pages/info/forside'
+
   resources :homeworks
 
   namespace :static_pages do
