@@ -82,8 +82,19 @@ body {
 }
 
 img {
--webkit-transition:-webkit-filter 0.2s ease-in-out;        
+    transition:-webkit-filter 0.2s ease-in-out;
+    -o-transition:-webkit-filter 0.2s ease-in-out; 
+    -moz-transition:-webkit-filter 0.2s ease-in-out; 
+    -webkit-transition:-webkit-filter 0.2s ease-in-out;        
 }
+
+.grey{
+    filter: grayscale(1);
+    -o-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
+
 
 #background-image{
   position: fixed;
