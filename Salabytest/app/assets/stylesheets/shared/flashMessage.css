@@ -1,0 +1,13 @@
+div .flash-message-box{
+
+    background-color: rgba(200,200,200,0.9);
+    border: solid 2px rgba(220,50,50, 0.7);
+    text-align: center;
+}
+
+strong .flash-message-text{
+
+    color: white;
+    font-family: helvetica, verdana, arial, sans-serif;
+
+}

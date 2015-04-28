@@ -1,5 +1,7 @@
 
     <%= form_for(:session, url: login_path) do |f| %>
+
+        <div class="flash-message-box"><strong class="flash-message-text"><%= flash[:alert] %></strong></div>
     
         <label>Brukernavn</label>
         <%= f.text_field :username, class: 'form-control', placeholder: 'Brukernavn' %>

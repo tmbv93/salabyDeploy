@@ -10,13 +10,13 @@ class SessionsController < ApplicationController
         log_in(user)
         redirect_to static_pages_barn_forside_path
     else
-      flash.now[:danger] = 'Ugylding kombinasjon av brukernavn/passord'
-      render 'new'
+      flash[:alert] = '- Ugyldig brukernavn og/eller passord!'
+      render 'static_pages/index'
     end
   end
 
   def destroy
     log_out
     redirect_to root_path
-    end
+  end
 end
