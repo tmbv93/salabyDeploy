@@ -58,7 +58,7 @@ body {
 }
 
 
-input[type="submit"]{
+#childSection input[type="submit"]{
     font-family: slapstick;
     font-size: 20pt;
 }
