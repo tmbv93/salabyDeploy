@@ -2,8 +2,8 @@
   <div class="large-12 medium-12 small-12 columns">
     <%= form_for(@user) do |f| %>
         <%= render 'shared/error_messages' %>
-        <label><strong>Navn: </strong></label>
-         <p><%= f.label @user.first_name %> <%= f.label @user.last_name %> | <%= f.label @user.username %> </p>
+        <p><strong>Navn: </strong>
+         <%= @user.first_name %> <%= @user.last_name %> | <strong>Brukernavn : </strong><%= @user.username %> </p>
     </div>
     </div>
     <div class="row">
@@ -24,7 +24,7 @@
     </div>
       <div class="row">
             <div class="large-6 medium-12 small-12 columns right ">
-                <%= f.submit "Lagre endringer", class: "button center" %>
+                <%= f.submit "Lagre endringer", class: "button right " %>
           </div>
         </div>
     <% end %>
