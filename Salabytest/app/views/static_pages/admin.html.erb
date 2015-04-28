@@ -1,0 +1,19 @@
+<%= render 'shared/page_header' %>
+
+<h1>Admin-innstillinger</h1>
+
+<div class="large-6 medium-6 small-6 columns">
+    <h4>Lenker</h4>
+    <ul>
+        <li><%= link_to 'forside', root_path %></li>
+        <li><%= link_to 'info', static_pages_info_forside_path %></li>
+        <li><%= link_to 'brukerliste', users_path %></li>
+        <li><%= link_to 'skoleliste', schools_path %></li>
+    </ul>
+</div>
+
+<div class="large-6 medium-6 small-6 columns">
+  <h4>Lag bruker</h4>
+</div>
+
+<%= render 'shared/page_footer' %>
