@@ -26,8 +26,14 @@
     }
 
     #footer{
-    margin-top: 80px;
-}
+        margin-top: 80px;
+    }
 
+    .breadcrumbs{
+        width: 970px;
+        margin-left: 0px;
+        background-color: rgb(244, 244, 244);
+        opacity: 0.8;
+}
     
   }

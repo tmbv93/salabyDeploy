@@ -23,6 +23,22 @@
     position: relative;
 }
 /*---------Headerområde SLUTT!!---------*/
+
+/*-------BREADCRUMBS---------*/
+
+.breadcrumbs{
+    width: 970px;
+    margin-left: 150px;
+    background-color: rgb(244, 244, 244);
+    opacity: 0.8;
+}
+
+
+
+/*-------BREADCRUMBS SLUTT!---------*/
+
+
+
 /*---------Hovedområde!!---------*/
 /*----------Hovedmeny!!-----------*/
 
