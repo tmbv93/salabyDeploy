@@ -4,7 +4,13 @@ class SessionsController < ApplicationController
 
   def create
 
+    if params[:session][:username] == ""
+      redirect_to static_pages_barn_forside_path
+    else
+
     user = User.find_by(username: params[:session][:username])
+
+
     if user && user.authenticate(params[:session][:password])
         #Login
         log_in(user)
@@ -18,5 +24,6 @@ class SessionsController < ApplicationController
   def destroy
     log_out
     redirect_to root_path
-  end
+      end
+    end
 end

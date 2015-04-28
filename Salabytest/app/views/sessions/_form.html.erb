@@ -4,12 +4,12 @@
         <div class="flash-message-box"><strong class="flash-message-text"><%= flash[:alert] %></strong></div>
     
         <label>Brukernavn</label>
-        <%= f.text_field :username, class: 'form-control', placeholder: 'Brukernavn' %>
+        <%= f.text_field :username, class: 'form-control', id: 'usernameEntryField', placeholder: 'Brukernavn' %>
 
         <label>Passord</label>
         <%= f.password_field :password, class: 'form-control', placeholder: 'Passord' %>
 
-        <%= f.submit "Logg in", class: "btn btn-primary", class: 'button expand' %>
+        <%= f.submit "TIL BARNESIDEN", class: "btn btn-primary button expand", id: 'mainLoginButton' %>
     <% end %>
 
     <p>Ny bruker? <%= link_to "Lag en konto!", signup_path %></p>
