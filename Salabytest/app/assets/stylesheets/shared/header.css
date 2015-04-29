@@ -1,9 +1,10 @@
 .top-bar {
-    height: 3.5em;
+
     background-color: #FFFFFF;
     border-bottom: solid thin #dcdcdc;
     color: #333;
     margin-bottom: 1em;
+    height: 53px;
 }
 
 .title-area {
