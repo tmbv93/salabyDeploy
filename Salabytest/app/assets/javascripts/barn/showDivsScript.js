@@ -33,7 +33,7 @@ $(function(){
                         //hvis barnehage er gjemt
                         if($barnehageDivs.is(":hidden")){
                                 
-                                $barnehageDivs.slideDown();
+                                $barnehageDivs.slideDown(500);
                                 $backgroundImage.addClass("grey");
                                 $barnehageButton.removeClass("grey");
                                 $barnehageButton.siblings("div").addClass("grey");
@@ -42,22 +42,22 @@ $(function(){
                                 //og burde kunne taes vekk med sibling senere)
  
                                 if($kanalSDivs.is(":visible")){
-                                        ($kanalSDivs).slideUp();
+                                        ($kanalSDivs).slideUp(500);
                                         $kanalSButton.addClass("grey");
                                 }
                                 if($skoleveienMenuDivs.is(":visible")){
-                                        ($skoleveienMenuDivs).slideUp();
+                                        ($skoleveienMenuDivs).slideUp(500);
                                         $skoleveienButton.addClass("grey");
                                 }
                                 if($MFLDivs.is(":visible")){
-                                        ($MFLDivs).slideUp();
+                                        ($MFLDivs).slideUp(500);
                                         $MFLButton.addClass("grey");
                                 }
-                                $menu.animate({"margin-top": "50px"}, 100);
+                                $menu.animate({"margin-top": "50px"}, 500);
                         }else{
                         //hvis synlig
-                        $menu.animate({"margin-top": "100px"}, 100);
-                        $barnehageDivs.slideUp();
+                        $menu.animate({"margin-top": "100px"}, 500);
+                        $barnehageDivs.slideUp(500);
                         $backgroundImage.removeClass("grey");
                         $barnehageButton.siblings("div").removeClass("grey");
                         }
@@ -70,29 +70,29 @@ $(function(){
                 $skoleveienButton.click(function(){
                         if($skoleveienMenuDivs.is(":hidden")){
                                 
-                                $skoleveienMenuDivs.slideDown();
+                                $skoleveienMenuDivs.slideDown(500);
                                 $backgroundImage.addClass("grey");
                                 $skoleveienButton.removeClass("grey");
                                 $skoleveienButton.siblings("div").addClass("grey");
                                 
                                 if($barnehageDivs.is(":visible")){
-                                        ($barnehageDivs).slideUp();
+                                        ($barnehageDivs).slideUp(500);
                                         $barnehageButton.addClass("grey");
                                 }
                                 if($kanalSDivs.is(":visible")){
-                                        ($kanalSDivs).slideUp();
+                                        ($kanalSDivs).slideUp(500);
                                         $kanalSButton.addClass("grey");
                                 }
                                 if($MFLDivs.is(":visible")){
-                                        ($MFLDivs).slideUp();
+                                        ($MFLDivs).slideUp(500);
                                         $MFLButton.addClass("grey");
                                 }
                                 //flytter menyen opp
-                                $menu.animate({"margin-top": "50px"}, 100);
+                                $menu.animate({"margin-top": "50px"}, 500);
                         }else {
                         //hvis synlig
-                        $menu.animate({"margin-top": "100px"}, 100);
-                        $skoleveienMenuDivs.slideUp();
+                        $menu.animate({"margin-top": "100px"}, 500);
+                        $skoleveienMenuDivs.slideUp(500);
                         $backgroundImage.removeClass("grey");
                         $skoleveienButton.siblings("div").removeClass("grey");
                         }
@@ -102,29 +102,29 @@ $(function(){
                 $kanalSButton.click(function(){
                         if($kanalSDivs.is(":hidden")){
 
-                                $kanalSDivs.slideDown();
+                                $kanalSDivs.slideDown(500);
                                 $backgroundImage.addClass("grey");
                                 $kanalSButton.removeClass("grey");
                                 $kanalSButton.siblings("div").addClass("grey");
                                 
                                 if($barnehageDivs.is(":visible")){
-                                        ($barnehageDivs).slideUp();
+                                        ($barnehageDivs).slideUp(500);
                                         $barnehageButton.addClass("grey");
                                 }
                                 if($skoleveienMenuDivs.is(":visible")){
-                                        ($skoleveienMenuDivs).slideUp();
+                                        ($skoleveienMenuDivs).slideUp(500);
                                         $skoleveienButton.addClass("grey");
                                 }
                                 if($MFLDivs.is(":visible")){
-                                        ($MFLDivs).slideUp();
+                                        ($MFLDivs).slideUp(500);
                                         $MFLButton.addClass("grey");
                                 }
                                  //flytter menyen opp
-                                $menu.animate({"margin-top": "50px"}, 100);
+                                $menu.animate({"margin-top": "50px"}, 500);
                         }else{
                         //hvis synlig
-                        $menu.animate({"margin-top": "100px"}, 100);
-                        $kanalSDivs.slideUp();
+                        $menu.animate({"margin-top": "100px"}, 500);
+                        $kanalSDivs.slideUp(500);
                         $backgroundImage.removeClass("grey");
                         $kanalSButton.siblings("div").removeClass("grey");
                         }
@@ -134,7 +134,7 @@ $(function(){
                 $MFLButton.click(function(){
                         if($MFLDivs.is(":hidden")){
                                 
-                                $MFLDivs.slideDown();
+                                $MFLDivs.slideDown(500);
                                 $backgroundImage.addClass("grey");
                                 $MFLButton.removeClass("grey");
                                 $MFLButton.siblings("div").addClass("grey");
@@ -151,10 +151,10 @@ $(function(){
                                         $kanalSButton.addClass("grey");
                                 }
                                 //flytter menyen opp
-                                $menu.animate({"margin-top": "50px"}, 100);
+                                $menu.animate({"margin-top": "50px"}, 500);
                         }else{
                         //hvis synlig
-                        $menu.animate({"margin-top": "100px"}, 100);
+                        $menu.animate({"margin-top": "100px"}, 500);
                         $MFLDivs.slideUp();
                         $backgroundImage.removeClass("grey");
                         $MFLButton.siblings("div").removeClass("grey");

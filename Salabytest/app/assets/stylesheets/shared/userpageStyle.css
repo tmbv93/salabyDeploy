@@ -10,12 +10,12 @@
     display: none;
 }
 
-h1 {
+#UserWrapper h1 {
     color: red;
 }
 
 
-textArea {
+#UserWrapper textArea {
     resize: none;
     height: 200px;
 }
