@@ -1,6 +1,5 @@
 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>  
 <script>
   $(function() {
     $( "#accordion" ).accordion();
@@ -10,36 +9,10 @@
   <!--SLIDER-->
   <div class="row">
     <div class="large-12 columns">
-<aside id="promoBanner">
-        <div class="large-8 small-12 columns">
-          <img src="/assets/voksen/nyheter/historienOmEuropa.png" alt="Bilde av historien om europa">
-        </div>
-        <div class="large-4 small-12 columns">
-          <div id="promobannerTextBox">
-            <h3>HISTORIEN OM EUROPA</h3>
-            <p>NYHET: Helt ferske temasider om
-              romertiden, middelalderen,
-              renessansen og opplysningstiden
-              er nå tilgjengelig under
-              «Historien om Europa» for 5.-7. trinn.</p>
-          </div>
-        </div>
-
-      </aside>
+        <%= render 'static_pages/info/page_information_banner.html.erb' %>
     </div>
   </div>
-<!--  <div class="row">
-    <div class="large-12 columns">
-      <nav class="breadcrumbs">
-        <a class="current" href="informasjon">Informasjon</a>
-        <a class="unavailable" href="omSalaby">Om salaby</a>
-        <a class="unavailable" href="omSkoleveien">Om Skolevein 1-2 Trinn</a>
-        <a class="unavailable" href="omByparken">Om Byparken 3-5 Trinn</a>
-        <a class="unavailable" href="omKanalS">Om KanalS 5-7 Trinn</a>
-      </nav>
-    </div>
-  </div>-->
-  <!--OMRÅDE FOR ARTIKLER-->
+
   <div class="row">
     <div id="articleOmrade">
     <div class="large-2 small-12 columns">
