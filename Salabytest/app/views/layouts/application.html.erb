@@ -1,4 +1,3 @@
-
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -12,13 +11,13 @@
     <%= favicon_link_tag 'favicon.ico' %>
   </head>
 
-  <!--</header><#%= render 'shared/page_header' %></header> -->
+  <header><%= render 'shared/page_header' unless @exclude_header %></header>
 
   <body>
     <%= yield %>
     <%= javascript_include_tag "application" %>
   </body>
 
-<!--<footer><#%= render 'shared/page_footer' %></footer> -->
+  <%= render 'shared/page_footer' unless @exclude_footer %>
 
 </html>
