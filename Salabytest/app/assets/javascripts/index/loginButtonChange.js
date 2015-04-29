@@ -12,7 +12,7 @@ $( document ).ready(function(){
     continueText = button.value;
 
     usernameField = document.getElementById('usernameEntryField');
-    usernameField.setAttribute('onkeydown', 'changeLoginButton(usernameField.value)');
+    usernameField.setAttribute('onkeyup', 'changeLoginButton(usernameField.value)');
     usernameField.setAttribute('onchange', 'changeLoginButton(usernameField.value)');
 
     changeLoginButton(usernameField.value);
