@@ -13,6 +13,10 @@
     	display: none;
     }*/
 
+    #barnehageButtonMobil{
+        margin-top: 50px;
+    }
+
     .menu-option img{
     	max-width: 200px;
     }

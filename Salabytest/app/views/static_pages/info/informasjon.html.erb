@@ -1,4 +1,11 @@
-
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>  
+<script>
+  $(function() {
+    $( "#accordion" ).accordion();
+  });
+  </script>
 <div id="wrapperVoksen">
   <!--SLIDER-->
   <div class="row">
@@ -21,7 +28,7 @@
       </aside>
     </div>
   </div>
-  <div class="row">
+<!--  <div class="row">
     <div class="large-12 columns">
       <nav class="breadcrumbs">
         <a class="current" href="informasjon">Informasjon</a>
@@ -31,46 +38,18 @@
         <a class="unavailable" href="omKanalS">Om KanalS 5-7 Trinn</a>
       </nav>
     </div>
-  </div>
+  </div>-->
   <!--OMRÅDE FOR ARTIKLER-->
   <div class="row">
     <div id="articleOmrade">
-      <div class="large-2 small-12 columns">
+    <div class="large-2 small-12 columns">
           
           <%= render 'shared/page_sidebar_info.html.erb' %>
       </div>
       <!--KODE BLOKK FOR HVER ARTIKKEL-->
       <div class="large-10 small-12 columns">
-          
           <div id="accordion">
-  <h3>Section 1</h3>
-  <div>
-    <p>
-    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-    </p>
-  </div>
-  <h3>Section 2</h3>
-  <div>
-    <p>
-    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
-    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
-    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
-    suscipit faucibus urna.
-    </p>
-  </div>
-          
-<!--        <article>
-          <h3>INFORMASJON OM INFORMASJON SIDEN</h3>
-          <p>Salaby er et digitalt læremiddel i alle fag for 1.-7. trinn og for alle aldergrupper i barnehagen.
-
-Salaby inneholder mer enn 4000 læringselementer fordelt på de ulike fagene. Rammen rundt innholdet er byen Salaby og karakterene som bor der. Alt innhold er utviklet av norske pedagoger og fagfolk. Salaby er lisensbasert.
-
-Salaby har fire hovedportaler for 1. - 4. trinn
-</p>
-        </article>-->
+              <%= render 'shared/page_information_accordion.html.erb' %>
       </div>
       <!--KODE BLOKK FOR HVER ARTIKKEL SLUTT-->
 
