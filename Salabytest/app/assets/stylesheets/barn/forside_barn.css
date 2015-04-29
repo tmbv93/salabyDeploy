@@ -1,5 +1,4 @@
 
-
 /*Gjemmer elementer som ikke skal vises før de skal :P*/
 /*HIDE ELEMENTS*/
 .kanalS, #barnehageButtonMobil, #skoleveienButtonMobil,
@@ -37,10 +36,9 @@
     transform: scale(1.1,1.1);
     -ms-transform: scale(1.1,1.1); /* IE 9 */
     -webkit-transform: scale(1.1,1.1); /* Chrome, Safari, Opera */
-
 }
 
-.menu{
+.barn-meny{
     margin-top: 100px;
     margin-bottom: 10px;
 
