@@ -87,22 +87,6 @@ Rails.application.routes.draw do
   end
 
   namespace :static_pages do
-  get 'info/omByparken'
-  end
-
-  namespace :static_pages do
-  get 'info/omKanalS'
-  end
-
-  namespace :static_pages do
-  get 'info/omSalaby'
-  end
-
-  namespace :static_pages do
-  get 'info/omSkoleveien'
-  end
-
-  namespace :static_pages do
   get 'info/forside'
   end
 
