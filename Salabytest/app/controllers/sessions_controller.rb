@@ -19,11 +19,12 @@ class SessionsController < ApplicationController
       flash[:alert] = '- Ugyldig brukernavn og/eller passord!'
       render 'static_pages/index'
     end
+    end
   end
 
   def destroy
     log_out
     redirect_to root_path
       end
-    end
 end
+
