@@ -1,6 +1,6 @@
 @media only screen and (max-width: 40em) {
   
-    .menu{
+    .barn-meny{
         display: none;
     }
     #barnehageButtonMobil, #skoleveienButtonMobil, 
@@ -38,6 +38,6 @@
         margin-left: 0px;
         background-color: rgb(244, 244, 244);
         opacity: 0.8;
-}
+    }   
     
-  }
+}
