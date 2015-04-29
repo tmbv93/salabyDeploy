@@ -8,7 +8,7 @@
 #andreBtn, #morsmaalBtn, .skolestart, .forste, .andre, .morsmaal{
     display: none;
 }
-.kanalS,.mfl,.menu, .barnehage {
+.kanalS,.mfl,.menu,.barnehage {
   margin-bottom: 140px;
 }
 
