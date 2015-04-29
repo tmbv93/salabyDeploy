@@ -50,14 +50,6 @@
 
     /*----------Hovedmeny SLUTT!!-----------*/
 
-body {
-   /* background: url("/assets/barn/skoleveien.jpg") no-repeat;
-    background-attachment: fixed;
-    background-size: cover;*/
-    overflow:scroll;
-    overflow-x: hidden;
-}
-
 #background-image {
     transition:-webkit-filter 0.2s ease-in-out;
     -o-transition:-webkit-filter 0.2s ease-in-out; 

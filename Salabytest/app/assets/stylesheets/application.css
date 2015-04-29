@@ -9,3 +9,10 @@ img{
 	-moz-user-drag: none;
 	-o-user-drag: none;
 }
+
+/* Overflow control */
+/* body {
+    overflow:scroll;
+    overflow-x: hidden;
+}
+*/

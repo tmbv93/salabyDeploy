@@ -11,24 +11,27 @@
     <%= favicon_link_tag 'favicon.ico' %>
   </head>
 
-  <header>
+  <body>
 
+  <header>
     <% if @include_header_info %>
 
         <%=render 'shared/page_header_info' %>
 
     <% else %>
 
-    <%= render 'shared/page_header' unless @exclude_header %>
+        <%= render 'shared/page_header' unless @exclude_header %>
 
     <% end %>
   </header>
 
-  <body>
+
+
+    <div class="topMarg"></div>
     <%= yield %>
     <%= javascript_include_tag "application" %>
-  </body>
 
-  <%= render 'shared/page_footer' unless @exclude_footer %>
+    <%= render 'shared/page_footer' unless @exclude_footer %>
+  </body>
 
 </html>
