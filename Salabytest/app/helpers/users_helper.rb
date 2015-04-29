@@ -8,4 +8,8 @@ module UsersHelper
     Department.joins(:users).where(users: {id: user.id})
   end
 
+  def teacher?
+    @user.class_admin?
+  end
+
 end

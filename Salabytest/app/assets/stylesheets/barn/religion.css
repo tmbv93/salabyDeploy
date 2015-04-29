@@ -95,10 +95,10 @@
 
 /*----------Hovedmeny SLUTT!!-----------*/
 
-div #religion-background-wrapper {
-    background: url("barn/rlebakgrunn.jpg") no-repeat fixed;
+div#religion-background-wrapper {
+    background: url("rlebakgrunn.jpg") no-repeat fixed;
     background-attachment: fixed;
-    background-color: red;
+    background-color: white;
     background-position: center bottom;
     background-size: cover;
 }

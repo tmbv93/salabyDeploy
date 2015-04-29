@@ -1,8 +1,7 @@
 /*---------Headerområde!!---------*/
 
-div #islam-background-container {
-    background: url("barn/islam/islambkg.jpg") no-repeat;
-    background-attachment: fixed;
+div#islam-background-container {
+    background: url("/assets/barn/islam/islambkg.jpg") no-repeat fixed center bottom;
     background-position: center bottom;
     background-size: cover;
     background-color: white;

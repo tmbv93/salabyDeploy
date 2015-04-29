@@ -22,4 +22,17 @@ class User < ActiveRecord::Base
   validates :last_name, presence: true, length: {maximum: 35}
   validates :password, length: {minimum: 6}
   validates :username, presence: true, length: {minimum: 6, maximum: 25}, uniqueness: {case_sensitive: false}
+
+  def system_admin?
+    system_admin == :school_admin
+  end
+
+  def class_admin?
+    status == :class_admin
+  end
+
+  def student?
+    status == :student
+  end
+
 end

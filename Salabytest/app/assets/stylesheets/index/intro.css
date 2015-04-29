@@ -77,7 +77,9 @@ input[type="text"],input[type="password"] {
     height: auto;
     padding: 5px;
     width: 400px;
-    background-color: purple;
+    border-radius: 20px;
+    border: outset  #CCCCFF;
+    background-color: #FAFAFF;
     box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
     margin-bottom: 5em;
 
@@ -85,11 +87,11 @@ input[type="text"],input[type="password"] {
 }
 
 #childSection label {
-    color: white;
+    color: black;
 }
 
 #childSection h2 {
-    color: white;
+    color: darkblue;
     font-family: slapstick;
 }
 

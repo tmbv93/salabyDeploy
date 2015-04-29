@@ -6,21 +6,19 @@
           <div class="flash-message-box"><strong class="flash-message-text"><%= flash[:alert] %></strong></div>
 
                 <div class="panel">
-                <div id="userInfo">
-                    <% if logged_in? %>
-                    <h1>Profilside for <%= @user.username %></h1>
-                    <p>
-                    <strong>Navn: </strong><%= @user.first_name %> <%= @user.last_name %>
-                    </p>
-                    <p><strong>Klasse: </strong>
-                    <% if departments = get_departments(@user) %>
-                    <% departments.each do |dep|%>
-                    <%= link_to dep.name, department_path(dep.id)%>
+                <div id="user-information">
+                        <h1><%= @user.username %></h1>
+                        <p><strong>Navn: </strong><%= @user.first_name %> <%= @user.last_name %></p>
+                        <p><strong>Klasse: </strong>
+
+                          <% if departments = get_departments(@user) %>
+                             <% departments.each do |dep|%>
+                             <%= link_to dep.name, department_path(dep.id)%>
+
+                              </p>
+
                     <% end %>
-                        <% else %>
-                            Ingen klasse <!--PRINTE UT INGEN KLASSE, HOW!-->
-                    <% end %>
-                    </p>
+
                     
                     <strong>Beskrivelse: </strong>
                     <p><%= @user.description %></p>
@@ -32,7 +30,7 @@
             </div>
         </div>
                 <div class="row">
-                    <% if current_user.class_admin? %>
+                    <% if logged_in? %>
                     <div class="large-8 columns">
                   <div class="panel">
                     <div id="classesArea">

@@ -1,7 +1,5 @@
-div #jodedom-background-container {
-    background: url("barn/jodedommen/jodebkg.jpg") no-repeat;
-    background-attachment: fixed;
-    background-position: center bottom;
+div#jodedom-background-container {
+    background: url("/assets/barn/jodedommen/jodebkg.jpg") no-repeat fixed center bottom;
     background-size: cover;
     background-color: rgba(0,163,204, 0.3);
 }
