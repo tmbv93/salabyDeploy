@@ -95,10 +95,10 @@
 
 /*----------Hovedmeny SLUTT!!-----------*/
 
-body {
-    background: url("/assets/barn/hinduisme/hinduismebak.jpg") no-repeat;
+div #religion-background-wrapper {
+    background: url("barn/rlebakgrunn.jpg") no-repeat fixed white;
     background-attachment: fixed;
-    background-color: white;
+    background-position: center bottom;
     background-size: cover;
 }
 
