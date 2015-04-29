@@ -8,8 +8,12 @@
         $childSection = $('#childSection');
         
     };
+
+
     
     function settEvents(){
+
+        $adultSection.addClass("grey");
 
         $adultSection.hover(function(){
             
