@@ -26,11 +26,17 @@
 
 /*-------BREADCRUMBS---------*/
 
-.breadcrumbs{
+/*.breadcrumbs{
     width: 970px;
     margin-left: 150px;
     background-color: rgb(244, 244, 244);
     opacity: 0.8;
+}*/
+
+.breadcrumbs{
+    margin-left:15px;
+    margin-right: 15px;
+    background-color: rgb(244, 244, 244);
 }
 
 
