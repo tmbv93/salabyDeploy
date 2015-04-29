@@ -2,6 +2,9 @@
 <div id="UserWrapper">
     <div class="row">
         <div class="large-12 columns">
+
+          <p id="notice"><%= flash[:notice] %></p>
+
                 <div class="panel">
                 <div id="userInfo">
                     <% if logged_in? %>
