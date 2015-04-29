@@ -37,7 +37,7 @@ body {
     transform: rotate(-40deg);
     
     position: absolute;
-    top: -10em;
+    top: -12em;
     left: -25em;
     overflow: hidden;
     border-bottom: black solid 5px;
@@ -45,7 +45,7 @@ body {
 }
 
 #adultSection img {
-    width: 80%;
+    width: 70%;
     transition: .2s all ease-in-out 0s;
 }
 
