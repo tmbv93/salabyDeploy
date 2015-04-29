@@ -29,7 +29,7 @@ body {
 /*ADULT SECTION STYLES*/
 
 #adultSection {
-    max-height: 30em;
+    max-height: 20em;
     max-width: 100%;
     -webkit-transform: rotate(-40deg);
     -moz-transform: rotate(-40deg);
@@ -37,16 +37,15 @@ body {
     transform: rotate(-40deg);
     
     position: absolute;
-    top: -10em;
+    top: -12em;
     left: -25em;
     overflow: hidden;
     border-bottom: black solid 5px;
-    /*-webkit-filter: grayscale(1);*/
 
 }
 
 #adultSection img {
-    min-width: 100%;
+    width: 70%;
     transition: .2s all ease-in-out 0s;
 }
 
@@ -58,6 +57,11 @@ body {
 }
 
 
+
+
+/*******************************************************************************************/
+/*CHILD SECTION STYLES*/
+
 #childSection input[type="submit"]{
     font-family: slapstick;
     font-size: 20pt;
@@ -66,10 +70,6 @@ body {
 input[type="text"],input[type="password"] {
     font-family: helvetica;
 }
-
-/*******************************************************************************************/
-/*CHILD SECTION STYLES*/
-
 #childSection {
     position: absolute;
     right: 20em;
@@ -102,13 +102,6 @@ input[type="text"],input[type="password"] {
 }
 /*
 
-#adultSection:hover {
-    -webkit-filter: grayscale(0);
-}
-
-#adultSection:hover ~ #background-image {
-    -webkit-filter: grayscale(1);
-}
 
 /***************MOBIL*********************/
 @media only screen and (max-width: 40em) {
