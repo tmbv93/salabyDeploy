@@ -11,7 +11,6 @@ class StaticPagesController < ApplicationController
   end
 
   def forside
-    @include_header_info = true
   end
 
   def admin
