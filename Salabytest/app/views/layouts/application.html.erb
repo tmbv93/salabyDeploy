@@ -14,21 +14,17 @@
 
   <body>
 
-  <header>
+
     <% if @include_header_info %>
 
-        <%=render 'shared/page_header_info' %>
+      <%=render 'shared/page_header_info' %>
 
     <% else %>
 
         <%= render 'shared/page_header' unless @exclude_header %>
 
     <% end %>
-  </header>
 
-
-
-    <div class="topMarg"></div>
     <%= yield %>
     <%= javascript_include_tag "application" %>
 
