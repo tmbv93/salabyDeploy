@@ -9,14 +9,14 @@
 
     <section class="top-bar-section">
       <!-- Right Nav Section -->
-      <ul class="right">
+      <ul class="right-header-section">
         <li><%=link_to "Hjem", static_pages_barn_forside_path %>
         </li>
         <!--SCRIPT FOR Å SJEKKE OM BRUKER ER LOGGET INN-->
         <% if logged_in? %>
           <li>
               <a href="#" data-dropdown="hover1" data-options="is_hover:true; hover_timeout:5000">
-                  Bruker <b class="caret"></b></a>
+                  <%=current_user.username %> <b class="caret"></b></a>
                 <ul id="hover1" class="f-dropdown" data-dropdown-content>
                     <li><%=link_to "Min Side", user_path(current_user) %></li>
                     <li class="divider"></li>

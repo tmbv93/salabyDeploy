@@ -7,6 +7,10 @@
     height: 53px;
 }
 
+.right-header-section {
+    float: right;
+}
+
 .title-area {
     height: 3.5em;
     border: none;
