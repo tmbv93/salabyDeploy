@@ -10,10 +10,12 @@ class StaticPagesController < ApplicationController
   def help
   end
 
-  def info_pages_bestilling_path
+  def forside
+    @include_header_info = true
   end
 
   def admin
+    @exclude_footer = true
   end
 
 end
