@@ -7,10 +7,9 @@ class SessionsController < ApplicationController
     if  logged_in?
       redirect_to static_pages_barn_forside_path
       flash[:alert] = "Du er allerede logget inn som #{current_user.username}"
-      else
 
     # If user doesn't input anything, redirect without loging in
-    if params[:session][:username] == ""
+    elsif params[:session][:username] == ""
       redirect_to static_pages_barn_forside_path
     else
 
