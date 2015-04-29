@@ -9,6 +9,7 @@
 
 .title-area {
     height: 3.5em;
+    border: none;
 }
 
 .top-bar-section ul {
@@ -26,6 +27,7 @@
 }
 .top-bar img {
 max-height: 55px;
+
 }
 .top-bar.expanded .title-area {
     background-color: #FFFFFF;
