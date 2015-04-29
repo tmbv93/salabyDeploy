@@ -5,7 +5,7 @@ div .islam-background-container {
     background-attachment: fixed;
     background-position: center bottom;
     background-size: cover;
-    background-color: rgba(0,163,204, 0.3);
+    background-color: white;
 }
 
 #mainHeader {
@@ -75,12 +75,7 @@ div .islam-background-container {
 
 /*----------Hovedmeny SLUTT!!-----------*/
 
-body {
-    background: url("/assets/barn/islam/islambkg.jpg") no-repeat;
-    background-attachment: fixed;
-    background-color: white;
-    background-size: cover;
-}
+
 /*----------Gjelder kun på religion bildene på RLE siden-----------*/
 
 
