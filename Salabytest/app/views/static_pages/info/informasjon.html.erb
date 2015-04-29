@@ -1,8 +1,8 @@
-<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script>
   $(function() {
-    $( "#accordion" ).accordion();
+    $( "#accordion" ).accordion({
+      heightStyle: "content"
+    });
   });
   </script>
 <div id="wrapperVoksen">
@@ -21,9 +21,8 @@
       </div>
       <!--KODE BLOKK FOR HVER ARTIKKEL-->
       <div class="large-10 small-12 columns">
-          <div id="accordion">
+
               <%= render 'shared/page_information_accordion.html.erb' %>
-      </div>
       <!--KODE BLOKK FOR HVER ARTIKKEL SLUTT-->
 
     </div>
