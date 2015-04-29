@@ -20,7 +20,7 @@ $(function(){
                 $MFLDivs = $(".MFL");
  
                 //menyen dekker alle de fire knappene
-                $menu = $(".menu");
+                $menu = $(".barn-meny");
  
                 //Id til bakgrunsbildet
                 $backgroundImage = $("#background-image");
