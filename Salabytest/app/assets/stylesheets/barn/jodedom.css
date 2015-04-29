@@ -1,5 +1,5 @@
-div .jodedom-background-container {
-    background: url("/assets/barn/islam/islambkg.jpg") no-repeat;
+div #jodedom-background-container {
+    background: url("barn/jodedommen/jodebkg.jpg") no-repeat;
     background-attachment: fixed;
     background-position: center bottom;
     background-size: cover;
