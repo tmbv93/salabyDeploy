@@ -53,10 +53,10 @@ $(function(){
                                         ($MFLDivs).stop(true, false).slideUp(500);
                                         $MFLButton.addClass("grey");
                                 }
-                                $menu.animate({"margin-top": "50px"}, 500);
+                                $menu.animate({"margin-top": "0"}, 500);
                         }else{
                         //hvis synlig
-                        $menu.animate({"margin-top": "100px"}, 500);
+                        $menu.animate({"margin-top": "50px"}, 500);
                         $barnehageDivs.stop(true, false).slideUp(500);
                         $backgroundImage.removeClass("grey");
                         $barnehageButton.siblings("div").removeClass("grey");
@@ -88,10 +88,10 @@ $(function(){
                                         $MFLButton.addClass("grey");
                                 }
                                 //flytter menyen opp
-                                $menu.animate({"margin-top": "50px"}, 500);
+                                $menu.animate({"margin-top": "0"}, 500);
                         }else {
                         //hvis synlig
-                        $menu.animate({"margin-top": "100px"}, 500);
+                        $menu.animate({"margin-top": "50px"}, 500);
                         $skoleveienMenuDivs.stop(true, false).slideUp(500);
                         $backgroundImage.removeClass("grey");
                         $skoleveienButton.siblings("div").removeClass("grey");
@@ -120,10 +120,10 @@ $(function(){
                                         $MFLButton.addClass("grey");
                                 }
                                  //flytter menyen opp
-                                $menu.animate({"margin-top": "50px"}, 500);
+                                $menu.animate({"margin-top": "0"}, 500);
                         }else{
                         //hvis synlig
-                        $menu.animate({"margin-top": "100px"}, 500);
+                        $menu.animate({"margin-top": "50px"}, 500);
                         $kanalSDivs.stop(true, false).slideUp(500);
                         $backgroundImage.removeClass("grey");
                         $kanalSButton.siblings("div").removeClass("grey");
@@ -151,10 +151,10 @@ $(function(){
                                         $kanalSButton.addClass("grey");
                                 }
                                 //flytter menyen opp
-                                $menu.stop(true, false).animate({"margin-top": "50px"}, 500);
+                                $menu.stop(true, false).animate({"margin-top": "0"}, 500);
                         }else{
                         //hvis synlig
-                        $menu.animate({"margin-top": "100px"}, 500);
+                        $menu.animate({"margin-top": "50px"}, 500);
                         $MFLDivs.stop(true, false).slideUp();
                         $backgroundImage.removeClass("grey");
                         $MFLButton.siblings("div").removeClass("grey");
