@@ -11,6 +11,14 @@ img{
 	-o-user-drag: none;
 }
 
+.backgroundImage{
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100em;
+  min-height: 100%;
+}
+
 /* Overflow control */
 /* body {
     overflow:scroll;

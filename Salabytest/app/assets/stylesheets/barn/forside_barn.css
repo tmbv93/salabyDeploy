@@ -49,7 +49,7 @@
 
     /*----------Hovedmeny SLUTT!!-----------*/
 
-#background-image {
+.backgroundImage {
     transition: filter 0.2s ease-in-out;
     -o-transition: -o-filter 0.2s ease-in-out; 
     -moz-transition: -moz-filter 0.2s ease-in-out; 
@@ -64,13 +64,7 @@
     -webkit-filter: grayscale(1);
 }
 
-#background-image{
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-width: 100em;
-  min-height: 100%;
-}
+
 
 #barnForsideWrapper{
     min-height: 100%;
