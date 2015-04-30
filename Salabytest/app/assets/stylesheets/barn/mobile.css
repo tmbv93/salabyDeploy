@@ -38,8 +38,8 @@
     }
 
     .breadcrumbs{
-        width: 400px;
-        margin-left: 0px;
+        max-width: 100%;
+        margin-left: 15px;
         background-color: rgb(244, 244, 244);
         opacity: 0.8;
     }   
