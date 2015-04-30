@@ -136,7 +136,15 @@ div#religion-background-wrapper {
 
 .test{
     min-height: 100%;
+    margin-top: 0;
+}
+
+
+.test-section{
+    min-height: 100%;
     margin-bottom: 0;
+    margin-top: -16px;
+
 }
 
 
