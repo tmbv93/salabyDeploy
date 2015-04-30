@@ -19,6 +19,15 @@ img{
   min-height: 100%;
 }
 
+.f-topbar-fixed{
+	padding-top: 0!important;
+}
+
+.topMarg {
+    margin-top: 65px;
+}
+
+
 /* Overflow control */
 /* body {
     overflow:scroll;
