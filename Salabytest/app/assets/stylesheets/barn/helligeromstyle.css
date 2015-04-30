@@ -1,0 +1,109 @@
+body {
+    margin: 0 auto;
+}
+
+#spillBG{
+    background-image: url(/assets/barn/hinduisme/helligerom_spill/hindspillBG.jpg);
+    width: 804px;
+    height: 500px;
+    background-color: black;
+    margin: 0 auto;
+    position: relative;
+}
+
+.circle {
+    height: 20px;
+    width: 20px;
+    opacity: 1;
+    border-radius: 50%;
+    border: 3px solid blue;
+    position: absolute;
+
+}
+
+.circle:hover {
+    opacity: 0.1;
+}
+
+.navn {
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    display: none;
+
+}
+
+#ganesha .circle {
+    top: 155px;
+    left: 410px;
+}
+
+.ganesha {
+    top: 135px;
+    left: 420px;
+}
+
+#vibhuti .circle {
+    top: 355px;
+    left: 245px;
+}
+
+.vibhuti {
+    top: 320px;
+    left: 260px;
+}
+
+#rokelse .circle {
+    top: 400px;
+    left: 576px;
+}
+
+.rokelse {
+    top: 370px;
+    left: 590px;
+}
+
+#blomster .circle {
+    top: 245px;
+    left: 385px;
+}
+
+.blomster {
+    top: 207px;
+    left: 420px;
+}
+
+#offer .circle {
+    top: 370px;
+    left: 420px;
+}
+
+.offer {
+    top: 335px;
+    left: 420px;
+}
+
+#nextBtn{
+    background-color: #8ad84a;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 3px white solid;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+
+}
+
+#nextBtn img {
+    position: relative;
+    left: 15px;
+    top:15px;
+    transition: all 1s ease-in-out;
+}
+
+#nextBtn img:hover {
+    transform: scale(1.3);
+}
+
