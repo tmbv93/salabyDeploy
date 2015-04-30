@@ -1,4 +1,28 @@
 Rails.application.routes.draw do
+  namespace :static_pages do
+  namespace :barn do
+    get 'norsk/eksempeltema1'
+    end
+  end
+
+  namespace :static_pages do
+  namespace :barn do
+    get 'norsk/eksempeltema2'
+    end
+  end
+
+  namespace :static_pages do
+  namespace :barn do
+    get 'engelsk/eksempeltema1'
+    end
+  end
+
+  namespace :static_pages do
+  namespace :barn do
+    get 'engelsk/eksempeltema2'
+    end
+  end
+
   get 'static_pages/admin'
   get 'static_pages/info/forside'
 
