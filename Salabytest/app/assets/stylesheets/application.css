@@ -19,6 +19,7 @@ img{
   min-height: 100%;
 }
 
+/* fjerner foundation javascript...*/
 .f-topbar-fixed{
 	padding-top: 0!important;
 }
