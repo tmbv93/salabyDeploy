@@ -1,84 +1,84 @@
 <div id="religion-background-wrapper">
 
 
-<section class="test-section">
+  <section class="test-section">
 
-  <div class="row">
-    <div class="large-12 columns">
-      <h1 class="fagh">RLE</h1>
+    <div class="row">
+      <div class="large-12 columns">
+        <h1 class="fagh">RLE</h1>
+      </div>
     </div>
-  </div>
 
-  <div class="row">
-    <ul class="breadcrumbs">
+    <div class="row">
+      <ul class="breadcrumbs">
         <li><a href="/static_pages/barn/forside.html">Hjem</a></li>
         <li class="unavailable"><a href="#">Kanal S</a></li>
         <li class="current"><a href="/static_pages/barn/rle">RLE</a></li>
-    </ul>
-  </div>
-
-
-
-  <div class="test">
-    <div class="row">
-
-      <div class="large-3 small-6 medium-4 columns">
-        <div class="align-center  bilde-hover">
-          <a href="rle/hinduisme.html"><img src="/assets/barn/RLE/hinduisme.png" draggable="false" alt="Hinduismebilde">
-          </a>
-        </div>
-      </div>
-
-      <div class="large-3 small-6 medium-4 columns">
-        <div class="align-center  bilde-hover">
-          <a href="rle/islam.html"><img src="/assets/barn/RLE/islam.png" draggable="false" alt="Islambilde"> </a>
-        </div>
-      </div>
-
-      <div class="large-3 small-6 medium-4 columns">
-        <div class="align-center  bilde-hover">
-          <img src="/assets/barn/RLE/kristendom.png" draggable="false" alt="Kristendombilde">
-        </div>
-      </div>
-
-      <div class="large-3 small-6 medium-4 columns">
-        <div class="align-center  bilde-hover">
-          <a href="/static_pages/barn/rle/jodedom"><img src="/assets/barn/rle/jøde.png" draggable="false" alt="Jødedommenbilde"></a>
-        </div>
-      </div>
-
-      <div class="large-3 small-6 medium-4 columns">
-        <div class="align-center  bilde-hover">
-          <img src="/assets/barn/RLE/budd.png" draggable="false" alt="Buddhismebilde">
-        </div>
-      </div>
-
-      <div class="large-3 small-6 medium-4 columns">
-        <div class="align-center  bilde-hover">
-          <img src="/assets/barn/RLE/sikhisme.png" draggable="false" alt="Sikhismebilde">
-        </div>
-      </div>
-
-      <div class="large-3 small-6 medium-4 columns">
-        <div class="align-center  bilde-hover">
-          <img src="/assets/barn/RLE/etikk.png" draggable="false" alt="Etikkbilde">
-        </div>
-      </div>
-
-      <div class="large-3 small-6 medium-4 columns">
-        <div class="align-center  bilde-hover">
-          <img src="/assets/barn/RLE/kirke.png" draggable="false" alt="Kirkebilde">
-        </div>
-      </div>
-
-      <div class="large-3 small-6 medium-4 columns">
-        <div class="align-center  bilde-hover">
-          <img src="/assets/barn/RLE/kunst2.png" draggable="false" alt="Kunstbilde">
-        </div>
-      </div>
-      <div class="large-3"></div>
+      </ul>
     </div>
-  </div>
-</section>
+
+
+
+    <div class="test">
+      <div class="row">
+
+        <div class="large-3 small-6 medium-4 columns">
+          <div class="align-center  bilde-hover">
+            <%=link_to image_tag("barn/RLE/hinduisme.png", alt: 'Hinduisme'), {action: :hinduisme, :controller => 'static_pages/barn/rle'}, {:class => 'dock-item'} %>
+            </a>
+          </div>
+        </div>
+
+        <div class="large-3 small-6 medium-4 columns">
+          <div class="align-center  bilde-hover">
+            <%=link_to image_tag("barn/RLE/islam.png", alt: 'Islam'), {action: :islam, :controller => 'static_pages/barn/rle'}, {:class => 'dock-item'} %>
+          </div>
+        </div>
+
+        <div class="large-3 small-6 medium-4 columns">
+          <div class="align-center  bilde-hover">
+            <%=link_to image_tag("barn/RLE/kristendom.png", alt: 'Kristendom'), {action: :kristendom, :controller => 'static_pages/barn/rle'}, {:class => 'dock-item'} %>
+          </div>
+        </div>
+
+        <div class="large-3 small-6 medium-4 columns">
+          <div class="align-center  bilde-hover">
+            <%=link_to image_tag("barn/RLE/jøde.png", alt: 'Jødedom'), {action: :jodedom, :controller => 'static_pages/barn/rle'}, {:class => 'dock-item'} %>
+          </div>
+        </div>
+
+        <div class="large-3 small-6 medium-4 columns">
+          <div class="align-center  bilde-hover">
+            <%=link_to image_tag("barn/RLE/budd.png", alt: 'Buddhisme'), {action: :buddhisme, :controller => 'static_pages/barn/rle'}, {:class => 'dock-item'} %>
+          </div>
+        </div>
+
+        <div class="large-3 small-6 medium-4 columns">
+          <div class="align-center  bilde-hover">
+            <%=link_to image_tag("barn/RLE/sikhisme.png", alt: 'Sikhisme'), {action: :sikhisme, :controller => 'static_pages/barn/rle'}, {:class => 'dock-item'} %>
+          </div>
+        </div>
+
+        <div class="large-3 small-6 medium-4 columns">
+          <div class="align-center  bilde-hover">
+            <%=link_to image_tag("barn/RLE/etikk.png", alt: 'Etikk og filosofi'), {action: :etikk_filosofi, :controller => 'static_pages/barn/rle'}, {:class => 'dock-item'} %>
+          </div>
+        </div>
+
+        <div class="large-3 small-6 medium-4 columns">
+          <div class="align-center  bilde-hover">
+            <%=link_to image_tag("barn/RLE/kirke.png", alt: 'Kirkehistorie'), {action: :kirkehistorie, :controller => 'static_pages/barn/rle'}, {:class => 'dock-item'} %>
+          </div>
+        </div>
+
+        <div class="large-3 small-6 medium-4 columns">
+          <div class="align-center  bilde-hover">
+            <%=link_to image_tag("barn/RLE/kunst2.png", alt: 'Kunst'), {action: :kunst, :controller => 'static_pages/barn/rle'}, {:class => 'dock-item'} %>
+          </div>
+        </div>
+        <div class="large-3"></div>
+      </div>
+    </div>
+  </section>
 
 </div>
